@@ -1,0 +1,26 @@
+{
+  "name": "bazar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run html:build && npm run scss:build",
+    "scss:build": "gulp scss",
+    "scss:watch": "gulp sass:watch",
+    "html:build": "gulp html:min"
+  },
+  "author": "Alex Pochatovsky",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "gulp-watch-sass": "^1.4.1",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
