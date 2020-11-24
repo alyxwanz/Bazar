@@ -1,0 +1,23 @@
+.footer {
+    
+    background-color: #373844; 
+    
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+
+       .footer-column__title {
+        font-family: $font-Playfair;
+        font-size: rem(24px);
+        font-weight: bold;
+        color: #ffffff;
+       } 
+
+       .footer-nav__item {
+
+       }
+    }
+}

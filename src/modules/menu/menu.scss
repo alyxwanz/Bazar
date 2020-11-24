@@ -1,0 +1,113 @@
+.menu-wrap {
+    display: flex;
+    
+
+    .menu-template {
+        .menu-template__item {
+            display: flex;
+            border-bottom: solid 1px #eeeeee;
+            padding: 24px 0px 20px;
+        }
+    
+        .menu-template__item:last-child {
+            border-bottom: none;
+        }
+    
+        .menu-template__title {
+            font-family: $font-Playfair;
+            font-size: rem(35px);
+            font-weight: bold;
+            color: #14141d;
+            margin-bottom: 35px;
+        }
+    
+        .menu-template__headline {
+            display: block;
+            text-transform: uppercase;
+            font-family: $font-Sintony;
+            font-size: rem(16px);
+            font-weight: bold;
+            color: #14141d;
+            margin-bottom: 10px;
+        }
+    
+        .menu-template__disc {
+            display: block;
+            font-family: $font-Sintony;
+            font-size: rem(14px);
+            font-weight: normal;
+            color: #5c6369;
+        }
+    
+        .menu-template_btn {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #fea100;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $font-Sintony;
+            font-size: rem(14px);
+            font-weight: bold;
+            letter-spacing: 0.35px;
+            color: #ffffff;
+            padding: 20px 30px;
+        }
+    
+        .menu-template__currency {
+            font-family: $font-Playfair;
+            font-size: rem(13px);
+            font-weight: bold;
+            color: #14141d;
+        }
+    
+        .menu-template__value {
+            font-family: $font-Playfair;
+            font-size: rem(26px);
+            font-weight: bold;
+            color: #14141d;
+        }
+    }
+
+    .menu-special {
+        .menu-special__title {
+            font-family: $font-Playfair;
+            font-size: rem(35px);
+            font-weight: bold;
+            color: #14141d;
+            margin-bottom: 35px;
+        }
+
+        .menu-special__img {
+            width: 320px;
+            height: 335px;
+            box-shadow: 0px 36px 51px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-special__item {
+            width: 320px;
+            height: 210px;
+            background-color: #7d8587;
+        }
+
+        .menu-special__heading {
+            display: block;
+            font-size: rem(22px);
+            font-weight: bold;
+            color: #14141d;
+        }
+
+        .menu-special__price {
+            display: block;
+            font-family: $font-Playfair;
+            font-size: rem(22px);
+            font-weight: bold;
+            color: #fea100;
+        }
+
+        .menu-special__currency {
+            font-size: rem(11px);
+        }
+    }
+
+    
+}

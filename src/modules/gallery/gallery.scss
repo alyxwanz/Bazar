@@ -1,0 +1,18 @@
+.gallery {
+    background-color: #edf1f3;
+
+    .gallery-section__title {
+        font-family: $font-Playfair;
+        font-size: rem(35px);
+        font-weight: bold;
+        color: #14141d;
+        margin-bottom: 27px;
+    }
+
+    .gallery-slider__slide {
+        width: 471px;
+        height: 340px;
+        background-color: #7d8587;
+    }
+    
+}
