@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const watchSass = require("gulp-watch-sass");
 const htmlmin = require('gulp-htmlmin');
 const browserSync = require('browser-sync').create();
+const pug = require('gulp-pug');
 
 sass.compiler = require('node-sass');
  
@@ -25,6 +26,18 @@ gulp.task('html:min', () => {
   return gulp.src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'));
+});
+ 
+gulp.task('pug', function buildHTML() {
+  return gulp.src('src/index.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+  .pipe(gulp.dest('dist'))
 });
 
 // gulp.task('serve', () => {
