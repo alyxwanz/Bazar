@@ -5,8 +5,7 @@
 @import './../modules/feedback-slider/feedback-slider.scss';
 @import './../modules/footer/footer.scss';
 @import './../modules/gallery/gallery.scss';
-@import './../modules/schedule/reserve-form.scss';
-
+@import './../modules/schedule/schedule.scss';
 
 @function rem($size) {
   @return $size / 16px * 1rem;
