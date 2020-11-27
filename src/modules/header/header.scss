@@ -2,16 +2,49 @@
     display: flex;
     justify-content: center;
     background-color: #7d8587;
+    padding: 20px 0 100px;
+    background-image: url('./../images/header/head.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    .head__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 200px;
+
+        .logo {
+            
+            a {
+                text-decoration: none;
+            }
+
+            &__text{
+                font-family: $font-Playfair;
+                text-transform: uppercase;
+                font-size: rem(13px);
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+            &__text:not(:last-child) {
+                font-size: rem(22px);
+                color: #fea100;
+            }
+
+        }
+    }
 
     .nav {
         
-        .nav__list {
+        &__list {
             display: flex;
         }
-        .nav__item {
+        &__item {
             margin-right: 33px;
         }
-        .nav__link {
+        &__link {
             font-family: $font-Sintony;
             text-transform: uppercase;
             text-decoration: none;
@@ -22,19 +55,43 @@
         }
     }
 
+    .book__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 0px 0px 0px 3px #FEA100; 
+        box-shadow: 0px 0px 0px 3px #FEA100;
+        background-color: #fea100;
+        border: 1px solid #ffffff;
+        border-radius: 3px;
+        padding: 12px 12px 12px 45px;
+        text-transform: uppercase;
+        font-family: $font-Sintony;
+        font-size: rem(12px);
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+    }
+
     .slider {
-        .slider__title {
+
+        max-width: 532px;
+        margin: 0 auto;
+
+        &__title {
             font-family: $font-Playfair;
             font-size: rem(62px);
             font-weight: bold;
             color: #ffffff;
+            margin-bottom: 70px;
+            text-align: center;
             
             span {
                 font-size: rem(42px);
             }
         }
 
-        .slider__disc {
+        &__disc {
             font-family: $font-Sintony;
             text-transform: uppercase;
             font-size: rem(14px);
@@ -42,12 +99,18 @@
             color: #fea100;
         }
 
-        .slider__phone {
+        &__phone {
             font-family: $font-Playfair;
             text-decoration: none;
             font-size: rem(37px);
             font-weight: bold;
             color: #ffffff;
         }
+    }
+
+    .slider__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

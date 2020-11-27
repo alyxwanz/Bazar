@@ -1,17 +1,17 @@
-@import './variables.scss';
-@import './../modules/header/header.scss';
-@import './../modules/menu/menu.scss';
-@import './../modules/reserve-form/reserve-form.scss';
-@import './../modules/feedback-slider/feedback-slider.scss';
-@import './../modules/footer/footer.scss';
-@import './../modules/gallery/gallery.scss';
-@import './../modules/schedule/schedule.scss';
+@import "./variables.scss";
+@import "./../modules/header/header.scss";
+@import "./../modules/menu/menu.scss";
+@import "./../modules/reserve-form/reserve-form.scss";
+@import "./../modules/feedback-slider/feedback-slider.scss";
+@import "./../modules/footer/footer.scss";
+@import "./../modules/gallery/gallery.scss";
+@import "./../modules/schedule/schedule.scss";
 
 body {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .wrapper {
-    width: 1084px;
+    width: 60%;
     margin: 0 auto;
 }

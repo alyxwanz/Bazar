@@ -8,7 +8,7 @@
     "url": "https://github.com/alyxwanz/Bazar.git"
   },
   "scripts": {
-    "build": "npm run pug && npm run scss:build",
+    "build": "gulp build",
     "scss:build": "gulp scss",
     "scss:watch": "gulp sass:watch",
     "pug": "gulp pug",
