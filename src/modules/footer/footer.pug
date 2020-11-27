@@ -22,13 +22,19 @@ footer.footer
     .footer-column
       h3.footer-column__title
         | News letter
-      span.span
+      span.footer-subscribe__disc
         | Enter your email address and subscribe daily newsletter
-      form(action='')
-        .div
-          .div
-          input(type='text' placeholder='Email Address')
-        button(type='submit') Subscribe
+      form(action='').footer-form
+        .footer-form__input
+          .footer-form__icon
+            input(type='text' placeholder='Email Address').footer-form__item
+        button.footer-form__btn(type='submit') Subscribe
     .footer-column
       h3.footer-column__title
         | Our app avilable
+      a.footer-column__link(href='http://')
+        img.footer-link__img(src='./images/footer/appstore.svg' alt='appstore' srcset='')
+      a.footer-column__link(href='http://')
+        img.footer-link__img(src='./images/footer/googlestore.svg' alt='googlestore' srcset='')
+    .footer-copyright
+      span.footer-copyright__text 2016 &copy;  Luxury Restaurant, All rights reserved
