@@ -1,2 +1,8 @@
 $font-Sintony: 'Sintony', sans-serif;
 $font-Playfair: 'Playfair Display', serif;
+
+@function rem($size) {
+    @return $size / 16px * 1rem;
+  }
+  
+  

@@ -7,10 +7,6 @@
 @import './../modules/gallery/gallery.scss';
 @import './../modules/schedule/schedule.scss';
 
-@function rem($size) {
-  @return $size / 16px * 1rem;
-}
-
 body {
     box-sizing: border-box;
 }

@@ -1,9 +1,46 @@
 .schedule {
+    width: 1084px;
+    margin: 0 auto;
 
     .schedule-section__title {
         font-family: $font-Playfair;
         font-size: rem(35px);
         font-weight: bold;
         color: #14141d;
+        padding: 100px 0;
+        display: inline-block;
+        margin-right: 160px;
+    }
+
+    .schedule-section__text {
+        font-family: $font-Playfair;
+        font-size: rem(20px);
+        font-style: italic;
+        color: #616161;
+        display: inline-grid;
+        padding-right: 60px;
+    }
+
+    .schedule-section__time {
+        font-family: $font-Playfair;
+        font-size: rem(30px);
+        font-style: normal;
+        font-weight: bold;
+        color: #fea100;
+        padding-top: 20px;
+    }
+
+    .schedule-section__img {
+    position: relative;
+}
+
+    .schedule-section__item {
+            min-width: 210px;
+            min-height: 210px;
+            background-color: #7d8587;
+            display: inline-block;
+            position: absolute;
+            right: -7px;
+            bottom: -45px;
     }
 }

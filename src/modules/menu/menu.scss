@@ -3,10 +3,12 @@
     
 
     .menu-template {
+        margin: 100px 25px 85px 25px;
         .menu-template__item {
             display: flex;
             border-bottom: solid 1px #eeeeee;
             padding: 24px 0px 20px;
+
         }
     
         .menu-template__item:last-child {
@@ -58,6 +60,7 @@
             font-size: rem(13px);
             font-weight: bold;
             color: #14141d;
+            margin-left: 100px;
         }
     
         .menu-template__value {
@@ -65,10 +68,13 @@
             font-size: rem(26px);
             font-weight: bold;
             color: #14141d;
+            margin-right: 50px;
         }
     }
 
     .menu-special {
+        margin: 100px 25px 85px 25px;
+        position: relative;
         .menu-special__title {
             font-family: $font-Playfair;
             font-size: rem(35px);
@@ -81,6 +87,9 @@
             width: 320px;
             height: 335px;
             box-shadow: 0px 36px 51px 0 rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
         }
 
         .menu-special__item {
@@ -94,6 +103,7 @@
             font-size: rem(22px);
             font-weight: bold;
             color: #14141d;
+            margin: 30px 131px 16px 40px;
         }
 
         .menu-special__price {
@@ -102,10 +112,19 @@
             font-size: rem(22px);
             font-weight: bold;
             color: #fea100;
+            margin-bottom: 37px;
+            margin-left: 40px;
         }
 
         .menu-special__currency {
             font-size: rem(11px);
+        }
+        .menu-special__img.small {
+            transform: scale(0.8);
+            position: absolute;
+            right: -243px;
+            top: 60px;
+            z-index: 0;
         }
     }
 
