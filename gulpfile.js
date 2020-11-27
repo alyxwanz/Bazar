@@ -1,5 +1,5 @@
 'use strict';
- 
+
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const watchSass = require("gulp-watch-sass");
@@ -8,29 +8,29 @@ const browserSync = require('browser-sync').create();
 const pug = require('gulp-pug');
 
 sass.compiler = require('node-sass');
- 
+
 gulp.task('scss', () => {
-  return gulp.src('./src/styles/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/styles'));
+	return gulp.src('./src/styles/*.scss')
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest('./dist/styles'));
 });
- 
+
 gulp.task('scss:watch', () => watchSass([
-  './src/styles/*.scss'
+	'./src/styles/*.scss'
 ])
   .pipe(sass())
   .pipe(gulp.dest('./dist/styles')));
  
 gulp.task('pug', function buildHTML() {
-  return gulp.src('src/index.pug')
-  .pipe(pug({
-    pretty: true
-  }))
-  .pipe(htmlmin({
-    collapseWhitespace: true,
-    removeComments: true
-  }))
-  .pipe(gulp.dest('dist'))
+	return gulp.src('src/index.pug')
+		.pipe(pug({
+			pretty: true
+		}))
+		.pipe(htmlmin({
+			collapseWhitespace: true,
+			removeComments: true
+		}))
+		.pipe(gulp.dest('dist'))
 });
 
 
