@@ -20,13 +20,6 @@ gulp.task('scss:watch', () => watchSass([
 ])
   .pipe(sass())
   .pipe(gulp.dest('./dist/styles')));
-
- 
-gulp.task('html:min', () => {
-  return gulp.src('src/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('dist'));
-});
  
 gulp.task('pug', function buildHTML() {
   return gulp.src('src/index.pug')
@@ -39,6 +32,16 @@ gulp.task('pug', function buildHTML() {
   }))
   .pipe(gulp.dest('dist'))
 });
+
+
+gulp.task('images', () => {
+  return gulp.src('src/images/**/*.{svg,png,jpeg,jpg,webp}', {since: gulp.lastRun('images')})
+      .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('build', gulp.series('scss', 'images', 'pug'));
+
+
 
 // gulp.task('serve', () => {
 //     browserSync.init({
