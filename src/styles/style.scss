@@ -12,6 +12,19 @@ body {
 }
 
 .wrapper {
-    width: 60%;
-    margin: 0 auto;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.style-mix {
+	font-family: $font-Sintony;
+	font-size: rem(14px);
+	font-weight: normal;
+	letter-spacing: 0.35px;
+	text-decoration: none;
+	color: $color_5;
+}
+
+.footer-margin {
+	margin-bottom: 18px;
 }

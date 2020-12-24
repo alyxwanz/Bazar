@@ -1,6 +1,15 @@
-$font-Sintony: 'Sintony', sans-serif;
-$font-Playfair: 'Playfair Display', serif;
+$font-Sintony: "Sintony", sans-serif;
+$font-Playfair: "Playfair Display", serif;
+
+$mainSize: 16px;
 
 @function rem($size) {
-    @return $size / 16px * 1rem;
-  }
+	@return $size / $mainSize * 1rem;
+}
+
+$color_1: #14141d;
+$color_2: #363d43;
+$color_3: #fea100;
+$color_4: #7d8587;
+$color_5: #adb2b7;
+$color_6: #52535e;
