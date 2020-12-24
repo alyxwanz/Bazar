@@ -1,40 +1,30 @@
 footer.footer
-  .wrapper.footer-flex
-    .footer-column
-      h3.footer-column__title
+  .wrapper.footer__flex
+    .footer__column
+      h2.footer__column-title
         | Navigation
-      nav.footer-nav
-        ul.footer-nav__list
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') Home
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') About us
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') Menu
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') Reservation
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') Recipe
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') Blog
-          li.footer-nav__item
-            a.footer-nav__link(href='http://') Contact Us
-    .footer-column
-      h3.footer-column__title
+      nav.footer__nav
+        ul.footer__nav-list
+          - arr = ['Home', 'About us', 'Menu', 'Reservation', 'Recipe', 'Blog', 'Contact us']
+            each val in arr
+              li.footer__nav-item.footer-margin
+               a.footer__nav-link.style-mix(href='#') #{val}
+    .footer__column
+      h2.footer__column-title
         | News letter
-      span.footer-subscribe__disc
+      span.footer__subscribe-disc.style-mix
         | Enter your email address and subscribe daily newsletter
-      form(action='').footer-form
-        .footer-form__input
-          .footer-form__icon
-            input(type='text' placeholder='Email Address').footer-form__item
-        button.footer-form__btn(type='submit') Subscribe
-    .footer-column
-      h3.footer-column__title
+      form.footer__form(action='')
+        .footer__form-input
+          .footer__form-icon
+            input.footer__form-item(type='text' placeholder='Email Address')
+        button.footer__form-btn(type='submit') Subscribe
+    .footer__column
+      h2.footer__column-title
         | Our app avilable
-      a.footer-column__link(href='http://')
-        img.footer-link__img(src='./images/footer/appstore.svg' alt='appstore' srcset='')
-      a.footer-column__link(href='http://')
-        img.footer-link__img(src='./images/footer/googlestore.svg' alt='googlestore' srcset='')
-    .footer-copyright
-      span.footer-copyright__text 2016 &copy;  Luxury Restaurant, All rights reserved
+      a.footer__column-link(href='http://')
+        img.footer__link-img(src='./images/footer/appstore.svg' alt='appstore' srcset='')
+      a.footer__column-link(href='http://')
+        img.footer__link-img(src='./images/footer/googlestore.svg' alt='googlestore' srcset='')
+    .footer__copyright
+      span.footer__copyright-text 2016 &copy;  Luxury Restaurant, All rights reserved

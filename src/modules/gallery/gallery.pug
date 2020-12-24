@@ -1,12 +1,10 @@
 section.gallery-section
   h2.gallery-section__title
     | Our Gallery
-  .gallery-section__slider
-    .gallery-section__slide
-    .gallery-section__slide
-    .gallery-section__slide
-    .gallery-section__slide
-    .gallery-section__slide
+  ul.gallery-section__slider
+    - arr2 = ["","","","",""]
+      each val2 in arr2
+        li.gallery-section__slide= val2
   .gallery-section__radio
     ul.gallery-section__list
       li.gallery-section__list-radio

@@ -1,118 +1,113 @@
 .reserve-form {
-    position: relative;
-    background-image: url('./../images/reserve-form/reserve-form.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	position: relative;
+	background-image: url("./../images/reserve-form/reserve-form.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
-    form {
-        max-width: 660px;
-        margin: 0 auto;
-    }
+	&__form {
+		max-width: 660px;
+		margin: 0 auto;
+	}
 
-    background-color: #565f61;
-    padding: 83px 0 85px;
+	background-color: #565f61;
+	padding: 83px 0 85px;
 
-    &__title {
-        font-family: $font-Playfair;
-        font-size: rem(35px);
-        font-weight: bold;
-        color: #ffffff;
-        margin-bottom: 22px;
-        text-align: center;
-    }
+	&__title {
+		font-family: $font-Playfair;
+		font-size: rem(35px);
+		font-weight: bold;
+		color: #ffffff;
+		margin-bottom: 22px;
+		text-align: center;
+	}
 
-    &__wrap:not(:last-child) {
-        display: flex;
-        margin-bottom: 10px;
-        align-items: center;
-        justify-content: center;
-    }
+	&__wrap:not(:last-child) {
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		justify-content: center;
+	}
 
-    &__wrap:last-child {
-        display: flex;
-        align-items: center;
-    }
+	&__wrap:last-child {
+		display: flex;
+		align-items: center;
+	}
 
-    &__item {
-        background-color: #ffffff;
-        border-radius: 2px;
-        padding: 19px;
-        width: 100%;
-    }
+	&__item {
+		background-color: #ffffff;
+		border-radius: 2px;
+		padding: 19px;
+		width: 100%;
+	}
 
-    &__item:not(:last-child) {
-        margin-right: 24px;
-    }
+	&__item:not(:last-child) {
+		margin-right: 24px;
+	}
 
-    &__input {
-        border: none;
-    }
+	&__input {
+		border: none;
+	}
 
-    &__btn {
-        background-color: #fea100;
-        border: transparent;
-        border-radius: 2px;
-        padding: 17px 27px;
-        font-family: $font-Sintony;
-        text-transform: uppercase;
-        font-size: rem(12px);
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: 0.3px;
-        color: #ffffff;
-        margin-right: 36px;
-    }
+	&__btn {
+		background-color: $color_3;
+		border: transparent;
+		border-radius: 2px;
+		padding: 17px 27px;
+		font-family: $font-Sintony;
+		text-transform: uppercase;
+		font-size: rem(12px);
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: 0.3px;
+		color: #ffffff;
+		margin-right: 36px;
+	}
 
-    &__phone {
-        font-family: $font-Playfair;
-        font-size: rem(20.5px);
-        font-weight: bold;
-        color: #ffffff;
-        text-decoration: none;
-    }
+	&__phone {
+		font-family: $font-Playfair;
+		font-size: rem(20.5px);
+		font-weight: bold;
+		color: #ffffff;
+		text-decoration: none;
+	}
 
-    &__cube:not(:last-child) {
-        position: absolute;
-        top: -50px;
-        left: 100px;
-        width: 251px;
-        height: 251px;
-        background-color: #7d8587;
-    }
+	&__cube:not(:last-child) {
+		position: absolute;
+		top: -50px;
+		left: 100px;
+		width: 251px;
+		height: 251px;
+		background-color: $color_4;
+	}
 
-    &__cube:not(:first-child) {
-        position: absolute;
-        bottom: -30px;
-        right: 150px;
-        width: 207px;
-        height: 207px;
-        background-color: #7d8587;
-    }
+	&__cube:not(:first-child) {
+		position: absolute;
+		bottom: -30px;
+		right: 150px;
+		width: 207px;
+		height: 207px;
+		background-color: $color_4;
+	}
 
-    .reserve-form__disc {
+	&__disc {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-right: 27px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-right: 27px;
+		&__text {
+			font-family: $font-Sintony;
+			font-size: rem(11px);
+			font-weight: bold;
+			color: #ffffff;
+			text-transform: uppercase;
+		}
 
-        .reserve-form__text {
-            font-family: $font-Sintony;
-            font-size: rem(11px);
-            font-weight: bold;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-
-        .reserve-form__text:not(:first-child) {
-            color: #fe4c8d;
-        }
-
-        
-
-    }
-
+		&__text:not(:first-child) {
+			color: #fe4c8d;
+		}
+	}
 }
