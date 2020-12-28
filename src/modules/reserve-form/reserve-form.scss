@@ -10,14 +10,9 @@
 		margin: 0 auto;
 	}
 
-	background-color: #565f61;
 	padding: 83px 0 85px;
 
 	&__title {
-		font-family: $font-Playfair;
-		font-size: rem(35px);
-		font-weight: bold;
-		color: #ffffff;
 		margin-bottom: 22px;
 		text-align: center;
 	}
@@ -35,10 +30,22 @@
 	}
 
 	&__item {
-		background-color: #ffffff;
+		position: relative;
 		border-radius: 2px;
-		padding: 19px;
+		padding: 19px 19px 19px 59px;
 		width: 100%;
+		border: 2px solid transparent;
+
+		&:hover {
+			border-radius: 2px;
+			border: 2px solid $color_gray;
+		}
+
+		.reserve-form__icon {
+			position: absolute;
+			top: 20px;
+			left: 19px;
+		}
 	}
 
 	&__item:not(:last-child) {
@@ -50,27 +57,15 @@
 	}
 
 	&__btn {
-		background-color: $color_3;
 		border: transparent;
-		border-radius: 2px;
 		padding: 17px 27px;
-		font-family: $font-Sintony;
-		text-transform: uppercase;
-		font-size: rem(12px);
-		font-weight: bold;
 		font-stretch: normal;
 		font-style: normal;
-		letter-spacing: 0.3px;
-		color: #ffffff;
 		margin-right: 36px;
 	}
 
 	&__phone {
-		font-family: $font-Playfair;
-		font-size: rem(20.5px);
-		font-weight: bold;
-		color: #ffffff;
-		text-decoration: none;
+		@include hover-link;
 	}
 
 	&__cube:not(:last-child) {
@@ -79,7 +74,7 @@
 		left: 100px;
 		width: 251px;
 		height: 251px;
-		background-color: $color_4;
+		background-color: $color_medium-gray;
 	}
 
 	&__cube:not(:first-child) {
@@ -88,7 +83,7 @@
 		right: 150px;
 		width: 207px;
 		height: 207px;
-		background-color: $color_4;
+		background-color: $color_medium-gray;
 	}
 
 	&__disc {
@@ -97,17 +92,5 @@
 		align-items: center;
 		justify-content: center;
 		margin-right: 27px;
-
-		&__text {
-			font-family: $font-Sintony;
-			font-size: rem(11px);
-			font-weight: bold;
-			color: #ffffff;
-			text-transform: uppercase;
-		}
-
-		&__text:not(:first-child) {
-			color: #fe4c8d;
-		}
 	}
 }

@@ -1,15 +1,33 @@
-$font-Sintony: "Sintony", sans-serif;
-$font-Playfair: "Playfair Display", serif;
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./fonts.scss";
 
-$mainSize: 16px;
-
-@function rem($size) {
-	@return $size / $mainSize * 1rem;
+.wrapper {
+	width: 60%;
+	margin: 0 auto;
 }
 
-$color_1: #14141d;
-$color_2: #363d43;
-$color_3: #fea100;
-$color_4: #7d8587;
-$color_5: #adb2b7;
-$color_6: #52535e;
+.btn {
+	color: $color_white;
+	letter-spacing: 0.35px;
+	border-radius: 4px;
+	background-color: $color_orange;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		background-color: $color_dark-orange;
+		box-shadow: 0px 0px 0px 3px $color_dark-orange;
+	}
+	&:active {
+		background-color: $color_orange;
+		box-shadow: 0px 0px 0px 3px $color_orange;
+	}
+}
+
+.phone {
+	font-family: $font-Playfair;
+	text-decoration: none;
+	font-weight: bold;
+	color: $color_white;
+}

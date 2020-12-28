@@ -1,37 +1,29 @@
+mixin reverse(rowName1, rowName2, url1, url2)
+  .reserve-form__wrap
+    .reserve-form__item.color-bg_white
+      .reserve-form__img
+      img.reserve-form__icon(src=url1 alt=rowName1 srcset='')
+      input.reserve-form__input(type='text' placeholder=rowName1)
+    .reserve-form__item.color-bg_white
+      .reserve-form__img
+      img.reserve-form__icon(src=url2 alt=rowName2 srcset='')
+      input.reserve-form__input(type='text' placeholder=rowName2)
+
 section.reserve-form
   .reserve-form__cube
-  
   .wrapper
-    h2.reserve-form__title
+    h2.reserve-form__title.playfair-normal.fz35.color_white
       | Reserve your table
     form(action='').reserve-form__form
+      +reverse('Name*', 'Email address*','./images/reserve-form/name.png','./images/reserve-form/email.png')
+      +reverse('Time*', 'Date*','./images/reserve-form/time.png','./images/reserve-form/date.png')
+      +reverse('Guests*', 'Phone*','./images/reserve-form/guest.png','./images/reserve-form/phone.png')
       .reserve-form__wrap
-        .reserve-form__item
-          .reserve-form__img
-          input.reserve-form__input(type='text' placeholder='Name*')
-        .reserve-form__item
-          .reserve-form__img
-          input.reserve-form__input(type='text' placeholder='Name*')
-      .reserve-form__wrap
-        .reserve-form__item
-          .reserve-form__img
-          input.reserve-form__input(type='text' placeholder='Name*')
-        .reserve-form__item
-          .reserve-form__img
-          input.reserve-form__input(type='text' placeholder='Name*')
-      .reserve-form__wrap
-        .reserve-form__item
-          .reserve-form__img
-          input.reserve-form__input(type='text' placeholder='Name*')
-        .reserve-form__item
-          .reserve-form__img
-          input.reserve-form__input(type='text' placeholder='Name*')
-      div.reserve-form__wrap
-        input.reserve-form__btn(type='button' value='Make reservation')
-        div.reserve-form__disc
-          div.reserve-form__text You can also call
-          div.reserve-form__text for a reservation
-        a.reserve-form__phone(href='tel:1-007-000-005') 1-007 000 005
+        input.reserve-form__btn.btn.sintony-bold.fz14(type='button' value='Make reservation')
+        .reserve-form__disc
+          .reserve-form__text.sintony-bold.fz11.color_white You can also call
+          .reserve-form__text.sintony-bold.fz11.color_pink for a reservation
+        a.reserve-form__phone.phone.fz22(href='tel:1-007-000-005') 1-007 000 005
   .reserve-form__cube
 
 
