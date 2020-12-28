@@ -1,0 +1,20 @@
+$font-Sintony: "Sintony", sans-serif;
+$font-Playfair: "Playfair Display", serif;
+
+.sintony-bold {
+	font-family: $font-Sintony;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.playfair-bold{
+	font-family: $font-Playfair;
+	font-weight: bold;
+}
+.sintony-normal {
+	font-family: $font-Sintony;
+	font-weight: normal;
+}
+.playfair-normal{
+	font-family: $font-Playfair;
+	font-weight: normal;
+}

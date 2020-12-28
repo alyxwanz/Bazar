@@ -1,0 +1,58 @@
+$color_black-shadow: rgba(0, 0, 0, 0.1);
+$color_dark: #14141d;
+$color_dark-bg: #373844;
+$color_medium-dark: #52535e;
+$color_less-dark: #363d43;
+$color_orange: #fea100;
+$color_dark-orange: #fd9000;
+$color-border_light-gray: #eeeeee;
+$color_gray: gray;
+$color_gray-better: #616161;
+$color_lighter-gray: #5c6369;
+$color_medium-gray: #7d8587;
+$color_light-gray: #adb2b7;
+$color-bg_light-gray: #6e7678;
+$color_medium-white: #d7d7d7;
+$color_white: #ffffff;
+$color_pink: #fe4c8d;
+$color-bg_graphite: #565f61;
+
+.color_black-shadow{
+	color: $color_black-shadow;
+}
+.color_dark{
+color: $color_dark;
+}
+.color_less-dark{
+	color: $color_less-dark;
+}
+.color_light-gray{
+	color: $color_light-gray;
+}
+.color_gray-better{
+	color: $color_gray-better;
+}
+.color_lighter-gray{
+	color: $color_lighter-gray;
+}
+.color_white{
+	color: $color_white;
+}
+.color_orange{
+	color: $color_orange;
+}
+.color_pink{
+	color: $color_pink;
+}
+.color-bg_graphite{
+	background-color: $color-bg_graphite;
+}
+.color-bg_medium-gray{
+	background-color: $color_medium-gray;
+}
+.color-bg_dark-bg {
+	background-color: $color_dark-bg;
+}
+.color-bg_white{
+	background-color: $color_white;
+}

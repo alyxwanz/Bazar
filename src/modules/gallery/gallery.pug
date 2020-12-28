@@ -1,12 +1,12 @@
-section.gallery-section
-  h2.gallery-section__title
+section.gallery
+  h2.gallery__title.playfair-bold.fz35.color_dark
     | Our Gallery
-  ul.gallery-section__slider
+  ul.gallery__slider
     - arr2 = ["","","","",""]
       each val2 in arr2
-        li.gallery-section__slide= val2
-  .gallery-section__radio
-    ul.gallery-section__list
-      li.gallery-section__list-radio
-      li.gallery-section__list-radio
-      li.gallery-section__list-radio
+        li.gallery__slide.color-bg_medium-gray= val2
+  .gallery__radio
+    ul.gallery__list
+      - arr1 = ["","","",]
+        each val1 in arr1
+          li.gallery__list-radio= val1

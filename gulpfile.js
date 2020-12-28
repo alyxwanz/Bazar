@@ -18,9 +18,9 @@ gulp.task('scss', () => {
 gulp.task('scss:watch', () => watchSass([
 	'./src/styles/*.scss'
 ])
-  .pipe(sass())
-  .pipe(gulp.dest('./dist/styles')));
- 
+	.pipe(sass())
+	.pipe(gulp.dest('./dist/styles')));
+
 gulp.task('pug', function buildHTML() {
 	return gulp.src('src/index.pug')
 		.pipe(pug({
@@ -35,8 +35,8 @@ gulp.task('pug', function buildHTML() {
 
 
 gulp.task('images', () => {
-  return gulp.src('src/images/**/*.{svg,png,jpeg,jpg,webp}', {since: gulp.lastRun('images')})
-      .pipe(gulp.dest('dist/images'));
+	return gulp.src('src/images/**/*.{svg,png,jpeg,jpg,webp}', { since: gulp.lastRun('images') })
+		.pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('build', gulp.series('scss', 'images', 'pug'));
