@@ -1,125 +1,119 @@
 .header {
 	display: flex;
 	justify-content: center;
-	background-color: $color_4;
 	padding: 20px 0 100px;
 	background-image: url("./../images/header/head.jpg");
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
 
+	&__logo-icon {
+		outline: none;
+		display: inline-block;
+		width: 150px;
+	}
+
 	&__wrapper {
 		width: 60%;
 		margin: 0 auto;
+		padding: 0 0 20px 0;
 	}
 
-	&__wrap {
+	&__menu {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 200px;
-
-		& > .header__logo {
-			a {
-				text-decoration: none;
-
-				& > .header__logo-text {
-					font-family: $font-Playfair;
-					text-transform: uppercase;
-					font-size: rem(13px);
-					font-weight: bold;
-					color: #ffffff;
-				}
-
-				& > .header__logo-text:not(:last-child) {
-					font-size: rem(22px);
-					color: #fea100;
-				}
-			}
-		}
 	}
 
-	&__nav {
-		& > .header__nav-list {
+	.header__nav {
+		&-list {
 			display: flex;
 
-			& > .header__nav-item {
+			.header__nav-item {
+				margin-right: 20px;
 
-				margin-right: 33px;
-				
 				&:first-child {
-					margin-left: 33px;
+					margin-left: 16px;
 				}
-				& > .header__nav-link {
-					font-family: $font-Sintony;
-					text-transform: uppercase;
+
+				.header__nav-link {
 					text-decoration: none;
-					font-size: rem(14px);
-					font-weight: bold;
 					letter-spacing: 0.35px;
-					color: #ffffff;
+					@include hover-link;
 				}
 			}
 		}
 	}
 
 	&__book-btn {
+		margin-left: 20px;
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		-webkit-box-shadow: 0px 0px 0px 3px $color_3;
-		box-shadow: 0px 0px 0px 3px $color_3;
-		background-color: $color_3;
-		border: 1px solid #ffffff;
-		border-radius: 3px;
-		padding: 12px;
-		text-transform: uppercase;
-		font-family: $font-Sintony;
-		font-size: rem(12px);
-		font-weight: bold;
-		letter-spacing: 0.3px;
-		color: #ffffff;
+		box-shadow: 0px 0px 0px 3px $color_orange;
+		border: 1px solid $color_white;
+		padding: 12px 12px 12px 45px;
+
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background-image: url("./../images/header/iconPlate.png");
+			background-repeat: no-repeat;
+			top: 20%;
+			left: 7.5%;
+		}
+
+		@include hover-button;
 	}
 
 	&__slider {
+		padding: 0 188px;
+		position: relative;
 		max-width: 532px;
 		margin: 0 auto;
 
-		& > .header__slider-item {
-			& > .header__slider-title {
-				font-family: $font-Playfair;
-				font-size: rem(62px);
-				font-weight: bold;
-				color: #ffffff;
-				margin-bottom: 70px;
-				text-align: center;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			border-top: 3px solid $color_white;
+			border-left: 3px solid $color_white;
+			width: 40px;
+			height: 40px;
+			top: 50%;
+		}
 
-				span {
-					font-size: rem(42px);
-				}
-			}
+		&::before {
+			left: 0;
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			right: 0;
+			transform: rotate(135deg);
+		}
+
+		.header__slider-title {
+			margin-bottom: 70px;
+			text-align: center;
 		}
 	}
 
-	&__slider-info {
+	.header__slider-info {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		& > .header__slider-phone {
-			font-family: $font-Playfair;
-			text-decoration: none;
-			font-size: rem(37px);
-			font-weight: bold;
-			color: #ffffff;
+		&-svg {
+			margin-bottom: 30px;
 		}
-		
-		& > .header__slider-disc {
-			font-family: $font-Sintony;
-			text-transform: uppercase;
-			font-size: rem(14px);
-			font-weight: bold;
-			color: $color_3;
+
+		&-phone {
+			@include hover-link;
 		}
 	}
 }

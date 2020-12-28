@@ -1,0 +1,52 @@
+@function rem($size) {
+	@return $size / 16px * 1rem;
+}
+
+.fz11{
+	font-size: rem(11px);
+}
+.fz12 {
+	font-size: rem(12px);
+}
+.fz13{
+	font-size: rem(13px);
+}
+.fz14 {
+	font-size: rem(14px);
+}
+.fz15 {
+	font-size: rem(15px);
+}
+.fz16 {
+	font-size: rem(16px);
+}
+.fz20{
+	font-size: rem(20px);
+}
+.fz22{
+	font-size: rem(22px);
+}
+.fz24{
+	font-size: rem(24px);
+}
+.fz25{
+	font-size: rem(25px);
+}
+.fz26{
+	font-size: rem(26px);
+}
+.fz35{
+	font-size: rem(35px);
+}
+.fz37{
+	font-size: rem(37px);
+}
+.fz42{
+	font-size: rem(42px);
+}
+.fz60{
+	font-size: rem(60px);
+}
+.fz62{
+	font-size: rem(62px);
+}
