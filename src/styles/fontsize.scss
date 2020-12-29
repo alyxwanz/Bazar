@@ -2,51 +2,81 @@
 	@return $size / 16px * 1rem;
 }
 
+$fz10: rem(10px);
+$fz11: rem(11px);
+$fz12: rem(12px);
+$fz13: rem(13px);
+$fz14: rem(14px);
+$fz15: rem(15px);
+$fz16: rem(16px);
+$fz18: rem(18px);
+$fz20: rem(20px);
+$fz22: rem(22px);
+$fz24: rem(24px);
+$fz25: rem(25px);
+$fz26: rem(26px);
+$fz28: rem(28px);
+$fz30: rem(30px);
+$fz35: rem(35px);
+$fz37: rem(37px);
+$fz40: rem(40px);
+$fz42: rem(42px);
+$fz45: rem(45px);
+$fz48: rem(48px);
+$fz50: rem(50px);
+$fz51: rem(51px);
+$fz55: rem(55px);
+$fz60: rem(60px);
+$fz62: rem(62px);
+
+.fz10 {
+	font-size: $fz10;
+}
 .fz11{
-	font-size: rem(11px);
+	font-size: $fz11;
 }
 .fz12 {
-	font-size: rem(12px);
+	font-size: $fz12;
 }
 .fz13{
-	font-size: rem(13px);
+	font-size: $fz13;
 }
 .fz14 {
-	font-size: rem(14px);
+	font-size: $fz14;
 }
 .fz15 {
-	font-size: rem(15px);
+	font-size: $fz15;
 }
 .fz16 {
-	font-size: rem(16px);
+	font-size: $fz16;
 }
 .fz20{
-	font-size: rem(20px);
+	font-size: $fz20;
 }
 .fz22{
-	font-size: rem(22px);
+	font-size: $fz22;
 }
 .fz24{
-	font-size: rem(24px);
+	font-size: $fz24;
 }
 .fz25{
-	font-size: rem(25px);
+	font-size: $fz25;
 }
 .fz26{
-	font-size: rem(26px);
+	font-size: $fz26;
 }
 .fz35{
-	font-size: rem(35px);
+	font-size: $fz35;
 }
 .fz37{
-	font-size: rem(37px);
+	font-size: $fz37;
 }
 .fz42{
-	font-size: rem(42px);
+	font-size: $fz42;
 }
 .fz60{
-	font-size: rem(60px);
+	font-size: $fz60;
 }
 .fz62{
-	font-size: rem(62px);
+	font-size: $fz62;
 }
