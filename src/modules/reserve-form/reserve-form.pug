@@ -12,7 +12,7 @@ mixin reverse(rowName1, rowName2, url1, url2)
 section.reserve-form
   .reserve-form__cube
   .wrapper
-    h2.reserve-form__title.playfair-normal.fz35.color_white
+    h2.reserve-form__title.playfair-normal.fz35.color_white.text-decor-dark
       | Reserve your table
     form(action='').reserve-form__form
       +reverse('Name*', 'Email address*','./images/reserve-form/name.png','./images/reserve-form/email.png')
@@ -21,8 +21,8 @@ section.reserve-form
       .reserve-form__wrap
         input.reserve-form__btn.btn.sintony-bold.fz14(type='button' value='Make reservation')
         .reserve-form__disc
-          .reserve-form__text.sintony-bold.fz11.color_white You can also call
-          .reserve-form__text.sintony-bold.fz11.color_pink for a reservation
+          .reserve-form__text.sintony-bold.fz14.color_white.text-decor-dark You can also call
+          .reserve-form__text.sintony-bold.fz14.color_pink.text-decor-dark for a reservation
         a.reserve-form__phone.phone.fz22(href='tel:1-007-000-005') 1-007 000 005
   .reserve-form__cube
 
