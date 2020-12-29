@@ -31,3 +31,7 @@
 	font-weight: bold;
 	color: $color_white;
 }
+.text-decor-dark {
+	text-shadow: $color_dark 1px 1px 0, $color_dark -1px -1px 0, 
+	$color_dark -1px 1px 0, $color_dark 1px -1px 0;
+}
