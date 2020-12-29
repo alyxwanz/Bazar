@@ -7,7 +7,9 @@ header.header.color-bg_medium-gray
             img.header__logo-icon(src='./images/header/logo.png' alt='' srcset='')
       .header__nav
         ul.header__nav-list
-          - arr1 = ['home', 'menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
+          li.header__nav-item
+            span.current-page.sintony-bold.fz14.color_light-gray home
+          - arr1 = ['menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
             each val1 in arr1
               li.header__nav-item
                 a.header__nav-link.sintony-bold.fz14.color_white(href='') #{val1}
