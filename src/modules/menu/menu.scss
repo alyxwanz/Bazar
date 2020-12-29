@@ -1,93 +1,95 @@
-.menu__wrap {
-	display: flex;
+.menu {
+	.menu__wrap {
+		display: flex;
 
-	.menu__template {
-position: relative;
-
-&::after{
-	content: "";
-	position: absolute;
-	top: 19%;
-	right: -1%;
-	background-color: $color_pink;
-	width: 5px;
-	height: 43px;
-}
-		margin: 100px 25px 85px 25px;
-		
-		&-item {
-			display: flex;
-			border-bottom: solid 1px $color-border_light-gray;
-			padding: 24px 0px 20px;
-		}
-
-		&-title {
-			margin-bottom: 35px;
-		}
-
-		&-headline {
-			display: block;
-			margin-bottom: 10px;
-		}
-
-		&-disc {
-			display: block;
-		}
-
-		&-btn {
-			margin-top: 20px;
-			display: inline-block;
-			padding: 20px 30px;
-		}
-
-		&-currency {
-			margin-left: 100px;
-		}
-
-		&-value {
-			margin-right: 50px;
-		}
-	}
-
-	.menu__special {
-		margin: 100px 25px 85px 25px;
-		position: relative;
-
-		&-title {
-			margin-bottom: 35px;
-		}
-
-		&-img {
-			width: 320px;
-			height: 335px;
-			box-shadow: 0px 36px 51px 0 $color_black-shadow;
+		.menu__template {
 			position: relative;
-			z-index: 1;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 19%;
+				right: -1%;
+				background-color: $color_pink;
+				width: 5px;
+				height: 43px;
+			}
+			margin: 100px 25px 85px 25px;
+
+			&-item {
+				display: flex;
+				border-bottom: solid 1px $color-border_light-gray;
+				padding: 24px 0px 20px;
+			}
+
+			&-title {
+				margin-bottom: 35px;
+			}
+
+			&-headline {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			&-disc {
+				display: block;
+			}
+
+			&-btn {
+				margin-top: 20px;
+				display: inline-block;
+				padding: 20px 30px;
+			}
+
+			&-currency {
+				margin-left: 100px;
+			}
+
+			&-value {
+				margin-right: 50px;
+			}
 		}
 
-		&-item {
-			width: 320px;
-			height: 210px;
-		}
+		.menu__special {
+			margin: 100px 25px 85px 25px;
+			position: relative;
 
-		&-heading {
-			display: block;
-			font-weight: bold;
-			margin: 30px 131px 16px 40px;
-		}
+			&-title {
+				margin-bottom: 35px;
+			}
 
-		&-price {
-			display: block;
-			margin-bottom: 37px;
-			margin-left: 40px;
-		}
-		
-		&-img.small {
-			transform: scale(0.8);
-			position: absolute;
-			right: -243px;
-			top: 60px;
-			z-index: 0;
+			&-img {
+				width: 320px;
+				height: 335px;
+				box-shadow: 0px 36px 51px 0 $color_black-shadow;
+				position: relative;
+				z-index: 1;
+			}
+
+			&-item {
+				width: 320px;
+				height: 210px;
+			}
+
+			&-heading {
+				display: block;
+				font-weight: bold;
+				margin: 30px 131px 16px 40px;
+			}
+
+			&-price {
+				display: block;
+				margin-bottom: 37px;
+				margin-left: 40px;
+			}
+
+			&-img.small {
+				transform: scale(0.8);
+				position: absolute;
+				right: -243px;
+				top: 60px;
+				z-index: 0;
+			}
 		}
 	}
 }

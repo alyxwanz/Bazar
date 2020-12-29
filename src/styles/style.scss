@@ -10,7 +10,15 @@
 @import "./../modules/footer/footer.scss";
 @import "./../modules/gallery/gallery.scss";
 @import "./../modules/schedule/schedule.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_header.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_menu.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_footer.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_feedback-slider.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_gallery.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_reserve-form.scss";
+@import "./../responsive_web_design/rwd_home-page/hp_schedule.scss";
 
 body {
+	margin: 0;
 	box-sizing: border-box;
 }
