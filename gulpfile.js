@@ -44,22 +44,22 @@ gulp.task('build', gulp.series('scss', 'images', 'pug'));
 
 
 // gulp.task('serve', () => {
-//     browserSync.init({
-//         server: "./src"
-//     });
-//     // gulp.watch('./src/styles/*.scss', ['scss'])
-//     watchSass([
-//         './src/styles/*.scss'
-//       ])
-//         .pipe(sass())
-//         .pipe(gulp.dest('./dist/styles'));
-//     gulp.watch("./src/*.scss").pipe(
-//         ['']
-//     );
+// 	browserSync.init({
+// 		server: "./src"
+// 	});
+// 	// gulp.watch('./src/styles/*.scss', ['scss'])
+// 	watchSass([
+// 		'./src/styles/*.scss'
+// 	])
+// 		.pipe(sass())
+// 		.pipe(gulp.dest('./dist/styles'));
+// 	gulp.watch("./src/*.scss").pipe(
+// 		['']
+// 	);
 
-//     gulp.watch("./src/*.html").on('change', browserSync.reload);
+// 	gulp.watch([("./src/*.pug")].on('change', browserSync.reload));
 // });
 
 // gulp.task('serve', () => {
-//     gulp.series('html:watch', 'scss:watch');
+// 	gulp.series('html:watch', 'scss:watch');
 // })
