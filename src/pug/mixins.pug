@@ -1,1 +1,18 @@
-include ./../../pug/mixins.pug
+mixin menu-item(headline, disc, value)
+  ul.menu__template-list
+    li.menu__template-item
+      .menu__template-text
+        span.menu__template-headline.color_dark.sintony-bold.fz16= headline
+        span.menu__template-disc.color_lighter-gray.fz14.sintony-normal= disc
+      .menu__template-price
+        span.menu__template-currency.fz13.playfair-bold.color_dark $
+        span.menu__template-value.fz26.playfair-bold.color_dark= value
+
+mixin header-menu()
+  ul.header__nav-list
+    li.header__nav-item
+      span.header__nav-current.current-page.sintony-bold.fz14.color_light-gray home
+    - arr1 = ['menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
+      each val1 in arr1
+        li.header__nav-item
+          a.header__nav-link.sintony-bold.fz14.color_white(href='') #{val1}
