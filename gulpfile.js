@@ -42,7 +42,6 @@ gulp.task('images', () => {
 gulp.task('build', gulp.series('scss', 'images', 'pug'));
 
 
-
 // gulp.task('serve', () => {
 // 	browserSync.init({
 // 		server: "./src"
@@ -60,6 +59,6 @@ gulp.task('build', gulp.series('scss', 'images', 'pug'));
 // 	gulp.watch([("./src/*.pug")].on('change', browserSync.reload));
 // });
 
-// gulp.task('serve', () => {
+// gulp.task('server', () => {
 // 	gulp.series('html:watch', 'scss:watch');
 // })
