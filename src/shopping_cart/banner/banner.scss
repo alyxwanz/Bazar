@@ -1,0 +1,36 @@
+.banner {
+    display: flex;
+    justify-content: center;
+
+    
+    &__wrapper {
+        
+        .banner__title {
+            margin: 100px 0;
+            position: relative;
+
+                &:before {
+                    content: "";
+                    width: 45px;
+                    height: 23px;
+;
+                    position: absolute;
+                    background-image: url("./../images/shopping-cart/right_leaf.png");
+                    background-repeat: no-repeat;
+                    top: 35%;
+                    right: -56px;
+                }
+                
+                &:after {
+                    content: "";
+                    width: 45px;
+                    height: 23px;
+                    position: absolute;
+                    background-image: url("./../images/shopping-cart/left_leaf.png");
+                    background-repeat: no-repeat;
+                    top: 35%;
+                    left: -56px;
+                }
+            }
+        }
+}

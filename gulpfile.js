@@ -22,7 +22,7 @@ gulp.task('scss:watch', () => watchSass([
 	.pipe(gulp.dest('./dist/styles')));
 
 gulp.task('pug', function buildHTML() {
-	return gulp.src('src/index.pug')
+	return gulp.src('src/*.pug')
 		.pipe(pug({
 			pretty: true
 		}))
