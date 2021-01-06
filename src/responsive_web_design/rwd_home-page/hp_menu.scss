@@ -1,0 +1,303 @@
+@media (max-width: 1260px) {
+	.menu {
+		height: 100vh;
+		.menu__wrap {
+			.menu__template {
+				&-headline {
+					font-size: $fz14;
+				}
+
+				&-disc {
+					font-size: $fz12;
+				}
+
+				&-currency {
+					margin-left: 40px;
+				}
+			}
+
+			.menu__special {
+				margin: 100px 0px 85px 25px;
+				position: relative;
+
+				&-img {
+					width: 290px;
+					height: 300px;
+				}
+
+				&-item {
+					width: 290px;
+					height: 190px;
+				}
+
+				&-heading {
+					margin: 15px 131px 16px 40px;
+				}
+
+				&-price {
+					margin-left: 40px;
+				}
+
+				&-img.small {
+					right: -215px;
+					top: 80px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.menu {
+		height: 100%;
+		.menu__wrap {
+			.menu__template {
+				&-value {
+					margin-right: 20px;
+				}
+
+				&-currency {
+					margin-left: 20px;
+				}
+			}
+
+			.menu__special {
+				&-img {
+					width: 250px;
+					height: 260px;
+				}
+
+				&-heading {
+					font-size: $fz20;
+					margin: 10px 131px 16px 40px;
+				}
+
+				&-disc {
+					font-size: $fz20;
+				}
+
+				&-item {
+					width: 250px;
+					height: 165px;
+				}
+
+				&-img.small {
+					right: -200px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 998px) {
+	.menu {
+height: 100%;
+		.menu__wrap {
+			flex-direction: column-reverse;
+
+			.menu__template {
+				&:after{
+					right: -5%;
+				}
+				&-headline {
+					font-size: $fz22;
+				}
+
+				&-disc {
+					font-size: $fz16;
+				}
+
+				margin: 0px 25px 85px 25px;
+
+				&-title {
+					text-align: center;
+					font-size: $fz40;
+				}
+				&-currency {
+					margin-left: 100px;
+				}
+
+				&-value {
+					font-size: $fz37;
+					margin-right: 50px;
+				}
+			}
+
+			.menu__special {
+				&-title {
+					text-align: center;
+					font-size: $fz40;
+				}
+
+				&-img {
+					right: 7%;
+					width: 380px;
+					height: 365px;
+					background-color: $color-border_light-gray;
+				}
+				&-item {
+					width: 380px;
+					height: 250px;
+				}
+
+				&-heading {
+					font-size: $fz25;
+				}
+
+				&-price {
+					font-size: $fz25;
+					margin-left: 40px;
+				}
+
+				&-img.small {
+					right: -40px;
+					top: 70px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 903px) {
+	.menu {
+		.menu__wrap {
+			.menu__special {
+				&-img {
+					right: 0%;
+					width: 320px;
+					height: 337px;
+				}
+				&-img.small {
+					right: -85px;
+					top: 70px;
+				}
+				&-item {
+					width: 320px;
+					height: 214px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.menu {
+		.menu__wrap {
+			width: 70%;
+			margin: 0 auto;
+
+			.menu__template {
+				&-btn{
+					margin-left: 30px;
+				}
+				&-value {
+					margin: 0;
+				}
+				&-currency {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	@media (max-width: 650px) {
+		.menu {
+			.menu__wrap {
+				width: 80%;
+				.menu__special {
+					&-img {
+						right: 5%;
+						width: 300px;
+						height: 320px;
+					}
+					&-img.small {
+						right: -25px;
+					}
+					&-item {
+						width: 300px;
+						height: 204px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 576px) {
+		.menu {
+			.menu__wrap {
+				width: 90%;
+				.menu__special {
+					&-img {
+						right: 5%;
+						width: 280px;
+						height: 305px;
+					}
+					&-img.small {
+						right: -11px;
+					}
+					&-item {
+						width: 280px;
+						height: 195px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 479px) {
+		.menu {
+			.menu__wrap {
+				.menu__template {
+					&-headline {
+						font-size: $fz18;
+					}
+
+					&-disc {
+						font-size: $fz12;
+					}
+				}
+				width: 100%;
+				.menu__special {
+					&-img {
+						right: 0%;
+						width: 230px;
+						height: 260px;
+					}
+					&-img.small {
+						right: -11px;
+					}
+					&-item {
+						width: 230px;
+						height: 160px;
+					}
+					&-heading {
+						font-size: $fz18;
+					}
+
+					&-price {
+						font-size: $fz18;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 320px) {
+		.menu {
+			.menu__wrap {
+				.menu__special {
+					&-img {
+						right: 0%;
+						width: 200px;
+						height: 235px;
+					}
+					&-img.small {
+						right: -11px;
+					}
+					&-item {
+						width: 200px;
+						height: 135px;
+					}
+				}
+			}
+		}
+	}
+}
