@@ -2,23 +2,13 @@ section.feedback-slider
   .feedback-slider__wrapper
     h2.feedback-slider__title.playfair-bold.fz35.color_dark
       | Happy Clients
+    .feedback-slider__radio
+      ul.feedback-slider__list
+        li.feedback-slider__list-radio.active_radio
+        li.feedback-slider__list-radio
+        li.feedback-slider__list-radio
     .feedback-slider__body
-      .feedback-slider__radio
-        ul.feedback-slider__list
-          - arr = ["","","",]
-            each val in arr
-              li.feedback-slider__list-radio= val
       .feedback-slider__slide
-        .feedback-slider__img.color-bg_medium-gray
-        .feedback-slider__text.playfair-bold
-          h3.feedback-slider__headline.playfair-bold.fz25.color_dark
-            | Best atmosphere and food
-          p.feedback-slider__disc.sintony-normal.fz15.color_less-dark
-            | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
-            | model text, and a search for &apos;lorem ipsum&apos; will uncover many web sites still in their infancy.
-            | Various versions have evolved over the years, sometimes by accident.
-          span.feedback-slider__line
-          span.feedback-slider__name.sintony-bold.fz16.color_dark
-            | Dr. Prabakaran John
-          .feedback-slider__stars
-            img.feedback-slider__icon(src='./images/feedback-slider/stars.png' alt='stars' srcset='')
+        +feedback()
+        +feedback()
+        +feedback()

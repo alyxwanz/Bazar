@@ -35,3 +35,40 @@
 	text-shadow: $color_dark 1px 1px 0, $color_dark -1px -1px 0, 
 	$color_dark -1px 1px 0, $color_dark 1px -1px 0;
 }
+.transformAnimation {
+	transition: all .6s ease-in-out;
+}
+.scale-item {
+	transform: scale(0.8);
+	animation: index2 1s ease-in-out;
+}
+.big {
+	animation: index 1s ease-in-out;
+	z-index: 1;
+	// transition: all 1s ease-in-out;
+}
+@keyframes index {
+	0% {z-index: 0;}
+	100% { z-index: 1;}
+}
+@keyframes index2 {
+	0% {z-index: 1;}
+	100% { z-index: 0;}
+}
+
+.active_radio {
+	border: 3px solid $color_orange !important;
+	position: relative;
+	&:after {
+		position: absolute;
+		content: "";
+		width: 4px;
+		height: 4px;
+		background-color: $color_orange;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+	}
+	
+}
