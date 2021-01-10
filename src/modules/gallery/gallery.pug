@@ -1,12 +1,21 @@
 section.gallery
   h2.gallery__title.playfair-bold.fz35.color_dark
     | Our Gallery
-  ul.gallery__slider
-    - arr2 = ["","","","",""]
-      each val2 in arr2
-        li.gallery__slide.color-bg_medium-gray= val2
+  .gallery__wrapper-slide
+    ul.gallery__slider
+      - arr2 = ["","","","","",]
+        each val2 in arr2
+          li.gallery__slide.color-bg_medium-gray= val2
+    ul.gallery__slider
+      - arr2 = ["","","","","",]
+        each val2 in arr2
+          li.gallery__slide.color-bg_medium-gray= val2
+    ul.gallery__slider
+      - arr2 = ["","","","","",]
+        each val2 in arr2
+          li.gallery__slide.color-bg_medium-gray= val2
   .gallery__radio
     ul.gallery__list
-      - arr1 = ["","","",]
-        each val1 in arr1
-          li.gallery__list-radio= val1
+      li.gallery__list-radio.active_radio
+      li.gallery__list-radio
+      li.gallery__list-radio

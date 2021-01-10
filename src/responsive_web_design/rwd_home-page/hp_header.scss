@@ -1,3 +1,20 @@
+//1024 PX
+@media (min-width: 1024px) {
+	.header {
+		&__slider {
+			padding: 0 30px;
+			margin: 0 auto 200px;
+			.header__slider-subtitle {
+				padding-top: 15px;
+				display: block;
+			}
+		}
+		&__menu {
+			padding: 0 10px;
+		}
+	}
+}
+
 // 998 PX
 @media (max-width: 998px) {
 	.header {
@@ -27,6 +44,7 @@
 			font-size: $fz12;
 		}
 		&__menu {
+			padding: 0;
 			max-width: 820px;
 		}
 		&__book-btn {
@@ -40,7 +58,7 @@
 		}
 
 		&__slider {
-			padding: 0 95px;
+			padding: 0 30px;
 			&-info {
 				padding-top: 100px;
 			}
@@ -52,15 +70,18 @@
 @media (max-width: 767px) {
 	.lock {
 		overflow: hidden;
+		background: $color_orange;
+		transition: all 0.5s;
 	}
 	.header {
 		&__menu {
+			justify-content: space-between;
 			position: relative;
 		}
 		.header__nav-list {
 			.header__nav-item {
 				margin: 0;
-				&:first-child{
+				&:first-child {
 					margin-left: 0;
 				}
 			}
@@ -81,7 +102,7 @@
 			height: 50px;
 			border-radius: 50%;
 			z-index: 110;
-			&-link{
+			&-link {
 				overflow: hidden;
 			}
 			&-link &-lines,
@@ -153,10 +174,14 @@
 				font-size: $fz40;
 			}
 		}
+		&__slider-subtitle {
+			display: inline;
+		}
 		&__slider {
-			padding: 0 50px;
-			&::before,
-			&::after {
+			width: 90%;
+			padding: 0;
+			&-btn-left,
+			&-btn-right {
 				width: 30px;
 				height: 30px;
 				top: 30%;
@@ -176,7 +201,8 @@
 			}
 		}
 		&__slider {
-			padding: 0 50px;
+			width: 85%;
+			padding: 0 30px;
 		}
 	}
 }
@@ -192,13 +218,15 @@
 		&__slider-title {
 			font-size: $fz30;
 			span {
-				font-size: $fz24;
+				display: block;
+				font-size: $fz20;
 			}
 		}
 		&__slider {
-			padding: 0 30px;
-			&::before,
-			&::after {
+			width: 85%;
+			padding: 0 18px;
+			&-btn-left,
+			&-btn-right {
 				width: 15px;
 				height: 15px;
 				top: 30%;
@@ -214,7 +242,21 @@
 		}
 	}
 }
-
+//376 PX
+@media (max-width: 376px) {
+	.header {
+		&__slider-title {
+			font-size: $fz28;
+			span {
+				font-size: $fz22;
+			}
+		}
+		&__slider {
+			width: 92%;
+			padding: 0 18px;
+		}
+	}
+}
 //320 PX
 @media (max-width: 320px) {
 	.header {
@@ -228,9 +270,10 @@
 			}
 		}
 		&__slider {
-			padding: 0 30px;
-			&::before,
-			&::after {
+			width: 86%;
+			padding: 0 20px;
+			&-btn-left,
+			&-btn-right {
 				width: 15px;
 				height: 15px;
 				top: 30%;

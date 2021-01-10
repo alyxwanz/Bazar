@@ -1,12 +1,11 @@
 mixin menu-item(headline, disc, value)
-  ul.menu__template-list
-    li.menu__template-item
-      .menu__template-text
-        span.menu__template-headline.color_dark.sintony-bold.fz16= headline
-        span.menu__template-disc.color_lighter-gray.fz14.sintony-normal= disc
-      .menu__template-price
-        span.menu__template-currency.fz13.playfair-bold.color_dark $
-        span.menu__template-value.fz26.playfair-bold.color_dark= value
+  li.menu__template-item
+    .menu__template-text
+      span.menu__template-headline.color_dark.sintony-bold.fz16= headline
+      span.menu__template-disc.color_lighter-gray.fz14.sintony-normal= disc
+    .menu__template-price
+      span.menu__template-currency.fz13.playfair-bold.color_dark $
+      span.menu__template-value.fz26.playfair-bold.color_dark= value
 
 mixin header-menu()
   ul.header__nav-list
@@ -16,3 +15,19 @@ mixin header-menu()
       each val1 in arr1
         li.header__nav-item
           a.header__nav-link.sintony-bold.fz14.color_white(href='') #{val1}
+
+mixin feedback()
+  .feedback-slider__block
+    .feedback-slider__img.color-bg_medium-gray
+    .feedback-slider__text.playfair-bold
+      h3.feedback-slider__headline.playfair-bold.fz25.color_dark
+        | Best atmosphere and food
+      p.feedback-slider__disc.sintony-normal.fz15.color_less-dark
+        | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+        | model text, and a search for &apos;lorem ipsum&apos; will uncover many web sites still in their infancy.
+        | Various versions have evolved over the years, sometimes by accident.
+      span.feedback-slider__line
+      span.feedback-slider__name.sintony-bold.fz16.color_dark
+        | Dr. Prabakaran John
+      .feedback-slider__stars
+        img.feedback-slider__icon(src='./images/feedback-slider/stars.png' alt='stars' srcset='')

@@ -7,6 +7,9 @@
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
+	&__wrapper {
+		width: 100%;
+	}
 
 	&__burger {
 		display: none;
@@ -20,7 +23,7 @@
 
 	&__menu {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		margin-bottom: 200px;
 	}
@@ -70,35 +73,41 @@
 	}
 
 	&__slider {
-		padding: 0 189.5px;
+		padding: 0 135px;
 		position: relative;
-		max-width: 532px;
-		margin: 0 auto;
-
-		&::before,
-		&::after {
-			content: "";
+		width: 80%;
+		margin: 0 auto 70px;
+		overflow: hidden;
+		.header__slider-item {
+			width: 100%;
+			display: flex;
+		}
+		&-btn-left,
+		&-btn-right {
+			z-index: 1;
+			background-color: transparent;
 			position: absolute;
+			border-right: 0;
+			border-bottom: 0;
 			border-top: 3px solid $color_white;
 			border-left: 3px solid $color_white;
 			width: 40px;
 			height: 40px;
 			top: 50%;
 		}
-
-		&::before {
-			left: 0;
+		&-btn-left {
+			left: 9px;
 			transform: rotate(-45deg);
 		}
-
-		&::after {
-			right: 0;
+		&-btn-right {
+			right: 9px;
 			transform: rotate(135deg);
 		}
 
 		.header__slider-title {
-			margin-bottom: 70px;
+			min-width: 100%;
 			text-align: center;
+			display: block;
 		}
 	}
 
