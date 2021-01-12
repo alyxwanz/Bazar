@@ -2,10 +2,9 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const watchSass = require("gulp-watch-sass");
 const htmlmin = require('gulp-htmlmin');
-const browserSync = require('browser-sync').create();
 const pug = require('gulp-pug');
+const watch = require('gulp-watch');
 
 sass.compiler = require('node-sass');
 
@@ -15,14 +14,8 @@ gulp.task('scss', () => {
 		.pipe(gulp.dest('./dist/styles'));
 });
 
-gulp.task('scss:watch', () => watchSass([
-	'./src/styles/*.scss'
-])
-	.pipe(sass())
-	.pipe(gulp.dest('./dist/styles')));
-
 gulp.task('pug', function buildHTML() {
-	return gulp.src('src/index.pug')
+	return gulp.src('src/*.pug')
 		.pipe(pug({
 			pretty: true
 		}))
@@ -33,6 +26,10 @@ gulp.task('pug', function buildHTML() {
 		.pipe(gulp.dest('dist'))
 });
 
+gulp.task('watch:pug', () => {
+	return watch('src/index.pug', { ignoreInitial: false })
+		.pipe(gulp.dest('dist'));
+});
 
 gulp.task('images', () => {
 	return gulp.src('src/images/**/*.{svg,png,jpeg,jpg,webp}', { since: gulp.lastRun('images') })
@@ -41,25 +38,8 @@ gulp.task('images', () => {
 
 gulp.task('build', gulp.series('scss', 'images', 'pug'));
 
-
-
-// gulp.task('serve', () => {
-// 	browserSync.init({
-// 		server: "./src"
-// 	});
-// 	// gulp.watch('./src/styles/*.scss', ['scss'])
-// 	watchSass([
-// 		'./src/styles/*.scss'
-// 	])
-// 		.pipe(sass())
-// 		.pipe(gulp.dest('./dist/styles'));
-// 	gulp.watch("./src/*.scss").pipe(
-// 		['']
-// 	);
-
-// 	gulp.watch([("./src/*.pug")].on('change', browserSync.reload));
-// });
-
-// gulp.task('serve', () => {
-// 	gulp.series('html:watch', 'scss:watch');
-// })
+gulp.task('watch',() => {
+	gulp.watch(['./src/index.pug','./src/**/**/*.pug'],gulp.series('pug'));
+	gulp.watch(['./src/**/**/*.scss', './src/styles/*.scss'],gulp.series('scss'));
+	gulp.watch('src/images/**/*.{svg,png,jpeg,jpg,webp}',gulp.series('images'));
+	});

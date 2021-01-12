@@ -10,3 +10,6 @@ command: npm i
 
 command: npm run build
 * you need to have installed gulp-cli on your PC(link: https://www.npmjs.com/package/gulp-cli)
+
+3. for development
+command: npm run watch

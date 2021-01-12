@@ -1,6 +1,11 @@
 .gallery {
 	background-color: #edf1f3;
 	padding: 97px 0 99px;
+overflow: hidden;
+	&__wrapper-slide {
+		display: flex;
+
+	}
 
 	&__slider {
 		max-width: 1970px;

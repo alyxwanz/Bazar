@@ -1,18 +1,65 @@
 mixin menu-item(headline, disc, value)
-  ul.menu__template-list
-    li.menu__template-item
-      .menu__template-text
-        span.menu__template-headline.color_dark.sintony-bold.fz16= headline
-        span.menu__template-disc.color_lighter-gray.fz14.sintony-normal= disc
-      .menu__template-price
-        span.menu__template-currency.fz13.playfair-bold.color_dark $
-        span.menu__template-value.fz26.playfair-bold.color_dark= value
+  li.menu__template-item
+    .menu__template-text
+      span.menu__template-headline.color_dark.sintony-bold.fz16= headline
+      span.menu__template-disc.color_lighter-gray.fz14.sintony-normal= disc
+    .menu__template-price
+      span.menu__template-currency.fz13.playfair-bold.color_dark $
+      span.menu__template-value.fz26.playfair-bold.color_dark= value
 
 mixin header-menu()
   ul.header__nav-list
     li.header__nav-item
-      span.header__nav-current.current-page.sintony-bold.fz14.color_light-gray home
-    - arr1 = ['menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
-      each val1 in arr1
-        li.header__nav-item
-          a.header__nav-link.sintony-bold.fz14.color_white(href='') #{val1}
+      a.header__nav-link.sintony-bold.fz14.home-page.color_white(href='./index.html') home
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.color_white.menu-page(href='./menu.html') menu
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.reservation-page.color_white(href='./reservation.html') reservation
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.recipe-2-column-page.color_white(href='./recipe-2-column.html') recipe
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.blog-page.color_white(href='./blog.html') blog
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.pages-page.color_white(href='./pages.html') pages
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.contact-page.color_white(href='./contact.html') contact
+
+mixin footer-menu()
+  ul.footer__nav-list
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.home-page_f(href='./index.html') Home
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.about-us-page_f(href='./about-us.html') About us
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.menu-page_f(href='./menu.html') Menu
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.reservation-page_f(href='./reservation.html') Reservation
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.recipe-2-column-page_f(href='./recipe-2-column.html') Recipe
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.blog-page_f(href='./blog.html') Blog
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.contact-page_f(href='./contact.html') Contact us
+
+mixin feedback()
+  .feedback-slider__block
+    .feedback-slider__img.color-bg_medium-gray
+    .feedback-slider__text.playfair-bold
+      h3.feedback-slider__headline.playfair-bold.fz25.color_dark
+        | Best atmosphere and food
+      p.feedback-slider__disc.sintony-normal.fz15.color_less-dark
+        | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+        | model text, and a search for &apos;lorem ipsum&apos; will uncover many web sites still in their infancy.
+        | Various versions have evolved over the years, sometimes by accident.
+      span.feedback-slider__line
+      span.feedback-slider__name.sintony-bold.fz16.color_dark
+        | Dr. Prabakaran John
+      .feedback-slider__stars
+        img.feedback-slider__icon(src='./images/feedback-slider/stars.png' alt='stars' srcset='')
+
+mixin menu__list(img, name)
+  .list__flex-container-item
+    .list__flex-container-item-icon
+      img.list__flex-container-item-logo(src=img, alt='')
+    .list__flex-container-item-name
+      h3.list__flex-container-item-word.fz20.playfair-bold.color_dark= name

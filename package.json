@@ -8,6 +8,7 @@
 		"url": "https://github.com/alyxwanz/Bazar.git"
 	},
 	"scripts": {
+		"watch": "gulp watch",
 		"build": "gulp build",
 		"scss:build": "gulp scss",
 		"scss:watch": "gulp sass:watch",

@@ -1,0 +1,17 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../modules_reservation/header/header.scss";
+@import "./../modules_reservation/main-title/main-title.scss";
+@import "./../modules_reservation/schedule/schedule.scss";
+@import "./../modules_reservation/footer/footer.scss";
+@import "./../responsive_web_design/rwd_reservation/reservation_header.scss";
+@import "./../responsive_web_design/rwd_reservation/reservation_schedule.scss";
+@import "./../responsive_web_design/rwd_reservation/reservation_footer.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}

@@ -5,14 +5,17 @@
 		.menu__template {
 			position: relative;
 
-			&::after {
-				content: "";
-				position: absolute;
-				top: 19%;
-				right: -1%;
-				background-color: $color_pink;
-				width: 5px;
-				height: 43px;
+			&-list {
+				height: 383px;
+				max-width: 475px;
+				overflow-y: scroll;
+				
+				&::-webkit-scrollbar {
+					width: 5px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: $color_pink;
+				}
 			}
 			margin: 100px 25px 85px 25px;
 
@@ -63,7 +66,7 @@
 				height: 335px;
 				box-shadow: 0px 36px 51px 0 $color_black-shadow;
 				position: relative;
-				z-index: 1;
+				transition: all 1s ease-in-out;
 			}
 
 			&-item {
@@ -84,11 +87,11 @@
 			}
 
 			&-img.small {
-				transform: scale(0.8);
+				transition: all 1s ease-in-out;
+				z-index: 0;
 				position: absolute;
 				right: -243px;
-				top: 100px;
-				z-index: 0;
+				top: 70px;
 			}
 		}
 	}
