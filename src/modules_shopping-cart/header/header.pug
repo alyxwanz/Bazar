@@ -1,0 +1,22 @@
+header.header.color-bg_white
+  .header__wrapper
+    .header__menu
+      .header__logo
+        a(href='#')
+          .header__logo-block-icon
+            img.header__logo-icon(src='./images/header/logo_dark.png' alt='' srcset='')
+      .header__nav
+        ul.header__nav-list
+          li.header__nav-item
+            span.current-page.sintony-bold.fz14.color_dark-grey home
+          - arr1 = ['menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
+            each val1 in arr1
+              li.header__nav-item
+                a.header__nav-link.sintony-bold.fz14.color_dark-grey(href='') #{val1}
+      a.header__cart-item(href='http://')
+        img.header__cart-icon(src='./images/header/cart_market_black.png' alt='cart-item' srcset='')
+      a.header__book-btn.btn.fz12.sintony-bold(href='#') Book your table
+
+
+
+
