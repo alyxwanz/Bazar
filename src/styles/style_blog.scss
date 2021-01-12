@@ -1,0 +1,17 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../modules_blog/header/header.scss";
+@import "./../modules_blog/main-title/main-title.scss";
+@import "./../modules_blog/schedule/schedule.scss";
+@import "./../modules_blog/footer/footer.scss";
+@import "./../responsive_web_design/rwd_blog/blog_header.scss";
+@import "./../responsive_web_design/rwd_blog/blog_schedule.scss";
+@import "./../responsive_web_design/rwd_blog/blog_footer.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(href='https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='./styles/reset.css')
+    link(rel='stylesheet' href='./styles/style_pages.css')
+    title Event
+  body
+    include ./pug/mixins.pug
+    include ./modules_pages/header/header.pug
+    include ./modules_pages/main-title/main-title.pug
+    include ./modules_pages/schedule/schedule.pug
+    include ./modules_pages/footer/footer.pug
+    script
+      include ./js/index_js/burger.js

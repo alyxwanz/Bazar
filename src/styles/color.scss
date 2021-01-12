@@ -12,6 +12,7 @@ $color_lighter-gray: #5c6369;
 $color_medium-gray: #7d8587;
 $color_light-gray: #adb2b7;
 $color-bg_light-gray: #6e7678;
+$color_ink: #2c465a;
 $color_medium-white: #d7d7d7;
 $color_white: #ffffff;
 $color_pink: #fe4c8d;
@@ -21,6 +22,9 @@ $color-bg_slight-blue: #edf1f3;
 $color-bg_orange: #fea100;
 $color_dark-grey: #2c465a;
 
+.color_ink {
+	color: $color_ink;
+}
 .color_black-shadow{
 	color: $color_black-shadow;
 }

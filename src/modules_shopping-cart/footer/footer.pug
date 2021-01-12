@@ -9,12 +9,8 @@ footer.footer.color-bg_dark-bg
       h2.footer__column-title.playfair-bold.fz24.color_white
         | Navigation
       nav.footer__nav
-        ul.footer__nav-list
-          - arr = ['Home', 'About us', 'Menu', 'Reservation', 'Recipe', 'Blog', 'Contact us']
-            each val in arr
-              li.footer__nav-item.footer-margin
-                a.footer__nav-link.sintony-normal.fz14(href='#') #{val}
-    .footer__column
+        +footer-menu()
+    .footer__column.form-block
       h2.footer__column-title.playfair-bold.fz24.color_white
         | News letter
       span.footer__subscribe-disc.sintony-normal.fz14

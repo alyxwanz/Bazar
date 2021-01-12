@@ -10,11 +10,36 @@ mixin menu-item(headline, disc, value)
 mixin header-menu()
   ul.header__nav-list
     li.header__nav-item
-      span.header__nav-current.current-page.sintony-bold.fz14.color_light-gray home
-    - arr1 = ['menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
-      each val1 in arr1
-        li.header__nav-item
-          a.header__nav-link.sintony-bold.fz14.color_white(href='') #{val1}
+      a.header__nav-link.sintony-bold.fz14.home-page.color_white(href='./index.html') home
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.color_white.menu-page(href='./menu.html') menu
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.reservation-page.color_white(href='./reservation.html') reservation
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.recipe-2-column-page.color_white(href='./recipe-2-column.html') recipe
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.blog-page.color_white(href='./blog.html') blog
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.pages-page.color_white(href='./pages.html') pages
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.contact-page.color_white(href='./contact.html') contact
+
+mixin footer-menu()
+  ul.footer__nav-list
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.home-page_f(href='./index.html') Home
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.about-us-page_f(href='./about-us.html') About us
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.menu-page_f(href='./menu.html') Menu
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.reservation-page_f(href='./reservation.html') Reservation
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.recipe-2-column-page_f(href='./recipe-2-column.html') Recipe
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.blog-page_f(href='./blog.html') Blog
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.contact-page_f(href='./contact.html') Contact us
 
 mixin feedback()
   .feedback-slider__block
@@ -31,3 +56,10 @@ mixin feedback()
         | Dr. Prabakaran John
       .feedback-slider__stars
         img.feedback-slider__icon(src='./images/feedback-slider/stars.png' alt='stars' srcset='')
+
+mixin menu__list(img, name)
+  .list__flex-container-item
+    .list__flex-container-item-icon
+      img.list__flex-container-item-logo(src=img, alt='')
+    .list__flex-container-item-name
+      h3.list__flex-container-item-word.fz20.playfair-bold.color_dark= name
