@@ -1,0 +1,21 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../modules_menu/header/header.scss";
+@import "./../modules_menu/main-title/main-title.scss";
+@import "./../modules_menu/list/list.scss";
+@import "./../modules_menu/speciality/speciality.scss";
+@import "./../modules_menu/schedule/schedule.scss";
+@import "./../modules_menu/footer/footer.scss";
+@import "./../responsive_web_design/rwd_menu/menu_header.scss";
+@import "./../responsive_web_design/rwd_menu/menu_schedule.scss";
+@import "./../responsive_web_design/rwd_menu/menu_footer.scss";
+@import "./../responsive_web_design/rwd_menu/menu_list.scss";
+@import "./../responsive_web_design/rwd_menu/menu_speciality.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}

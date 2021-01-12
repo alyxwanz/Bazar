@@ -126,3 +126,8 @@
 		}
 	}
 }
+.home-page {
+	color: $color_light-gray !important;
+	pointer-events: none;
+   cursor: default;
+}
