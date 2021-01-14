@@ -1,0 +1,21 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(href='https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='./styles/reset.css')
+    link(rel='stylesheet' href='./styles/style_shopping-cart.css')
+    title Shopping-cart
+  body
+    include ./pug/mixins.pug
+    include ./modules_shopping-cart/header/header.pug
+    include ./modules_shopping-cart/banner/banner.pug
+    include ./modules_shopping-cart/product_cart/product_cart.pug
+    include ./modules_shopping-cart/related_products/related_products.pug
+    include ./modules_shopping-cart/footer/footer.pug
+    script
+      include ./js/index_js/burger.js
+      include ./js/shopping-cart_js/shopping-cart.js
+      include ./js/shopping-cart_js/delete-btn.js

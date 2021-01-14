@@ -1,0 +1,50 @@
+.book-a-table__wrapper {
+    width: 83%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.description {
+    text-align: center;
+    width: 700px;
+    margin: 0 263px;
+    margin-bottom: 50px;
+}
+
+.column {
+    display: inline-block;
+}
+
+.inner-column {
+    display: block;
+    width: 370px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #c7d1d6;
+    margin-right: 30px;
+}
+
+.reqs {
+    width: 1225px;
+    height: 170px;
+    font-size: 14px;
+    z-index: 0;
+    border: none;
+    border-bottom: 1px solid #c7d1d6;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.reqs-btn {
+    display: block;
+    padding: 20px 37px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border: none;
+}

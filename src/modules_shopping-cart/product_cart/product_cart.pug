@@ -1,0 +1,62 @@
+section.product-cart
+    .product-cart__wrapper
+        h2.product-cart__title.playfair-bold.fz35 Product Cart
+        .product-cart__table-part
+            .product-cart__table
+                table(style='width: 100%', border='1')
+                    thead.playfair-bold.fz22
+                        tr
+                            th Item
+                            th Price
+                            th Qty
+                            th Subtotal
+                    tbody.playfair-bold.fz15#tbody
+                        tr.row
+ 
+                            td.for-button  
+                                img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
+                                | Green Mung Beas
+                                span.delete-btn
+                            td#price $ 100
+                            td 
+                                span.qty-count#count 1
+                            td#total $ 100
+                                    
+                        tr.row
+
+                            td.for-button  
+                                img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
+                                | Laird Green Ientils
+                                span.delete-btn
+                            td#price $ 100
+                            td 
+                                span.qty-count#count 1
+                            td#total $ 100
+                        tr.row
+
+                            td.for-button  
+                                img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
+                                | Fava Bean
+                                span.delete-btn
+                            td#price $ 100
+                            td 
+                                span.qty-count#count 1
+                            td#total $ 100
+            ul.product-cart__summary.color-bg_pink.color_white
+                li.head.playfair-bold.fz22 Summary
+                li.body.sintony-normal.fz15
+                    ul
+                        li.subtotal Subtotal
+                        li.subtotal-price : $300
+                    ul
+                        li.shipping-cost Shipping Cost
+                        li.shipping-cost-price : $0
+                    ul
+                        li.tax Tax
+                        li.tax-price : $10
+                li.foot.sintony-bold.fz15
+                    ul
+                        li.order Order Total
+                        li.order-price : $310
+                    ul
+                        li.a__btn.btn(href='#') Go to checkout                 

@@ -17,6 +17,11 @@ $color_medium-white: #d7d7d7;
 $color_white: #ffffff;
 $color_pink: #fe4c8d;
 $color-bg_graphite: #565f61;
+$color-bg_pink: #fe4c8d;
+$color-bg_slight-blue: #edf1f3;
+$color-bg_orange: #fea100;
+$color_dark-grey: #2c465a;
+$color-bg_white: #f4f4f4;
 
 .color_ink {
 	color: $color_ink;
@@ -65,4 +70,19 @@ color: $color_dark;
 }
 .color-bg_orange {
 	background-color: $color_orange;
+}
+.color-bg_pink {
+	background-color: $color_pink;
+}
+.color-bg_slight-blue {
+	background-color: $color-bg_slight-blue;
+}
+.color-bg_orange {
+	background-color: $color-bg_orange;
+}
+.color_dark-grey {
+	color: $color_dark-grey;
+}
+.color-bg_white {
+	color: $color-bg_white;
 }

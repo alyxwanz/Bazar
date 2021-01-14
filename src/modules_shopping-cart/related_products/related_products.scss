@@ -1,0 +1,119 @@
+.related-products {
+    .related-products__wrapper {
+        margin: 0 auto;
+        width: 75%;
+    }
+    
+    &__title {
+        // border-top: 100px solid black;
+        // border-color: transparent;
+        margin-bottom: 57px;
+        margin-top: 100px;
+        padding-top: 100px;
+    }
+    .related-products__table {
+        margin: -20px;
+    }
+    
+    td {
+        border: 10px solid black;
+        border-color: transparent;
+    }
+
+    .related-no-padding {
+        margin-right: -75px;
+    }
+
+    .rectangle {
+        width: 270px;
+        height: 397px;
+        margin-bottom: 123px;
+        border: 1px solid #e4e4e4;
+        position: relative;
+    }
+    
+    // .star-icon {
+    //     background-color: red;
+    // }
+
+    .evaluation {
+        width: 40px;
+        height: 25px;
+        margin-bottom: 15px;
+        display: flex;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+    }
+    ul {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    li {
+        display: inline;
+    }
+
+    
+    
+    .add-to-cart {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -22px;
+        left: 112px;
+        z-index: 1;
+    }
+    
+    .plus {
+        background: white;
+        height: 20px; 
+        width: 4px;
+        position: relative; 
+        left: 20px;
+        top: 12px;
+    }
+    .plus:after {
+        content: "";
+        height: 3px; 
+        width: 20px;
+        background: white;
+        position: absolute; 
+        left: -8px; 
+        top: 9px;
+        }
+    
+    ul {
+        text-align: center;
+    }
+    
+    img {
+        // padding: 40px 22px;
+        // margin: 36px 23px 40px 23px;
+        padding-right: inherit;
+    }
+    
+    li.image {
+        img {
+            padding-top: 40px;
+        }
+    }
+
+    li.product {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+    li.price-old {
+        display: inline;
+        text-decoration: line-through;
+    }
+
+    li.price {
+        display: inline;
+
+    }
+}
