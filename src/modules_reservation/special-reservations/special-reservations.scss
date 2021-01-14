@@ -1,0 +1,84 @@
+.special-reservations {
+    background-image: url("./../images/reserve-form/gray_background.jpg");
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.special-reservations__title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+
+
+.propositions-part {
+    display: flex;
+    margin-right: 30px;
+    padding-bottom: 100px;
+
+}
+
+.private-dinner {
+    margin-right: 40px;
+    ul {
+
+        width: 370px;
+    }
+}
+
+.dinning {
+    width: 295px;
+
+}
+
+.dinning-img {
+    margin-bottom: 45px;
+}
+
+.dinning-head {
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.dinning-desc {
+    margin-bottom: 60px;
+    margin-left: 40px;
+}
+
+.info {
+    border: 1px dashed #e4e4e4;
+    box-shadow: 0px 0px 0px 10px #fe4c8d;
+    text-transform: uppercase;
+    ul {
+        padding: 58px 55px 100px 55px;
+    }
+}
+
+.info-phone {
+    margin-bottom: 20px;
+}
+
+.phone-number {
+    margin-bottom: 10px;
+}
+
+.call-us {
+    margin-bottom: 45px;
+}
+
+.info-email {
+    margin-bottom: 20px;
+}
+
+.couple-dinner {
+    margin-left: 40px;
+    ul {
+
+        width: 370px;
+    }
+}

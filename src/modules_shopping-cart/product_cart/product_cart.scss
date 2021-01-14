@@ -105,3 +105,35 @@ ul.product-cart__summary {
         margin-right: 25px;
     }
 }
+
+.for-button {
+    position: relative;
+}
+
+.delete-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    z-index: 1;
+    left: 78px;
+    top: 28px;
+
+    &:hover {
+        //ЭТО ХОРОШО!
+        width: 27px;
+        height: 27px;
+        box-shadow: 0px 0px 6px 7px red;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+        z-index: 1;
+        left: 80px;
+        top: 30px; 
+    }
+}
+
+.focused {
+    display: none;
+}

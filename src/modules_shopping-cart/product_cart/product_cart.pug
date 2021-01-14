@@ -10,31 +10,38 @@ section.product-cart
                             th Price
                             th Qty
                             th Subtotal
-                    tbody.playfair-bold.fz15
-                        tr
-                            td  
+                    tbody.playfair-bold.fz15#tbody
+                        tr.row
+ 
+                            td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Green Mung Beas
-                            td $ 100
+                                span.delete-btn
+                            td#price $ 100
                             td 
-                                span.qty-count 1
-                            td $ 100
-                        tr
-                            td  
+                                span.qty-count#count 1
+                            td#total $ 100
+                                    
+                        tr.row
+
+                            td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Laird Green Ientils
-                            td $ 100
+                                span.delete-btn
+                            td#price $ 100
                             td 
-                                span.qty-count 1
-                            td $ 100
-                        tr
-                            td  
+                                span.qty-count#count 1
+                            td#total $ 100
+                        tr.row
+
+                            td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Fava Bean
-                            td $ 100
+                                span.delete-btn
+                            td#price $ 100
                             td 
-                                span.qty-count 1
-                            td $ 100
+                                span.qty-count#count 1
+                            td#total $ 100
             ul.product-cart__summary.color-bg_pink.color_white
                 li.head.playfair-bold.fz22 Summary
                 li.body.sintony-normal.fz15
@@ -52,4 +59,4 @@ section.product-cart
                         li.order Order Total
                         li.order-price : $310
                     ul
-                        li.a__btn.btn(href='#') Go to checkout                   
+                        li.a__btn.btn(href='#') Go to checkout                 

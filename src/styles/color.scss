@@ -21,6 +21,7 @@ $color-bg_pink: #fe4c8d;
 $color-bg_slight-blue: #edf1f3;
 $color-bg_orange: #fea100;
 $color_dark-grey: #2c465a;
+$color-bg_white: #f4f4f4;
 
 .color_ink {
 	color: $color_ink;
@@ -81,4 +82,7 @@ color: $color_dark;
 }
 .color_dark-grey {
 	color: $color_dark-grey;
+}
+.color-bg_white {
+	color: $color-bg_white;
 }

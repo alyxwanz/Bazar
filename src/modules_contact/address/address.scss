@@ -1,0 +1,92 @@
+.address__wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.address__block-one {
+    position: relative;
+    height: 510px;
+}
+
+.address__double-part {
+    display: flex;
+    position: absolute;
+    top: -225px;
+    box-shadow: 0px 46px 57px 0px rgba(0, 0, 0, 0.15);
+}
+
+.address__form-block {
+    padding-left: 100px;
+    h2 {
+        margin-top: 100px;
+    }
+}
+
+.touch {
+    display: block;
+    width: 370px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #c7d1d6;
+    margin-right: 115px;
+	// background-size: cover;
+	// background-position: center;
+	// background-repeat: no-repeat;
+}
+
+.touch:first-child {
+    margin-top: 40px;
+}
+
+.message {
+    height: 170px;
+    font-size: 14px;
+    z-index: 0;
+    border-bottom: 1px solid #c7d1d6;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-btn {
+    padding: 20px 37px;
+    margin-right: 25px;
+    margin-bottom: 80px;
+    border: none;
+}
+
+.address__address-block {
+    padding-left: 115px;
+    h2 {
+        margin-bottom: 40px;
+        margin-top: 100px;
+    }
+}
+
+.address-word {
+    margin-bottom: 10px;
+}
+
+.lux {
+    margin-bottom: 40px;
+}
+
+.phone-number {
+    margin-bottom: 40px;
+}
+
+.email-address {
+    margin-bottom: 40px;
+    margin-right: 178px;
+}
+
+.follow {
+    margin-bottom: 13px;
+}
+
+ul.icons {
+    display: flex;
+    img {
+        margin-right: 12px;
+    }
+}
