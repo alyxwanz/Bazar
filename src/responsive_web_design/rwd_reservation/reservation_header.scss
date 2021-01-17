@@ -19,7 +19,6 @@
 @media (max-width: 998px) {
 	.header {
 		padding: 10px;
-		height: 100vh;
 
 		.header__nav {
 			&-list {
@@ -210,7 +209,6 @@
 //479 PX
 @media (max-width: 479px) {
 	.header {
-		height: 100vh;
 		&__logo {
 			display: none;
 		}

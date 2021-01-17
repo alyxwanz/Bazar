@@ -1,16 +1,15 @@
+
 .header {
 	display: flex;
 	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-image: none;
-	height: inherit;
-
-	.header__wrapper {
-		justify-content: center;
-		display: contents;
+	padding: 20px 0 22px;
+	&__wrapper {
+		width: 100%;
 	}
 
+	&__burger {
+		display: none;
+	}
 
 	&__logo-icon {
 		outline: none;
@@ -20,9 +19,8 @@
 
 	&__menu {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-		margin-bottom: 0;
 	}
 
 	.header__nav {
@@ -31,12 +29,12 @@
 
 			.header__nav-item {
 				margin-right: 20px;
-
 				&:first-child {
 					margin-left: 16px;
 				}
 
 				.header__nav-link {
+					color: $color_ink;
 					text-decoration: none;
 					letter-spacing: 0.35px;
 					@include hover-link;
@@ -65,7 +63,6 @@
 			top: 20%;
 			left: 7.5%;
 		}
-
 		@include hover-button;
 	}
 }
