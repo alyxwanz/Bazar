@@ -20,18 +20,35 @@
     display: inline-block;
 }
 
+.inner-column-wrap {
+    position: relative;
+}
+
+.inner-column__icon {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.inner-column__textarea-icon {
+    position: absolute;
+    top: 42px;
+    left: 10px;
+}
+
 .inner-column {
     display: block;
-    width: 370px;
+    width: 320px;
     height: 60px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid #c7d1d6;
     margin-right: 30px;
+    padding-left: 50px;
 }
 
 .reqs {
-    width: 1225px;
+    width: 1175px;
     height: 170px;
     font-size: 14px;
     z-index: 0;
@@ -39,6 +56,7 @@
     border-bottom: 1px solid #c7d1d6;
     margin-bottom: 40px;
     margin-top: 40px;
+    padding-left: 50px;
 }
 
 .reqs-btn {
