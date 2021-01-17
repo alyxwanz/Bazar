@@ -1,0 +1,20 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../modules_shopping-cart/header/header.scss";
+@import "./../modules_shopping-cart/banner/banner.scss";
+@import "./../modules_shopping-cart/product_cart/product_cart.scss";
+@import "./../modules_shopping-cart/related_products/related_products.scss";
+@import "./../modules_shopping-cart/schedule/schedule.scss";
+@import "./../modules_shopping-cart/main-title/main-title.scss";
+@import "./../modules_shopping-cart/footer/footer.scss";
+@import "./../responsive_web_design/rwd_item-cart/item-cart_header.scss";
+@import "./../responsive_web_design/rwd_item-cart/item-cart_schedule.scss";
+@import "./../responsive_web_design/rwd_item-cart/item-cart_footer.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
