@@ -19,7 +19,6 @@
 @media (max-width: 998px) {
 	.header {
 		padding: 10px;
-		height: 100vh;
 
 		.header__nav {
 			&-list {
@@ -92,7 +91,6 @@
 		&__nav-current {
 			font-size: $fz25;
 		}
-		height: 100%;
 
 		&__burger {
 			display: block;
@@ -193,7 +191,6 @@
 // 576 PX
 @media (max-width: 576px) {
 	.header {
-		min-height: 100%;
 		&__slider-title {
 			font-size: $fz42;
 			span {
@@ -210,7 +207,6 @@
 //479 PX
 @media (max-width: 479px) {
 	.header {
-		height: 100vh;
 		&__logo {
 			display: none;
 		}

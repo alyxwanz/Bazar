@@ -1,0 +1,133 @@
+.header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 100px;
+	background-image: url("./../images/header/head.jpg");
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	&__wrapper {
+		width: 100%;
+	}
+
+	&__burger {
+		display: none;
+	}
+
+	&__logo-icon {
+		outline: none;
+		display: inline-block;
+		width: 150px;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 200px;
+	}
+
+	.header__nav {
+		&-list {
+			display: flex;
+
+			.header__nav-item {
+				margin-right: 20px;
+
+				&:first-child {
+					margin-left: 16px;
+				}
+
+				.header__nav-link {
+					text-decoration: none;
+					letter-spacing: 0.35px;
+					@include hover-link;
+				}
+			}
+		}
+	}
+
+	&__book-btn {
+		margin-left: 20px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 0px 0px 3px $color_orange;
+		border: 1px solid $color_white;
+		padding: 12px 12px 12px 45px;
+
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background-image: url("./../images/header/iconPlate.png");
+			background-repeat: no-repeat;
+			top: 20%;
+			left: 7.5%;
+		}
+
+		@include hover-button;
+	}
+
+	&__slider {
+		padding: 0 135px;
+		position: relative;
+		width: 80%;
+		margin: 0 auto 70px;
+		overflow: hidden;
+		.header__slider-item {
+			width: 100%;
+			display: flex;
+		}
+		&-btn-left,
+		&-btn-right {
+			z-index: 1;
+			background-color: transparent;
+			position: absolute;
+			border-right: 0;
+			border-bottom: 0;
+			border-top: 3px solid $color_white;
+			border-left: 3px solid $color_white;
+			width: 40px;
+			height: 40px;
+			top: 50%;
+		}
+		&-btn-left {
+			left: 9px;
+			transform: rotate(-45deg);
+		}
+		&-btn-right {
+			right: 9px;
+			transform: rotate(135deg);
+		}
+
+		.header__slider-title {
+			min-width: 100%;
+			text-align: center;
+			display: block;
+		}
+	}
+
+	.header__slider-info {
+		padding-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-svg {
+			margin-bottom: 30px;
+		}
+
+		&-phone {
+			@include hover-link;
+		}
+	}
+}
+.home-page {
+	color: $color_light-gray !important;
+	pointer-events: none;
+   cursor: default;
+}

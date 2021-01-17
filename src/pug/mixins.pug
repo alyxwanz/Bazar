@@ -63,3 +63,64 @@ mixin menu__list(img, name)
       img.list__flex-container-item-logo(src=img, alt='')
     .list__flex-container-item-name
       h3.list__flex-container-item-word.fz20.playfair-bold.color_dark= name
+
+mixin blog__content(img, title, count, text, day, month)
+  .blog__content-item
+    .blog__content-item-photo
+      img.blog__content-item-photo-image(src=img alt='' srcset='')
+    .blog__content-item-text
+      .blog__content-item-text-date.sintony-bold.fz30.color-bg_orange.color_white= day
+        .blog__content-item-text-date-month.sintony-bold.fz12.color_white= month
+      .blog__content-item-text-description
+        h2.blog__content-item-text-description-title.playfair-bold.fz35= title
+        p.blog__content-item-text-description-main_text.color_lighter-gray.sintony-normal.fz14= text
+    .blog__content-item-panel
+      .blog__content-item-panel-rate
+        .blog__content-item-panel-rate-btn
+          a.blog__content-item-panel-rate-btn-read_more.btn.fz14.sintony-bold(href='#') read more
+        .blog__content-item-panel-rate-like
+        .blog__content-item-panel-rate-summ.fz14.color_white= count
+      .blog__content-item-panel-links
+        .blog__content-item-panel-links-share
+          a.blog__content-item-panel-links-share-link(href='#')
+            img.blog__content-item-panel-links-share-link-img(src='./images/blog/content/share.png' alt='stars' srcset='')
+        .blog__content-item-panel-links-social
+          +social-blog('facebook', './images/blog/content/icon_facebook.png','https://uk-ua.facebook.com/')
+          +social-blog('twitter', './images/blog/content/icon_twitter.png', 'https://twitter.com/ru')
+          +social-blog('google', './images/blog/content/icon_google.png','https://www.google.com.ua/?hl=ru')
+
+mixin social(name, src, url)
+  .footer__social
+    a.footer__social-link(href=url)
+      img.footer__social-icon(src= src alt=name srcset='')
+
+mixin social-blog(name, src, url)
+  .blog__content-item-panel-links-social-block
+    a.blog__content-item-panel-links-social-block-link(href=url)
+      img.blog__content-item-panel-links-social-block-link-icon(src= src alt=name srcset='')
+
+mixin category-tag(name)
+  li.blog__sidebar-category-list-tags-item.fz14.sintony-bold= name
+
+mixin post(img, title, text)
+  .blog__sidebar-post-item
+    .blog__sidebar-post-item-photo
+      img.blog__sidebar-post-item-photo-icon(src= img alt='post' srcset='')
+    .blog__sidebar-post-item-text
+      .blog__sidebar-post-item-text-title.fz11.sintony-bold.color_lighter-gray= title
+      .blog__sidebar-post-item-text-text.fz14.playfair-bold.color_dark= text
+
+mixin radio-orange()
+  .radio-orange
+    span.radio-orange__item.active-radio-orange
+    span.radio-orange__item
+    span.radio-orange__item
+
+mixin archive(month, summ)
+  li.blog__sidebar-archive-statistic-item
+    .blog__sidebar-archive-statistic-item-date.sintony-bold.fz14= month
+    .blog__sidebar-archive-statistic-item-count.sintony-bold.fz14= summ
+
+mixin tags(name)
+  .blog__sidebar-tags-container-item
+    span.blog__sidebar-tags-container-item-name.sintony-bold.fz14.color_pear= name
