@@ -38,8 +38,8 @@ gulp.task('images', () => {
 
 gulp.task('build', gulp.series('scss', 'images', 'pug'));
 
-gulp.task('watch',() => {
-	gulp.watch(['./src/index.pug','./src/**/**/*.pug'],gulp.series('pug'));
-	gulp.watch(['./src/**/**/*.scss', './src/styles/*.scss'],gulp.series('scss'));
-	gulp.watch('src/images/**/*.{svg,png,jpeg,jpg,webp}',gulp.series('images'));
-	});
+gulp.task('watch', () => {
+	gulp.watch(['./src/index.pug', './src/**/**/*.pug'], gulp.series('pug'));
+	gulp.watch(['./src/**/**/*.scss', './src/styles/*.scss'], gulp.series('scss'));
+	gulp.watch('src/images/**/*.{svg,png,jpeg,jpg,webp}', gulp.series('images'));
+});
