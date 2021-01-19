@@ -72,21 +72,44 @@
 }
 
 .phone-number {
+    display: block;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .email-address {
+    display: block;
     margin-bottom: 40px;
     margin-right: 178px;
+    text-decoration: none;
 }
 
 .follow {
     margin-bottom: 13px;
 }
 
-ul.icons {
+.icons {
     display: flex;
     img {
         margin-right: 12px;
     }
 }
+
+// .over-mixin {
+//     margin-top: 0;
+// }
+
+// &__social{
+//     display: flex;
+//     margin-right: 4px;
+//     &-link {
+//         display: inline;
+//         .footer__social-icon {
+//             border-radius: 50%;
+//             border: 1px solid transparent;
+//             &:hover {
+//                 border: 1px solid $color_gray;
+//             }
+//         }
+//     }
+// }

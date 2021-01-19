@@ -1,0 +1,19 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(href='https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='./styles/reset.css')
+    link(rel='stylesheet' href='./styles/style_checkout.css')
+    title Checkout
+  body
+    include ./pug/mixins.pug
+    include ./modules_checkout/header/header.pug
+    include ./modules_checkout/main-title/main-title.pug
+    include ./modules_checkout/instant-checkout/instant-checkout.pug
+    include ./modules_checkout/create-account/create-account.pug
+    include ./modules_checkout/footer/footer.pug
+    script
+      include ./js/index_js/burger.js

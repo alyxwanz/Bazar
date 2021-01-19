@@ -60,11 +60,16 @@
 }
 
 .info-phone {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .phone-number {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 .call-us {
@@ -72,6 +77,8 @@
 }
 
 .info-email {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 

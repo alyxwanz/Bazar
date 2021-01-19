@@ -7,13 +7,27 @@ section.book-a-table
             .book-a-table__form-part
                 form.fz14.sintony-normal.color_less-dark(action="submit")
                     span.column
-                        input.inner-column(type="text" placeholder="Name*")
-                        input.inner-column(type="text" placeholder="Date*")
+                        .inner-column-wrap
+                            img.inner-column__icon(src="./images/reserve-form/name.png", alt="name")
+                            input.inner-column(type="text" placeholder="Name*")
+                        .inner-column-wrap
+                            img.inner-column__icon(src="./images/reserve-form/date.png", alt="name")
+                            input.inner-column(type="text" placeholder="Date*")
                     span.column
-                        input.inner-column(type="email" placeholder="Email*")
-                        input.inner-column(type="text" placeholder="Time*")
+                        .inner-column-wrap
+                            img.inner-column__icon(src="./images/reserve-form/email.png", alt="name")
+                            input.inner-column(type="email" placeholder="Email*")
+                        .inner-column-wrap
+                            img.inner-column__icon(src="./images/reserve-form/time.png", alt="name")
+                            input.inner-column(type="text" placeholder="Time*")
                     span.column
-                        input.inner-column(type="tel" placeholder="Phone*")
-                        input.inner-column(type="text" placeholder="Guests*")
-                    textarea.reqs.fz14.sintony-normal.color_less-dark(type="text" placeholder= "Special Requirements*")
-                    button.btn.reqs-btn(href='#') Make Reservation
+                        .inner-column-wrap
+                            img.inner-column__icon(src="./images/reserve-form/phone.png", alt="name")
+                            input.inner-column(type="tel" placeholder="Phone*")
+                        .inner-column-wrap
+                            img.inner-column__icon(src="./images/reserve-form/guest.png", alt="name")
+                            input.inner-column(type="text" placeholder="Guests*")
+                    .inner-column-wrap
+                        img.inner-column__textarea-icon(src="./images/reserve-form/comment.png", alt="name")
+                        textarea.reqs.fz14.sintony-normal.color_less-dark(type="text" placeholder= "Special Requirements*")
+                        button.btn.reqs-btn(href='#') Make Reservation

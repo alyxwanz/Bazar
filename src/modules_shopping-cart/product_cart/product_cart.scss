@@ -41,69 +41,52 @@ tbody {
         border: 1px solid #e4e4e4;
     }
 }
+
+.sidebar-part {
+    height: 365px;
+}
                  
-ul.product-cart__summary {
-    height: 360px;
+.product-cart-sidebar-wrap {
+    display: unset;
     border: 1px dashed #e4e4e4;
-    margin-left: 32px;
     box-shadow: 0px 0px 0px 10px #fe4c8d;
+    margin-left: 46px;
+}
 
-    li.head {
-        padding: 35px 0 25px 30px;
-    }
-    
-    ul {
-        padding-left: 30px;
-        padding-bottom: 15px;
-    }
-    
-    .subtotal {
-        display: inline;
-    }
-    
-    .subtotal-price {
-        display: inline;
-        padding-left: 86px;
-    }
-    
-    .shipping-cost { 
-        display: inline;
-    }
-    
-    .shipping-cost-price { 
-        display: inline;
-        padding-left: 46px;
-    }
-    
-    .tax {
-        display: inline;
-    }
-    
-    .tax-price {
-        display: inline;
-        padding-left: 123px;
-    }
-    
-    li.foot {
-        border-top: 1px dashed #e4e4e4;
-        padding-top: 15px;
-    }
+.summary-wrap {
+    display: block;
+    padding: 30px 30px 10px;
+}
 
-    li.order {
-        display: inline;
-    }
+.bordered {
+    border-bottom: 1px dashed #e4e4e4;
+}
 
-    li.order-price {
-        display: inline;
-        padding-left: 51px;
-        padding-right: 25px;
-    }
-    
-    .btn {
-        padding: 20px 37px;
-        margin-top: 45px;
-        margin-right: 25px;
-    }
+.summary-title {
+    padding-bottom: 20px;
+}
+
+.summary-costs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-row {
+    padding-bottom: 15px;
+}
+
+.order-wrap {
+    display: block;
+    padding: 15px 30px;
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: 20px 37px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 7px;
+    margin: 30px 0 75px;
 }
 
 .for-button {

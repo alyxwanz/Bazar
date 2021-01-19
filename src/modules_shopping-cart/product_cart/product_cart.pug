@@ -42,21 +42,21 @@ section.product-cart
                             td 
                                 span.qty-count#count 1
                             td#total $ 100
-            ul.product-cart__summary.color-bg_pink.color_white
-                li.head.playfair-bold.fz22 Summary
-                li.body.sintony-normal.fz15
-                    ul
-                        li.subtotal Subtotal
-                        li.subtotal-price : $300
-                    ul
-                        li.shipping-cost Shipping Cost
-                        li.shipping-cost-price : $0
-                    ul
-                        li.tax Tax
-                        li.tax-price : $10
-                li.foot.sintony-bold.fz15
-                    ul
-                        li.order Order Total
-                        li.order-price : $310
-                    ul
-                        li.a__btn.btn(href='#') Go to checkout                 
+            .product-cart.sidebar-part
+                .product-cart.product-cart-sidebar-wrap.color-bg_pink.color_white
+                    .product-cart.summary-wrap.bordered 
+                        .product-cart.summary-title.playfair-bold.fz22 Summary
+                        .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
+                            .summary-row Subtotal
+                            .summary-row : $300
+                        .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
+                            .summary-row Shipping cost
+                            .summary-row : $0
+                        .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
+                            .summary-row Tax
+                            .summary-row : $10
+                    .product-cart.order-wrap
+                        .product-cart.summary-costs.sintony-bold.fz15
+                            .summary-row Order Total
+                            .summary-row : $310
+                        .product-cart.btn.checkout-btn.sintony-bold.fz14(href='#') Go to checkout

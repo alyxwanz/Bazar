@@ -54,3 +54,4 @@ class Cart {
         this.purchases = [];
     }
 }
+

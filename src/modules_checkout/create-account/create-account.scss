@@ -1,0 +1,41 @@
+.create-account__wrapper {
+    margin: 0 auto;
+    width: 645px;
+    padding: 100px 0;
+}
+
+.account-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.desc-wrap {
+    text-align: center;
+
+    padding-bottom: 40px;
+}
+
+.create-account-form {
+    display: inline-flex;
+    align-items: center;
+}
+
+.account-input {
+    display: block;
+    width: 435px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #dde4e8;
+    border-bottom: 1px solid #c7d1d6;
+    margin-right: 10px;
+    text-transform: none;
+}
+
+.account-btn {
+    display: inline-block;
+    padding: 20px 37px;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 7px;
+}
