@@ -1,12 +1,14 @@
-const deleteBtn = document.querySelector('.delete-btn');
-const focused = document.querySelector('.focused');
-const row = document.querySelector('.row');
+'use strict'
+
+window.addEventListener('load', () => {
+
+    const deleteBtn = document.querySelector('.delete-btn');
+    const focused = document.querySelector('.focused');
+    const row = document.querySelectorAll('.row');
 
 
 
-deleteBtn.addEventListener('click', () => {
-    row.classList.add('focused');
-})
-
-
-//
+    deleteBtn.addEventListener('click', function () {
+        row.classList.toggle('focused');
+    });
+});

@@ -1,0 +1,30 @@
+footer.footer.color-bg_dark-bg
+  .wrapper.footer__flex
+    .footer__column
+      h2.footer__column-title.playfair-bold.fz24.color_white
+        | Navigation
+      nav.footer__nav
+        +footer-menu()
+    .footer__column.form-block
+      h2.footer__column-title.playfair-bold.fz24.color_white
+        | News letter
+      span.footer__subscribe-disc.sintony-normal.fz14
+        | Enter your email address and subscribe daily newsletter
+      form.footer__form(action='')
+        .footer__form-input
+          .footer__form-icon
+            img.footer__form-pick(src='./images/footer/footer_email.png' alt='email' srcset='')
+            input.footer__form-item.color_light-gray(type='text' placeholder='Email Address')
+        button.footer__form-btn.btn.fz14.sintony-bold(type='submit') Subscribe
+      +social('facebook', './images/footer/facebook.png','https://uk-ua.facebook.com/')
+      +social('twitter', './images/footer/twitter.png', 'https://twitter.com/ru')
+      +social('google', './images/footer/google.png','https://www.google.com.ua/?hl=ru')
+    .footer__column
+      h2.footer__column-title.color_white.playfair-bold.fz24
+        | Our app avilable
+      a.footer__column-link(href='http://')
+        img.footer__link-img(src='./images/footer/apple.png' alt='appstore' srcset='')
+      a.footer__column-link(href='http://')
+        img.footer__link-img(src='./images/footer/gplay.png' alt='googlestore' srcset='')
+    .footer__copyright
+      span.footer__copyright-text.color_light-gray.sintony-normal.fz13 2016 &copy;  Luxury Restaurant, All rights reserved
