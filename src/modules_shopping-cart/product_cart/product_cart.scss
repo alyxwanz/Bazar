@@ -15,6 +15,10 @@
     margin-right: 32px;
 }
 
+.product-cart__table {
+    width: 809px;
+}
+
 
 thead {
     th {
@@ -24,14 +28,43 @@ thead {
     }
 }
 
+.product-table-item {
+    width: 376px;
+}
+
+.product-table-price {
+    width: 138px;
+}
+
+.product-table-qty {
+    width: 158px;
+}
+
+.product-table-subtotal {
+    width: 138px;
+}
 
 tbody {
     img {
-        padding-right: 30px;
+        margin-right: 30px;
     }
     td {
-        padding: 20px 100px 20px 0;
+        padding: 20px 0;
         border-bottom: 1px solid #e4e4e4;
+    }
+    .td-for-relative {
+        position: relative;
+        .qty-plus-button {
+            position: absolute;
+            left: 50px;
+            cursor: pointer;
+        }
+        .qty-minus-button {
+            width: 20px;
+            position: absolute;
+            right: 58px;
+            cursor: pointer;
+        }
     }
     &:first-child {
             padding-right: 30px;
@@ -87,6 +120,7 @@ tbody {
     border: none;
     border-radius: 7px;
     margin: 30px 0 75px;
+    cursor: pointer;
 }
 
 .for-button {

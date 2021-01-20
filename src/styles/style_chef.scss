@@ -1,0 +1,19 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../modules_chef/header/header.scss";
+@import "./../modules_chef/main-title/main-title.scss";
+@import "./../modules_chef/head-chef/head-chef.scss";
+@import "./../modules_chef/chef-team/chef-team.scss";
+@import "./../modules_chef/schedule/schedule.scss";
+@import "./../modules_chef/footer/footer.scss";
+// @import "./../responsive_web_design/rwd_about-us/about-us_header.scss";
+// @import "./../responsive_web_design/rwd_about-us/about-us_schedule.scss";
+// @import "./../responsive_web_design/rwd_about-us/about-us_footer.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
