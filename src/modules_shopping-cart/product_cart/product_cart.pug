@@ -3,24 +3,30 @@ section.product-cart
         h2.product-cart__title.playfair-bold.fz35 Product Cart
         .product-cart__table-part
             .product-cart__table
-                table(style='width: 100%', border='1')
+                table.product-table(style='width: 100%', border='1')
                     thead.playfair-bold.fz22
                         tr
-                            th Item
-                            th Price
-                            th Qty
-                            th Subtotal
+                            th.product-table-item Item
+                            th.product-table-price Price
+                            th.product-table-qty Qty
+                            th.product-table-subtotal Subtotal
                     tbody.playfair-bold.fz15#tbody
-                        tr.row
+                        tr.row#row
  
                             td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Green Mung Beas
                                 span.delete-btn
-                            td#price $ 100
-                            td 
-                                span.qty-count#count 1
-                            td#total $ 100
+                            td $ 
+                                span#price 100
+                            td.td-for-relative
+                                span.qty-count#count 2
+                                span.qty-plus-button#plus-button 
+                                    img(src="./images/shopping-cart/add.png", alt="btn_+")
+                                span.qty-minus-button#minus-button
+                                    img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
+                            td $ 
+                                span#total 100
                                     
                         tr.row
 
@@ -28,20 +34,33 @@ section.product-cart
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Laird Green Ientils
                                 span.delete-btn
-                            td#price $ 100
-                            td 
-                                span.qty-count#count 1
-                            td#total $ 100
+                            td $ 
+                                span#price 100
+                            td.td-for-relative
+                                span.qty-count#count 3
+                                span.qty-plus-button#plus-button 
+                                    img(src="./images/shopping-cart/add.png", alt="btn_+")
+                                span.qty-minus-button#minus-button
+                                    img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
+                            td $ 
+                                span#total 100
                         tr.row
 
                             td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Fava Bean
                                 span.delete-btn
-                            td#price $ 100
-                            td 
-                                span.qty-count#count 1
-                            td#total $ 100
+                            td $ 
+                                span#price 100
+                            td.td-for-relative 
+                                span.qty-count#count 4
+                                span.qty-plus-button#plus-button 
+                                    img(src="./images/shopping-cart/add.png", alt="btn_+")
+                                span.qty-minus-button#minus-button
+                                    img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
+
+                            td $ 
+                                span#total 100
             .product-cart.sidebar-part
                 .product-cart.product-cart-sidebar-wrap.color-bg_pink.color_white
                     .product-cart.summary-wrap.bordered 

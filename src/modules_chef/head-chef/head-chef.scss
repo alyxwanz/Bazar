@@ -1,0 +1,36 @@
+.chef {
+    padding-top: 100px;
+}
+
+.double-part {
+    display: flex;
+}
+
+
+.double-part-head {
+    padding-bottom: 30px;
+}
+
+.double-part-desc {
+    line-height: 2;
+}
+
+.double-part-info {
+    // background-image: url("./../images/chef/food_vector_bg.png");
+    width: 600px;
+    padding: 45px;
+}
+
+.double-part-expertise {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.inner-name {
+    margin-right: 10px;
+}
+
+.inner-expertise {
+    display: inline;
+    padding-right: 20px;
+}
