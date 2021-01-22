@@ -1,35 +1,39 @@
+'use strict'
 
 window.addEventListener('load', () => {
-    let price = document.getElementById('price');
-    let minusButton = document.getElementById('minus-button');
-    let plusButton = document.getElementById('plus-button');
-    let count = document.getElementById('count');
-    let total = document.getElementById('total');
-    let result = parseInt(count.innerHTML) * parseInt(price.innerHTML)
     let currentCount;
-
-    total.textContent = result.toString()
-
-    // let selectedTd;
-
-    // tbody.onclick = function(event) {
-    //     let target = event.target;
-    //     if (target.tagname != )
-    // }
-
-
-
-    minusButton.addEventListener('click',() => {
-        currentCount = parseInt(count.innerHTML);
-        --currentCount;
-        count.textContent = currentCount.toString()
-        if (currentCount <0) row.remove()
-    })
-
-    plusButton.addEventListener('click',() => {
-        currentCount = parseInt(count.innerHTML);
-        ++currentCount;
-        count.textContent = currentCount.toString()
-    })
-    
+//minus
+    tbody.addEventListener('click', (event) => {
+        const min = event.target.closest('.qty-minus-button');
+        const minCount = event.target.closest('.td-for-relative');
+        const first = minCount.firstChild;
+        if (min) {
+            currentCount = parseInt(first.innerHTML);
+            --currentCount;
+            first.textContent = currentCount.toString()
+				if (currentCount <2) {
+					first.textContent = '1';
+					min.style.display = 'none';
+				}
+			}
+    });
+//plus
+    tbody.addEventListener('click', (event) => {
+      const plus = event.target.closest('.qty-plus-button');
+      const plusCount = event.target.closest('.td-for-relative');
+      const second = plusCount.firstChild;
+      if (plus) {
+          currentCount = parseInt(second.innerHTML);
+          ++currentCount;
+			 second.textContent = currentCount.toString()
+			 if (min.style.display == 'none') min.style.display = 'inline'
+      }
+  });
+    // delete-btn
+    tbody.addEventListener('click', (event) => {
+        if (event.target.className == 'focused') return;
+        const pane = event.target.closest('.delete-btn');
+        const paneTwo = event.target.closest('.row');
+        if (pane && paneTwo) paneTwo.remove();
+    });
 })

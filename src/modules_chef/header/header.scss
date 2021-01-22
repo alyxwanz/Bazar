@@ -68,3 +68,13 @@
 		@include hover-button;
 	}
 }
+
+.header__container-links { 
+	background-color: $color_white;
+}
+.header__container-links a {
+	color: $color_dark;
+}
+.header__nav-link-container-drop {
+	color: $color_dark;
+}

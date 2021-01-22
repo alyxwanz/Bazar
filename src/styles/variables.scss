@@ -112,3 +112,46 @@ button.active_end {
 	background-color: $color_light-pear;
 
 }
+
+.header__nav-link-container-drop {
+	cursor: pointer;
+ }
+
+ .header__nav-link-container {
+	position: relative;
+	display: inline-block;
+
+ }
+
+.header__container-links {
+	display: none;
+	position: absolute;
+	background-color: $color_dark;
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 16px;
+	left: -6px;
+ }
+
+ .header__container-links a {
+	color: $color_white;
+	padding: 6px 0 6px 6px;
+	text-decoration: none;
+	display: block;
+
+ }
+ 
+
+ .header__container-links a:hover {
+	 color: $color_orange;
+}
+
+ .header__nav-link-container:hover .header__container-links {
+
+	display: block;
+ }
+ .header__nav-link-container:hover .header__nav-link-container-drop {
+
+	color: $color_orange;
+ }

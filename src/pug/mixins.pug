@@ -20,7 +20,11 @@ mixin header-menu()
     li.header__nav-item
       a.header__nav-link.sintony-bold.fz14.blog-page.color_white(href='./blog.html') blog
     li.header__nav-item
-      a.header__nav-link.sintony-bold.fz14.pages-page.color_white(href='./pages.html') pages
+      .header__nav-link-container
+        span.header__nav-link-container-drop.sintony-bold.fz14.pages-page.color_white pages
+          .header__container-links
+            a.header__container-link.sintony-bold.fz14.pages-page.color_white(href='./chef.html') chef
+            a.header__container-link.sintony-bold.fz14.pages-page.color_white(href='./event.html') event
     li.header__nav-item
       a.header__nav-link.sintony-bold.fz14.contact-page.color_white(href='./contact.html') contact
 
@@ -124,3 +128,15 @@ mixin archive(month, summ)
 mixin tags(name)
   .blog__sidebar-tags-container-item
     span.blog__sidebar-tags-container-item-name.sintony-bold.fz14.color_pear= name
+
+mixin content-item(photo, name, stars, text)
+  .content__flex-container
+    .content__flex-container-photo
+      img.content__flex-container-photo-icon(src= photo alt='food' srcset='')
+    .content__flex-container-content
+      h3.content__flex-container-content-title.playfair-bold.fz22.color_dark= name
+      .content__flex-container-content-stars
+        img.content__flex-container-content-stars-icon_stars(src= stars alt='rate' srcset='')
+      p.content__flex-container-content-text.sintony-normal.fz14.color_lighter-gray= text
+      .content__flex-container-content-btn_item
+      a.content__flex-container-content-btn_item-button.btn.sintony-bold.fz14.color_white recipe details
