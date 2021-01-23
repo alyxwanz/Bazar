@@ -1,0 +1,34 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $color_dark;
+	z-index: 999;
+	transition: all 1s;
+	opacity: 1;
+	visibility: visible;
+
+}
+.img-load {
+	display: inline-block;
+	position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+animation: 1s spin infinite linear;
+}
+.done {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes spin {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
