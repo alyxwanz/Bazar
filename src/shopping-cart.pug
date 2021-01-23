@@ -9,6 +9,7 @@ html(lang="en")
     link(rel='stylesheet' href='./styles/style_shopping-cart.css')
     title Shopping-cart
   body
+    include ./preloader/preloader.pug
     include ./pug/mixins.pug
     include ./modules_shopping-cart/header/header.pug
     include ./modules_shopping-cart/main-title/main-title.pug
@@ -16,5 +17,6 @@ html(lang="en")
     include ./modules_shopping-cart/related_products/related_products.pug
     include ./modules_shopping-cart/footer/footer.pug
     script
+      include ./js/preloader/preloader.js
       include ./js/index_js/burger.js
       include ./js/shopping-cart_js/counting.js
