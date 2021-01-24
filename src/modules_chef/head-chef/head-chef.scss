@@ -22,9 +22,12 @@
 }
 
 .double-part-info {
-    // background-image: url("./../images/chef/food_vector_bg.png");
+    background-image: url("./../images/chef/food_vector_bg.png");
     width: 600px;
     padding: 45px;
+    background-position-x: -526px;
+    background-position-y: -19px;
+    border: 1px solid #ebebeb;
 }
 
 .double-part-expertise {
