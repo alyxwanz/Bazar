@@ -1,15 +1,19 @@
 .chef {
+    display: flex;
     padding-top: 100px;
 }
 
+
 .chef__wrapper {
     margin: 0 auto;
-    display: flex;
+
 }
 
 .double-part {
     display: flex;
     box-shadow: 0px 46px 57px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 100px;
+    padding-top: 25px;
 }
 
 
@@ -22,17 +26,19 @@
 }
 
 .double-part-info {
-    background-image: url("./../images/chef/food_vector_bg.png");
+    display: block;
+    background-image: url("./../images/chef/food_vector_bg3.png");
     width: 600px;
     padding: 45px;
     background-position-x: -526px;
-    background-position-y: -19px;
+    background-position-y: -21px;
     border: 1px solid #ebebeb;
 }
 
 .double-part-expertise {
     padding-top: 45px;
     padding-bottom: 20px;
+
 }
 
 .inner-name {
