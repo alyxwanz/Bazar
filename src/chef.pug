@@ -9,6 +9,7 @@ html(lang="en")
     link(rel='stylesheet' href='./styles/style_chef.css')
     title Chef
   body
+    include ./preloader/preloader.pug
     include ./pug/mixins.pug
     include ./modules_chef/header/header.pug
     include ./modules_chef/main-title/main-title.pug
@@ -18,3 +19,4 @@ html(lang="en")
     include ./modules_chef/footer/footer.pug
     script
       include ./js/index_js/burger.js
+      include ./js/preloader/preloader.js

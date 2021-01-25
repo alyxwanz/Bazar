@@ -9,6 +9,7 @@ html(lang="en")
     link(rel='stylesheet' href='./styles/style_blog.css')
     title Blog
   body
+    include ./preloader/preloader.pug
     include ./pug/mixins.pug
     include ./modules_blog/header/header.pug
     include ./modules_blog/main-title/main-title.pug
@@ -17,3 +18,5 @@ html(lang="en")
     include ./modules_blog/footer/footer.pug
     script
       include ./js/index_js/burger.js
+      include ./js/blog_js/like.js
+      include ./js/preloader/preloader.js

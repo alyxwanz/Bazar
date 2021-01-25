@@ -4,10 +4,6 @@ window.addEventListener('load', () => {
     const subtotalSummary = document.querySelectorAll('.total-value');
     let subtotalArr = []
 
-    
-
-    
-
     const summarySubtotal = document.querySelector('.summary-price')
     const taxSubtotal = parseInt(document.querySelector('.tax-price').innerHTML)
     const orderTotalSubtotal = document.querySelector('.order-total-price')
@@ -48,9 +44,6 @@ window.addEventListener('load', () => {
             totalValueCount.textContent = totalPrice.toString()
             return totalValue
 
-            // console.log(priceCount.innerHTML);
-            // console.log(parseInt(quantityCount.innerHTML));
-            // console.log(totalValueCount.innerHTML);
         };
 
         if (min) {        
@@ -94,8 +87,6 @@ window.addEventListener('load', () => {
       getTotalPrice()
       countSummary()
 
-
-
   });
     // delete-btn
     tbody.addEventListener('click', (event) => {
@@ -104,10 +95,5 @@ window.addEventListener('load', () => {
         const paneTwo = event.target.closest('.row');
         if (pane && paneTwo) paneTwo.remove();
     });
-
-
-
-
-
 
 })

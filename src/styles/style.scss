@@ -3,6 +3,7 @@
 @import "./color.scss";
 @import "./fontsize.scss";
 @import "./variables.scss";
+@import "./../preloader/preloader.scss";
 @import "./../modules/header/header.scss";
 @import "./../modules/menu/menu.scss";
 @import "./../modules/reserve-form/reserve-form.scss";
@@ -17,6 +18,8 @@
 @import "./../responsive_web_design/rwd_home-page/hp_gallery.scss";
 @import "./../responsive_web_design/rwd_home-page/hp_reserve-form.scss";
 @import "./../responsive_web_design/rwd_home-page/hp_schedule.scss";
+@import "./../modules_menu/menu-header/menu-header.scss";
+
 
 
 
@@ -24,4 +27,9 @@
 body {
 	margin: 0;
 	box-sizing: border-box;
+}
+
+.mr {
+	margin: 0;
+	background-color: gray;
 }
