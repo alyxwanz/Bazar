@@ -11,22 +11,24 @@ section.product-cart
                             th.product-table-qty Qty
                             th.product-table-subtotal Subtotal
                     tbody.playfair-bold.fz15#tbody
-                        tr.row#row
-
+                        tr.row
+ 
                             td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Green Mung Beas
                                 span.delete-btn
-                            td $ 
-                                span#price 100
+                            td 
+                                span $ 
+                                span.price-value 100
                             td.td-for-relative
-                                span.qty-count#count 1
-                                span.qty-plus-button#plus-button 
+                                span.qty-count 1
+                                span.qty-plus-button 
                                     img(src="./images/shopping-cart/add.png", alt="btn_+")
-                                span.qty-minus-button#minus-button
+                                span.qty-minus-button
                                     img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
-                            td $ 
-                                span#total 100
+                            td 
+                                span $ 
+                                span.total-value 100
                                     
                         tr.row
 
@@ -34,48 +36,58 @@ section.product-cart
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Laird Green Ientils
                                 span.delete-btn
-                            td $ 
-                                span#price 100
+                            td 
+                                span $  
+                                span.price-value 100
                             td.td-for-relative
-                                span.qty-count#count 1
-                                span.qty-plus-button#plus-button 
+                                span.qty-count 1
+                                span.qty-plus-button 
                                     img(src="./images/shopping-cart/add.png", alt="btn_+")
-                                span.qty-minus-button#minus-button
+                                span.qty-minus-button
                                     img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
-                            td $ 
-                                span#total 100
+                            td 
+                                span $ 
+                                span.total-value 100
                         tr.row
 
                             td.for-button  
                                 img.shopping-cart__image(src='./images/shopping-cart/image.png' alt='image' srcset='')
                                 | Fava Bean
                                 span.delete-btn
-                            td $ 
-                                span#price 100
+                            td 
+                                span $ 
+                                span.price-value 100
                             td.td-for-relative 
-                                span.qty-count#count 1
-                                span.qty-plus-button#plus-button 
+                                span.qty-count 1
+                                span.qty-plus-button 
                                     img(src="./images/shopping-cart/add.png", alt="btn_+")
-                                span.qty-minus-button#minus-button
+                                span.qty-minus-button
                                     img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
 
-                            td $ 
-                                span#total 100
+                            td 
+                                span $ 
+                                span.total-value 100
             .product-cart.sidebar-part
                 .product-cart.product-cart-sidebar-wrap.color-bg_pink.color_white
                     .product-cart.summary-wrap.bordered 
                         .product-cart.summary-title.playfair-bold.fz22 Summary
                         .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
                             .summary-row Subtotal
-                            .summary-row : $300
+                            .summary-row 
+                                span : $
+                                span.summary-price 
                         .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
                             .summary-row Shipping cost
                             .summary-row : $0
                         .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
                             .summary-row Tax
-                            .summary-row : $10
+                            .summary-row
+                                span : $
+                                span.tax-price 10
                     .product-cart.order-wrap
                         .product-cart.summary-costs.sintony-bold.fz15
                             .summary-row Order Total
-                            .summary-row : $310
-                        a.product-cart.btn.checkout-btn.sintony-bold.fz14(href='./checkout.html') Go to checkout
+                            .summary-row
+                                span : $
+                                span.order-total-price 
+                        .product-cart.btn.checkout-btn.sintony-bold.fz14(href='#') Go to checkout
