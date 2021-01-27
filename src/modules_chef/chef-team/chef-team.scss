@@ -1,123 +1,121 @@
-.chef-team__title {
-    padding-top: 100px;
-    padding-bottom: 30px;
-}
-
-.chef-team-bg-image {
+.chef-team {
+    padding: 100px 0;
     background-image: url("./../images/chef/bg_image.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-}
-
-.chef-team__first-row {
-    display: inline-flex;
-}
-.chef-team__second-row {
-    display: inline-flex;
-    padding-bottom: 100px;
-}
-.wrap {
-    position: relative;
-    border: 1px solid #ebebeb;
-    margin-right: 30px;
-    margin-bottom: 60px;
-}
-
-.chef-team-item:hover::before {
-    opacity: 0.97;
-
-}
-
-.chef-team-item::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fe4c8d;
-    opacity: 0;
-    transition: all 0.3s;
-
-}
-.chef-team-item-inner {
-    width: 268px;
-    height: 348px;
-    position: absolute;
-    transition: all 0.3s;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    color: #fff;
-    &:hover {
-        opacity: 1;
+    &__wrapper {
+        width: 1170px;
+        margin: 0 auto;
     }
-}
+
+    &__title {
+        padding-bottom: 20px;
+    }
+        
+    &__first-row {
+        display: inline-flex;
+    }
+
+    &__wrap {
+        position: relative;
+        border: 1px solid #ebebeb;
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__chef-team-item:hover::before {
+        opacity: 0.97;
+    }
+
+    &__chef-team-item::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fe4c8d;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    &__chef-team-item-inner {
+        width: 268px;
+        height: 348px;
+        position: absolute;
+        transition: all 0.3s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: #fff;
+        &:hover {
+            opacity: 1;
+        }
 
 
-.cheff-name-inner {
-    padding-top: 50px;
-    text-align: center;
-}
+    }
 
-.cheff-desc {
-    text-align: center;
-    line-height: 1.857;
-    padding-top: 25px;
-    width: 210px;
-    padding-left: 25px;
-    padding-bottom: 40px;
-}
+    &__cheff-name-inner {
+        padding-top: 50px;
+        text-align: center;
+    }
 
-.chef-team-social {
-    display: inline-flex;
-    padding-left: 65px;
-}
-
-.cheff-photo {
-    width: 268px;
-    height: 262px;
-}
-
-.rectangle-bottom {
-    width: 268px;
-    height: 85px;
-}
-
-.cheff-name {
-    padding-top: 20px;
-    text-align: center;
-}
-
-.add-bottom {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -22px;
-    left: 112px;
-    z-index: 1;
-}
-
-.plus-bottom {
-    background: white;
-    height: 20px; 
-    width: 4px;
-    position: relative; 
-    left: 20px;
-    top: 12px;
-    &::after
-    {
-        content: "";
-        height: 3px; 
-        width: 20px;
+    &__cheff-desc {
+        text-align: center;
+        line-height: 1.857;
+        padding-top: 25px;
+        width: 210px;
+        padding-left: 25px;
+        padding-bottom: 40px;
+    }
+    
+    &__chef-team-social {
+        display: inline-flex;
+        padding-left: 65px;
+    }
+    
+    &__cheff-photo {
+        width: 268px;
+        height: 262px;
+    }
+    
+    &__rectangle-bottom {
+        width: 268px;
+        height: 85px;
+    }
+    
+    &__cheff-name {
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    &__add-bottom {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -22px;
+        left: 112px;
+        z-index: 1;
+    }
+    
+    &__plus-bottom {
         background: white;
-        position: absolute; 
-        left: -8px; 
-        top: 9px;
+        height: 20px; 
+        width: 4px;
+        position: relative; 
+        left: 20px;
+        top: 12px;
+        &::after {
+            content: "";
+            height: 3px; 
+            width: 20px;
+            background: white;
+            position: absolute; 
+            left: -8px; 
+            top: 9px;
+        }
     }
 }
-
-
