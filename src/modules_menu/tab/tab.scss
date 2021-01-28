@@ -116,3 +116,29 @@ body {
 .active {
     display: block;
 }
+
+.menu__template-text {
+    width: 310px;
+    display: inline;
+}
+.template-headline {
+    display: block;
+}
+
+.template-disc {
+    display: block;
+}
+
+.template-price {
+    display: inline-block;
+    color: #fea100;
+    position: absolute;
+    right: 40px;
+}
+
+.menu__template-item {
+    display: flex;
+    list-style: none;
+    position: relative;
+
+}

@@ -111,7 +111,7 @@
         "id": "13",
         "name": "Cinnamon Rolls",
         "type": ["All", "Breakfast"],
-        "description": "",
+        "description": "Just cinnamon rolls",
         "today special": false,
         "price": "33,00",
         "img": "../images/json/cinnamon-rolls.jpg"
