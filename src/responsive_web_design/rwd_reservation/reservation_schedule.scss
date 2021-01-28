@@ -11,7 +11,15 @@
 		}
 		&__text {
 			font-size: $fz18;
-			padding-right: 30px;
+			padding-right: 25px;
+		}
+	}
+}
+@media (max-width: 1068px) {
+	.schedule {
+		&__title {
+			font-size: $fz22;
+			margin-right: 30px;
 		}
 	}
 }
@@ -40,7 +48,11 @@
 		}
 	}
 }
-
+@media (max-width: 620px) {
+	.schedule__time {
+		display: block;
+	}
+}
 @media (max-width: 576px) {
 	.schedule {
 		width: 80%;

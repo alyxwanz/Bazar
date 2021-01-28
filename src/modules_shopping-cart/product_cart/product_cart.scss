@@ -1,156 +1,171 @@
 .product-cart {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .product-cart__wrapper {
-    .product-cart__title {
-        margin-top: 100px;
-        margin-bottom: 35px;
-    }
+	.product-cart__title {
+		margin-top: 100px;
+		margin-bottom: 35px;
+	}
 }
 
 .product-cart__table-part {
-    display: flex;
-    margin-right: 32px;
+	display: flex;
+	margin-right: 32px;
 }
 
 .product-cart__table {
-    width: 809px;
+	width: 809px;
 }
 
 
 thead {
-    th {
-        border-bottom: 1px solid #e4e4e4;
-        padding-bottom: 15px;
-        text-align: inherit;
-    }
+	th {
+		border-bottom: 1px solid #e4e4e4;
+		padding-bottom: 15px;
+		text-align: inherit;
+	}
 }
 
 .product-table-item {
-    width: 376px;
+	width: 376px;
 }
 
 .product-table-price {
-    width: 138px;
+	width: 138px;
 }
 
 .product-table-qty {
-    width: 158px;
+	width: 158px;
 }
 
 .product-table-subtotal {
-    width: 138px;
+	width: 138px;
 }
 
 tbody {
-    img {
-        margin-right: 30px;
-    }
-    td {
-        padding: 20px 0;
-        border-bottom: 1px solid #e4e4e4;
-    }
-    .td-for-relative {
-        position: relative;
-        .qty-plus-button {
-            position: absolute;
-            left: 50px;
-            cursor: pointer;
-        }
-        .qty-minus-button {
-            width: 20px;
-            position: absolute;
-            right: 58px;
-            cursor: pointer;
-        }
-    }
-    &:first-child {
-            padding-right: 30px;
-        }
-    .qty-count {
-        padding: 15px 25px;
-        border: 1px solid #e4e4e4;
-    }
+	img {
+		margin-right: 30px;
+	}
+	td {
+		padding: 20px 0;
+		border-bottom: 1px solid #e4e4e4;
+	}
+	.td-for-relative {
+		position: relative;
+		.qty-plus-button {
+			position: absolute;
+			left: 50px;
+			cursor: pointer;
+		}
+		.qty-minus-button {
+			width: 20px;
+			position: absolute;
+			right: 58px;
+			cursor: pointer;
+		}
+	}
+	&:first-child {
+			padding-right: 30px;
+		}
+	.qty-count {
+		padding: 15px 25px;
+		border: 1px solid #e4e4e4;
+	}
 }
 
 .sidebar-part {
-    height: 365px;
+	height: 365px;
 }
-                 
+					
 .product-cart-sidebar-wrap {
-    display: unset;
-    border: 1px dashed #e4e4e4;
-    box-shadow: 0px 0px 0px 10px #fe4c8d;
-    margin-left: 46px;
+	display: unset;
+	border: 1px dashed #e4e4e4;
+	box-shadow: 0px 0px 0px 10px #fe4c8d;
+	margin-left: 46px;
 }
 
 .summary-wrap {
-    display: block;
-    padding: 30px 30px 10px;
+	display: block;
+	padding: 30px 30px 10px;
 }
 
 .bordered {
-    border-bottom: 1px dashed #e4e4e4;
+	border-bottom: 1px dashed #e4e4e4;
 }
 
 .summary-title {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .summary-costs {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .summary-row {
-    padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .order-wrap {
-    display: block;
-    padding: 15px 30px;
+	display: block;
+	padding: 15px 30px;
 }
 
 .checkout-btn {
-    display: inline-block;
-    padding: 20px 37px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 7px;
-    margin: 30px 0 75px;
-    cursor: pointer;
+	display: inline-block;
+	padding: 20px 37px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 7px;
+	margin: 30px 0 75px;
+	cursor: pointer;
 }
 
 .for-button {
-    position: relative;
+	position: relative;
 }
 
 .delete-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: red;
-    position: absolute;
-    z-index: 1;
-    left: 78px;
-    top: 28px;
+	position: relative;
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	background: $color_pink;
+	position: absolute;
+	z-index: 1;
+	left: 96px;
+	top: 10px;
+	border: 2px solid $color_white;
 
-    &:hover {
-        //ЭТО ХОРОШО!
-        width: 27px;
-        height: 27px;
-        box-shadow: 0px 0px 6px 7px red;
-        border-radius: 50%;
-        background: red;
-        position: absolute;
-        z-index: 1;
-        left: 80px;
-        top: 30px; 
-    }
+	&:hover {
+		border: 2px solid $color_orange;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+	}
+	&::before, &::after {
+		position: absolute;
+		content: '';
+		width: 20px;
+		height: 3px;
+		background-color: $color_white;
+		z-index: 2;
+		border-radius: 20px;
+		top: 45%;
+		left: 12%;
+
+	}
+	&::before {
+		transform: rotate(-45deg);
+	}
+	&::after {
+	transform: rotate(45deg);
 }
 
+	}
+
 .focused {
-    display: none;
+	display: none;
 }

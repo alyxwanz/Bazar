@@ -1,6 +1,8 @@
-//1024 PX
-@media (min-width: 1024px) {
+
+@media (min-width: 998px) {
 	.header {
+		height: 100%;
+		
 		&__slider {
 			padding: 0 30px;
 			margin: 0 auto 200px;
@@ -18,8 +20,13 @@
 // 998 PX
 @media (max-width: 998px) {
 	.header {
-		padding: 10px;
-		height: 100vh;
+		height: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		&__menu {
+			margin: 0 auto 200px;
+		}
 
 		.header__nav {
 			&-list {
@@ -57,10 +64,21 @@
 			}
 		}
 
+		&__slider-title {
+			font-size: $fz51;
+			span {
+				display: block;
+				font-size: $fz40;
+			}
+		}
 		&__slider {
-			padding: 0 30px;
-			&-info {
-				padding-top: 100px;
+			width: 85%;
+			padding: 0 18px;
+			&-btn-left,
+			&-btn-right {
+				width: 30px;
+				height: 30px;
+				top: 30%;
 			}
 		}
 	}
@@ -74,6 +92,7 @@
 		transition: all 0.5s;
 	}
 	.header {
+		height: 100%;
 		&__menu {
 			justify-content: space-between;
 			position: relative;
@@ -92,8 +111,6 @@
 		&__nav-current {
 			font-size: $fz25;
 		}
-		height: 100%;
-
 		&__burger {
 			display: block;
 			position: relative;
@@ -145,12 +162,10 @@
 		&__logo {
 			margin-right: 15px;
 		}
-
 		&__nav {
-			margin-left: -10px;
 			z-index: 100;
-			height: 100vh;
-			width: 100vw;
+			height: 100%;
+			width: 100%;
 			flex-direction: column;
 			background-color: $color_orange;
 			position: fixed;
@@ -169,52 +184,32 @@
 		}
 
 		&__slider-title {
-			font-size: $fz51;
+			font-size: $fz40;
 			span {
-				font-size: $fz40;
+				display: block;
+				font-size: $fz30;
 			}
 		}
 		&__slider-subtitle {
 			display: inline;
 		}
 		&__slider {
-			width: 90%;
-			padding: 0;
+			width: 85%;
+			padding: 0px 16px;
 			&-btn-left,
 			&-btn-right {
-				width: 30px;
-				height: 30px;
+				width: 25px;
+				height: 25px;
 				top: 30%;
 			}
 		}
 	}
 }
-
+//СМОТРЕТЬ ЗДЕСЬ ШИРИНУ СЛАЙДЕРА
 // 576 PX
 @media (max-width: 576px) {
 	.header {
 		min-height: 100%;
-		&__slider-title {
-			font-size: $fz42;
-			span {
-				font-size: $fz35;
-			}
-		}
-		&__slider {
-			width: 85%;
-			padding: 0 30px;
-		}
-	}
-}
-
-//479 PX
-@media (max-width: 479px) {
-	.header {
-		height: 100vh;
-		&__logo {
-			display: none;
-		}
-
 		&__slider-title {
 			font-size: $fz30;
 			span {
@@ -232,6 +227,17 @@
 				top: 30%;
 			}
 		}
+	}
+}
+// -------------------------
+//479 PX
+@media (max-width: 479px) {
+	.header {
+		min-height: 100%;
+		&__logo {
+			display: none;
+		}
+		}
 		.header__slider-info {
 			&-phone {
 				padding-top: 30px;
@@ -241,10 +247,12 @@
 			}
 		}
 	}
-}
+
 //376 PX
 @media (max-width: 376px) {
 	.header {
+		min-height: 100vh;
+		padding-top: 40px;
 		&__slider-title {
 			font-size: $fz28;
 			span {
@@ -260,6 +268,7 @@
 //320 PX
 @media (max-width: 320px) {
 	.header {
+		min-height: 100%;
 		&__book-btn {
 			margin-left: 0;
 		}

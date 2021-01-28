@@ -155,3 +155,12 @@ button.active_end {
 
 	color: $color_orange;
  }
+
+ @media (max-width: 570px) {
+	 .main-subtitle {
+		 font-size: $fz26;
+	 }
+	 .main-title_img {
+		margin: -12px 0 0;
+  }
+ }

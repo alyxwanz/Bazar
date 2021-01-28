@@ -28,6 +28,19 @@
 		}
 	}
 }
+@media (max-width: 580px) {
+	.footer {
+	&__nav-link {
+		font-size: $fz22;
+	}
+	&__nav-item {
+		text-align: center;
+	}
+	&__nav {
+		margin-bottom: 100px;
+	}
+}
+}
 @media (max-width: 479px) {
 	.footer {
 		padding-bottom: 20px;
@@ -35,7 +48,6 @@
 			font-size: $fz11;
 		}
 		&__column-title {
-			font-size: $fz15;
 			text-align: center;
 		}
 		&__copyright-text {
@@ -52,9 +64,6 @@
 		}
 		&__column {
 			padding: 0 5px;
-		}
-		&__nav-link {
-			font-size: $fz12;
 		}
 	}
 	.form-block {

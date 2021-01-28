@@ -32,9 +32,10 @@
         position: relative;
     }
     
-    // .star-icon {
-    //     background-color: red;
-    // }
+    .star-icon {
+		  display: block;
+		  margin-top: -13px;
+    }
 
     .evaluation {
         width: 40px;
@@ -58,6 +59,7 @@
     
     
     .add-to-cart {
+		 cursor: pointer;
         width: 44px;
         height: 44px;
         border-radius: 50%;

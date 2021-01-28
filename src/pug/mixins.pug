@@ -21,7 +21,7 @@ mixin header-menu()
       a.header__nav-link.sintony-bold.fz14.blog-page.color_white(href='./blog.html') blog
     li.header__nav-item
       .header__nav-link-container
-        span.header__nav-link-container-drop.sintony-bold.fz14.pages-page.color_white pages
+        span.header__nav-link.header__nav-link-container-drop.sintony-bold.fz14.pages-page.color_white pages
           .header__container-links
             a.header__container-link.sintony-bold.fz14.pages-page.color_white(href='./chef.html') chef
             a.header__container-link.sintony-bold.fz14.pages-page.color_white(href='./event.html') event
@@ -45,19 +45,18 @@ mixin footer-menu()
     li.footer__nav-item.footer-margin
       a.footer__nav-link.sintony-normal.fz14.contact-page_f(href='./contact.html') Contact us
 
-mixin feedback()
+mixin feedback(url, name, comment)
   .feedback-slider__block
-    .feedback-slider__img.color-bg_medium-gray
+    .feedback-slider__img
+      img(src= url alt='person' srcset='')
     .feedback-slider__text.playfair-bold
-      h3.feedback-slider__headline.playfair-bold.fz25.color_dark
-        | Best atmosphere and food
+      h3.feedback-slider__headline.playfair-bold.fz25.color_dark= comment
       p.feedback-slider__disc.sintony-normal.fz15.color_less-dark
         | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
         | model text, and a search for &apos;lorem ipsum&apos; will uncover many web sites still in their infancy.
         | Various versions have evolved over the years, sometimes by accident.
       span.feedback-slider__line
-      span.feedback-slider__name.sintony-bold.fz16.color_dark
-        | Dr. Prabakaran John
+      span.feedback-slider__name.sintony-bold.fz16.color_dark= name
       .feedback-slider__stars
         img.feedback-slider__icon(src='./images/feedback-slider/stars.png' alt='stars' srcset='')
 

@@ -5,7 +5,9 @@
 
 .address__block-one {
     position: relative;
-    height: 510px;
+	 min-height: 510px;
+	 display: flex;
+	 justify-content: center;
 }
 
 .address__double-part {

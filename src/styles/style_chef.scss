@@ -10,9 +10,9 @@
 @import "./../modules_chef/chef-team/chef-team.scss";
 @import "./../modules_chef/schedule/schedule.scss";
 @import "./../modules_chef/footer/footer.scss";
-// @import "./../responsive_web_design/rwd_about-us/about-us_header.scss";
-// @import "./../responsive_web_design/rwd_about-us/about-us_schedule.scss";
-// @import "./../responsive_web_design/rwd_about-us/about-us_footer.scss";
+@import "./../responsive_web_design/rwd_chef/chef_header.scss";
+@import "./../responsive_web_design/rwd_chef/chef_schedule.scss";
+@import "./../responsive_web_design/rwd_chef/chef_footer.scss";
 
 body {
 	margin: 0;

@@ -1,9 +1,11 @@
 .create-account__wrapper {
     margin: 0 auto;
-    width: 645px;
+    max-width: 645px;
     padding: 100px 0;
 }
-
+.create-account {
+	line-height: 23px;
+}
 .account-title {
     text-align: center;
     padding-bottom: 30px;
@@ -33,7 +35,7 @@
 
 .account-btn {
     display: inline-block;
-    padding: 20px 37px;
+    padding: 17px 37px;
     margin: 0 auto;
 
     border: none;

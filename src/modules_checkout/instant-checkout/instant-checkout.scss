@@ -60,7 +60,7 @@
 
 .checkout-sidebar-title {
     padding-bottom: 20px;
-    padding-left: 25px;
+    text-align: center;
 }
 
 .wrap1 {
@@ -89,16 +89,8 @@
 
 .checkout-product-list {
     display: flex;
-    justify-content: space-between;
-}
-
-.checkout-list {
-    padding: 0 65px 20px 25px;
-}
-
-.checkout-head {
-    padding-right: 65px;
-    padding-left: 25px;
+	 justify-content: space-between;
+	 padding-bottom: 20px;
 }
 
 .tax-part {
@@ -121,7 +113,8 @@
 }
 
 .payment-wrap {
-    padding-left: 30px;
+	margin-left: 30px;
+    display: flex;
 }
 
 .payment-service {
