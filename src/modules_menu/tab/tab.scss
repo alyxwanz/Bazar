@@ -117,28 +117,42 @@ body {
     display: block;
 }
 
+.menu {
+    &__template-item {
+        display: flex;
+        list-style: none;
+        padding-top: 25px;    
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    &__template-headline {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    &__template-disc {
+        display: block;
+        padding-bottom: 25px;
+    }
+
+    &__template-price {
+        color: #fea100;
+        &__template-currency {
+            color: #fea100;
+        }
+        &__template-value {
+            color: #fea100;
+        }
+    }
+}
 .menu__template-text {
     width: 310px;
-    display: inline;
-}
-.template-headline {
-    display: block;
 }
 
-.template-disc {
-    display: block;
-}
 
-.template-price {
-    display: inline-block;
-    color: #fea100;
-    position: absolute;
-    right: 40px;
-}
 
-.menu__template-item {
-    display: flex;
-    list-style: none;
-    position: relative;
 
-}
+
+
+
+
