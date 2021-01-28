@@ -3,84 +3,125 @@
         | Menu List View
     .tab
         button.tablinks(data-id='All')
-            img.svg-icon(src='images/menu/menu_list/all.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_all.png' alt='icon_all' srcset='')
             |                 All
         button.tablinks(data-id='Breakfast')
-            img.svg-icon(src='images/menu/menu_list/Breakfast.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_breakfast.png' alt='icon_breakfast' srcset='')
             |                 Breakfast
         button.tablinks(data-id='Lunch')
-            img.svg-icon(src='images/menu/menu_list/Lunch.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_lunch.png' alt='icon_lunch' srcset='')
             |                 Lunch
         button.tablinks(data-id='Snacks')
-            img.svg-icon(src='images/menu/menu_list/Snacks.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_snacks.png' alt='icon_snacks' srcset='')
             |                 Snacks
         button.tablinks(data-id='Pizza')
-            img.svg-icon(src='images/menu/menu_list//Pizza.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_pizza.png' alt='icon_pizza' srcset='')
             |                 Pizza
         button.tablinks(data-id='Soups')
-            img.svg-icon(src='images/menu/menu_list//Soups.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_soups.png' alt='icon_soups' srcset='')
             |                 Soups
         button.tablinks(data-id='Dinner')
-            img.svg-icon(src='images/menu/menu_list//Dinner.svg' alt='' srcset='')
+            img.svg-icon(src='images/menu/menu_list/icon_dinner.png' alt='icon_dinner' srcset='')
             |                 Dinner
     .tab-wrap
         #All.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Ultimate organic fruit salad
-                    p survived not only five centuries but the leap
+                    +menu-item("Ultimate organic fruit salad", "survived not only five centuries but the leap", "50,00")
+                    +menu-item("Toasts and Jam", "Rustic breads, scones, and biscuits paired with fruit-jams, jellies, nut butters, savory spreads, pickles, and more", "45,00")
+                    +menu-item("Eggs Benedict", "Eggs with a toasted english muffin, topped with a slice of Canadian bacon", "40,00")
+                    +menu-item("Croissants", "Awwww, croissants!", "20,00")
+                    +menu-item("Spinach and feta on flat bread", "Traditional turkish lunch", "55,00")
+                    +menu-item("Pasta with tuna", "Italian tradinional lunch. Olives and fresh tomatoes included", "60,00")
+                    +menu-item("Grilled Lamb and Feta Pita Sandwiches", "Healthy and delicious", "44,75")
+                    +menu-item("Organic european style yogurt", "Crafted with pure, simple ingredients, and minimally processed.", "15,00")
+                    +menu-item("Jaffa Cakes", "Light and delicious snacks from Scotland", "10,00")
+                    +menu-item("Pizza Marinara", "Neapolitan pizza in Italian cuisine seasoned with only tomatoes, extra virgin olive oil, oregano and garlic", "89,00")
+                    +menu-item("Pizza Meat&Cheese", "Get a taste of what you have been missing and get a mouthful of Hand-tossed Pizzas you deserve", "80,00")
+                    +menu-item("Chicken Noodles", "Mary Cadogan's aromatic broth will warm you up on a winter's evening - it contains ginger, which is particularly good for colds", "89,00")
+                    +menu-item("Soup Miso", "Traditional japanese soup with tofu, egg and kimchi", "38,50")
+                    +menu-item("Soup Borsch", "Traditional ukrainian red soup with sour cream", "75,00")
+                    +menu-item("Black Label Burger", "Prime dry-aged beef, carefully sourced and aged for six to seven weeks", "85,00")
+                    +menu-item("Buffalo Wings", "Buffalo Wings is always Buffalo Wings", "75,00")
+                    +menu-item("Chicken for Two", "Chicken with a dry brine before being dried, seasoned and cooked in a very hot oven", "100,00")
                 .tabcontent-inner
-                    h3 Ultimate organic fruit salad
-                    p survived not only five centuries but the leap
+                    +menu-item("Pancakes and Maple Syrup", "A zesty take on American pancakes with orange zest in the batter and segments on top. All doused with lashings of maple syrup", "68,00")
+                    +menu-item("Cinnamon Rolls", "Just cinnamon rolls", "33,00")
+                    +menu-item("Shawarma", "Shawarma with chicken or pork, maded by world famous shawarmamen Ashot", "25,00")
+                    +menu-item("Feijoada with rice and coconut water", "Bean stew looks flavorful, hearty and nutritious", "67,00")
+                    +menu-item("Schnitzel with salad and herby potatoes", "Austrian traditional lunch. Yumm!", "45,00")
+                    +menu-item("A lot of butter", "It's a thrill! Ice cream!", "99,99")
+                    +menu-item("Gansito", "A Mexican snack cake that is filled with both strawberry jelly and a creamy filling", "25,25")
+                    +menu-item("Pizza Caesar", "Pizza based on Caesar sauce with mozzarella, bacon, chicken fillet, iceberg salad leaves and parmesan cheese", "95,00")
+                    +menu-item("Pizza Dolce", "Sweet pizza with chokolate and fruits", "85,00")
+                    +menu-item("Soup Tom Yam", "Spicy and hot vietnamese soup", "45,00")
+                    +menu-item("Soup Okroshka", "Traditional fresh russian soup", "68,00")
+                    +menu-item("Blackened Redfish", "The dish starts with a blend of spices, applied liberally to the Gulf fish before it’s seared with a little clarified butter in a ripping-hot cast-iron pan", "110,00")
+                    +menu-item("Charbroiled Oysters", "Gulf oysters from Louisiana are some of the plumpest and tastiest in the country", "140,00")
         #Breakfast.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Lorem, ipsum.
-                    p
-                        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus dolores non.
+                    +menu-item("Ultimate organic fruit salad", "survived not only five centuries but the leap", "50")
+                    +menu-item("Toasts and Jam", "Rustic breads, scones, and biscuits paired with fruit-jams, jellies, nut butters, savory spreads, pickles, and more", "45,00")
+                    +menu-item("Eggs Benedict", "Eggs with a toasted english muffin, topped with a slice of Canadian bacon", "40,00")
+                    +menu-item("Croissants", "Awwww, croissants!", "20,00")
                 .tabcontent-inner
-                    h3 Lorem, ipsum.
-                    p
-                        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus dolores non.
+                    +menu-item("Pancakes and Maple Syrup", "A zesty take on American pancakes with orange zest in the batter and segments on top. All doused with lashings of maple syrup", "68,00")
+                    +menu-item("Cinnamon Rolls", "Just cinnamon rolls", "33,00")
+                    +menu-item("Shawarma", "Shawarma with chicken or pork, maded by world famous shawarmamen Ashot", "25,00")
+
         #Lunch.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!
+                    +menu-item("Spinach and feta on flat bread", "Traditional turkish lunch", "55,00")
+                    +menu-item("Pasta with tuna", "Italian tradinional lunch. Olives and fresh tomatoes included", "60,00")
+                    +menu-item("Grilled Lamb and Feta Pita Sandwiches", "Healthy and delicious", "44,75")
                 .tabcontent-inner
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!
+                    +menu-item("Feijoada with rice and coconut water", "Bean stew looks flavorful, hearty and nutritious", "67,00")
+                    +menu-item("Schnitzel with salad and herby potatoes", "Austrian traditional lunch. Yumm!", "45,00")
         #Snacks.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Lorem, ipsum.
-                    p Lorem ipsum dolor sit amet.
+                    +menu-item("Organic european style yogurt", "Crafted with pure, simple ingredients, and minimally processed.", "15,00")
+                    +menu-item("Jaffa Cakes", "Light and delicious snacks from Scotland", "10,00")
+
+
                 .tabcontent-inner
-                    h3 Lorem, ipsum.
-                    p Lorem ipsum dolor sit amet.
+                    +menu-item("A lot of butter", "It's a thrill! Ice cream!", "99,99")
+                    +menu-item("Gansito", "A Mexican snack cake that is filled with both strawberry jelly and a creamy filling", "25,25")
+
+
         #Pizza.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    +menu-item("Pizza Marinara", "Neapolitan pizza in Italian cuisine seasoned with only tomatoes, extra virgin olive oil, oregano and garlic", "89,00")
+                    +menu-item("Pizza Meat&Cheese", "Get a taste of what you have been missing and get a mouthful of Hand-tossed Pizzas you deserve", "80,00")
+
                 .tabcontent-inner
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    +menu-item("Pizza Caesar", "Pizza based on Caesar sauce with mozzarella, bacon, chicken fillet, iceberg salad leaves and parmesan cheese", "95,00")
+                    +menu-item("Pizza Dolce", "Sweet pizza with chokolate and fruits", "85,00")
+
         #Soups.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Lorem.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing.
+                    +menu-item("Chicken Noodles", "Mary Cadogan's aromatic broth will warm you up on a winter's evening - it contains ginger, which is particularly good for colds", "89,00")
+                    +menu-item("Soup Miso", "Traditional japanese soup with tofu, egg and kimchi", "38,50")
+                    +menu-item("Soup Borsch", "Traditional ukrainian red soup with sour cream", "75,00")
+
                 .tabcontent-inner
-                    h3 Lorem.
-                    p Lorem ipsum dolor sit amet consectetur adipisicing.
+                    +menu-item("Soup Tom Yam", "Spicy and hot vietnamese soup", "45,00")
+                    +menu-item("Soup Okroshka", "Traditional fresh russian soup", "68,00")
+
         #Dinner.tabcontent
             .tabcontent-flex
                 .tabcontent-inner
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor sit amet.
+                    +menu-item("Black Label Burger", "Prime dry-aged beef, carefully sourced and aged for six to seven weeks", "85,00")
+                    +menu-item("Buffalo Wings", "Buffalo Wings is always Buffalo Wings", "75,00")
+                    +menu-item("Chicken for Two", "Chicken with a dry brine before being dried, seasoned and cooked in a very hot oven", "100,00")
+
                 .tabcontent-inner
-                    h3 Lorem, ipsum dolor.
-                    p Lorem ipsum dolor sit amet.
+                    +menu-item("Blackened Redfish", "The dish starts with a blend of spices, applied liberally to the Gulf fish before it’s seared with a little clarified butter in a ripping-hot cast-iron pan", "110,00")
+                    +menu-item("Charbroiled Oysters", "Gulf oysters from Louisiana are some of the plumpest and tastiest in the country", "140,00")
+
     .link-wrap
         a.Explor-food(href='#') Explor food menu
