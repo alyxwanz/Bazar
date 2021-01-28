@@ -1,0 +1,35 @@
+.schedule {
+	width: 1084px;
+	margin: 0 auto;
+
+	&__title {
+		padding: 100px 0;
+		display: inline-block;
+		margin-right: 160px;
+	}
+
+	&__text {
+		font-style: italic;
+		display: inline-grid;
+		padding-right: 60px;
+	}
+
+	&__time {
+		font-style: normal;
+		padding-top: 20px;
+	}
+
+	&__img {
+		position: relative;
+	}
+
+	&__item {
+		min-width: 210px;
+		min-height: 210px;
+		display: inline-block;
+		position: absolute;
+		right: -7px;
+		bottom: 65px;
+		border: 2px solid $color_medium-dark;
+	}
+}

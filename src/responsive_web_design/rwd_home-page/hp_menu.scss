@@ -1,6 +1,6 @@
 @media (max-width: 1260px) {
 	.menu {
-		height: 100vh;
+		height: 100%;
 		.menu__wrap {
 			.menu__template {
 				&-headline {
@@ -25,9 +25,9 @@
 					height: 300px;
 				}
 
-				&-item {
-					width: 290px;
-					height: 190px;
+				&-item img{
+					max-width: 290px;
+					max-height: 190px;
 				}
 
 				&-heading {
@@ -76,7 +76,7 @@
 					font-size: $fz20;
 				}
 
-				&-item {
+				&-item img{
 					width: 250px;
 					height: 165px;
 				}
@@ -135,9 +135,9 @@ height: 100%;
 					height: 365px;
 					background-color: $color-border_light-gray;
 				}
-				&-item {
-					width: 380px;
-					height: 250px;
+				&-item img{
+					min-width: 380px;
+					min-height: 250px;
 				}
 
 				&-heading {
@@ -150,7 +150,7 @@ height: 100%;
 				}
 
 				&-img.small {
-					right: -40px;
+					right: -15px;
 					top: 70px;
 				}
 			}
@@ -168,12 +168,12 @@ height: 100%;
 					height: 337px;
 				}
 				&-img.small {
-					right: -85px;
+					right: 0;
 					top: 70px;
 				}
-				&-item {
-					width: 320px;
-					height: 214px;
+				&-item img{
+					min-width: 320px;
+					min-height: 214px;
 				}
 			}
 		}
@@ -213,9 +213,9 @@ height: 100%;
 					&-img.small {
 						right: -25px;
 					}
-					&-item {
-						width: 300px;
-						height: 204px;
+					&-item img{
+						min-width: 300px;
+						min-height: 204px;
 					}
 				}
 			}
@@ -235,9 +235,9 @@ height: 100%;
 					&-img.small {
 						right: -11px;
 					}
-					&-item {
-						width: 280px;
-						height: 195px;
+					&-item img{
+						min-width: 280px;
+						min-height: 195px;
 					}
 				}
 			}
@@ -264,11 +264,13 @@ height: 100%;
 						height: 260px;
 					}
 					&-img.small {
-						right: -11px;
+						right: 0px;
 					}
-					&-item {
-						width: 230px;
-						height: 160px;
+					&-item img{
+						min-width: 230px;
+						min-height: 160px;
+						max-width: 230px;
+						max-height: 160px;
 					}
 					&-heading {
 						font-size: $fz18;
@@ -293,9 +295,11 @@ height: 100%;
 					&-img.small {
 						right: -11px;
 					}
-					&-item {
-						width: 200px;
-						height: 135px;
+					&-item img{
+						min-width: 200px;
+						min-height: 135px;
+						max-width: 200px;
+						max-height: 135px;
 					}
 				}
 			}

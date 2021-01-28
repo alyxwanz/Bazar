@@ -1,0 +1,79 @@
+
+.header {
+
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 22px;
+	&__wrapper {
+		width: 100%;
+	}
+
+	&__burger {
+		display: none;
+	}
+
+	&__logo-icon {
+		outline: none;
+		display: inline-block;
+		width: 150px;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header__nav {
+		&-list {
+			display: flex;
+
+			.header__nav-item {
+				margin-right: 20px;
+				&:first-child {
+					margin-left: 16px;
+				}
+
+				.header__nav-link {
+					color: $color_ink;
+					text-decoration: none;
+					letter-spacing: 0.35px;
+					@include hover-link;
+				}
+			}
+		}
+	}
+
+	&__book-btn {
+		margin-left: 20px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 0px 0px 3px $color_orange;
+		border: 1px solid $color_white;
+		padding: 12px 12px 12px 45px;
+
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background-image: url("./../images/header/iconPlate.png");
+			background-repeat: no-repeat;
+			top: 20%;
+			left: 7.5%;
+		}
+
+		@include hover-button;
+	}
+}
+.header__container-links { 
+	background-color: $color_white;
+}
+.header__container-links a {
+	color: $color_dark;
+}
+.header__nav-link-container-drop {
+	color: $color_dark;
+}

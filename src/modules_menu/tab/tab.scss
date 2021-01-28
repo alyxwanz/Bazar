@@ -1,0 +1,158 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    padding: 97px 0 100px;
+}
+
+/* Style the tab */
+.tab {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tab-wrap {
+    border-top: 1px dashed #a3b0ba;
+    padding: 60px 0 60px;
+}
+
+.menu-list {
+    margin: 0 0 42px 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #14141d;
+    text-transform: capitalize;
+}
+
+/* Style the buttons inside the tab */
+/* .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+} */
+
+.svg-icon {
+    height: 23px;
+    margin-bottom: 10px;
+}
+
+.tablinks {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: PlayfairDisplay;
+    font-size: 20px;
+    font-weight: bold;
+    color: #14141d;
+    text-transform: capitalize;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    color: #fea100;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #fea100;
+}
+
+/* Style the tab content */
+/* .tabcontent:not(:first-child) {
+    display: none;
+} */
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.tabcontent-inner {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+}
+
+.tabcontent-inner:not(:last-child) {
+    margin-right: 30px;
+}
+
+.link-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.Explor-food {
+    background-color: #fea100;
+    display: block;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 4px;
+    font-family: Sintony;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.active {
+    display: block;
+}
+
+.menu {
+    &__template-item {
+        display: flex;
+        list-style: none;
+        padding-top: 25px;    
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    &__template-headline {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    &__template-disc {
+        display: block;
+        padding-bottom: 25px;
+    }
+
+    &__template-price {
+        color: #fea100;
+        &__template-currency {
+            color: #fea100;
+        }
+        &__template-value {
+            color: #fea100;
+        }
+    }
+}
+.menu__template-text {
+    width: 310px;
+}
+
+
+
+
+
+
+
+

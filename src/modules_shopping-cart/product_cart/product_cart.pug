@@ -1,0 +1,93 @@
+section.product-cart
+    .product-cart__wrapper
+        h2.product-cart__title.playfair-bold.fz35 Product Cart
+        .product-cart__table-part
+            .product-cart__table
+                table.product-table(style='width: 100%', border='1')
+                    thead.playfair-bold.fz22
+                        tr
+                            th.product-table-item Item
+                            th.product-table-price Price
+                            th.product-table-qty Qty
+                            th.product-table-subtotal Subtotal
+                    tbody.playfair-bold.fz15#tbody
+                        tr.row
+ 
+                            td.for-button  
+                                img.shopping-cart__image(src='./images/shopping-cart/bean3.png' alt='image' srcset='')
+                                | Green Mung Beas
+                                span.delete-btn
+                            td 
+                                span $ 
+                                span.price-value 100
+                            td.td-for-relative
+                                span.qty-count 1
+                                span.qty-plus-button 
+                                    img(src="./images/shopping-cart/add.png", alt="btn_+")
+                                span.qty-minus-button
+                                    img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
+                            td 
+                                span $ 
+                                span.total-value 100
+                                    
+                        tr.row
+
+                            td.for-button  
+                                img.shopping-cart__image(src='./images/shopping-cart/bean2.jpg' alt='image' srcset='')
+                                | Laird Green Ientils
+                                span.delete-btn
+                            td 
+                                span $  
+                                span.price-value 100
+                            td.td-for-relative
+                                span.qty-count 1
+                                span.qty-plus-button 
+                                    img(src="./images/shopping-cart/add.png", alt="btn_+")
+                                span.qty-minus-button
+                                    img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
+                            td 
+                                span $ 
+                                span.total-value 100
+                        tr.row
+
+                            td.for-button  
+                                img.shopping-cart__image(src='./images/shopping-cart/bean.jpg' alt='image' srcset='')
+                                | Fava Bean
+                                span.delete-btn
+                            td 
+                                span $ 
+                                span.price-value 100
+                            td.td-for-relative 
+                                span.qty-count 1
+                                span.qty-plus-button 
+                                    img(src="./images/shopping-cart/add.png", alt="btn_+")
+                                span.qty-minus-button
+                                    img.qty-minus-button(src="./images/shopping-cart/minus.png", alt="btn_-")
+
+                            td 
+                                span $ 
+                                span.total-value 100
+            .product-cart.sidebar-part
+                .product-cart.product-cart-sidebar-wrap.color-bg_pink.color_white
+                    .product-cart.summary-wrap.bordered 
+                        .product-cart.summary-title.playfair-bold.fz22 Summary
+                        .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
+                            .summary-row Subtotal
+                            .summary-row 
+                                span : $
+                                span.summary-price 
+                        .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
+                            .summary-row Shipping cost
+                            .summary-row : $0
+                        .product-cart.summary-costs.sintony-normal.fz15.color_lightest-grey
+                            .summary-row Tax
+                            .summary-row
+                                span : $
+                                span.tax-price 10
+                    .product-cart.order-wrap
+                        .product-cart.summary-costs.sintony-bold.fz15
+                            .summary-row Order Total
+                            .summary-row
+                                span : $
+                                span.order-total-price 
+                        .product-cart.btn.checkout-btn.sintony-bold.fz14(href='#') Go to checkout

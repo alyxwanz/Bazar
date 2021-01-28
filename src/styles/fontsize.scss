@@ -12,11 +12,13 @@ $fz16: rem(16px);
 $fz18: rem(18px);
 $fz20: rem(20px);
 $fz22: rem(22px);
+$fz23: rem(23px);
 $fz24: rem(24px);
 $fz25: rem(25px);
 $fz26: rem(26px);
 $fz28: rem(28px);
 $fz30: rem(30px);
+$fz32: rem(32px);
 $fz35: rem(35px);
 $fz37: rem(37px);
 $fz40: rem(40px);
@@ -26,6 +28,7 @@ $fz48: rem(48px);
 $fz50: rem(50px);
 $fz51: rem(51px);
 $fz55: rem(55px);
+$fz56: rem(56px);
 $fz60: rem(60px);
 $fz62: rem(62px);
 
@@ -56,6 +59,9 @@ $fz62: rem(62px);
 .fz22{
 	font-size: $fz22;
 }
+.fz23{
+	font-size: $fz23;
+}
 .fz24{
 	font-size: $fz24;
 }
@@ -65,6 +71,12 @@ $fz62: rem(62px);
 .fz26{
 	font-size: $fz26;
 }
+.fz30{
+	font-size: $fz30;
+}
+.fz32{
+	font-size: $fz32;
+}
 .fz35{
 	font-size: $fz35;
 }
@@ -73,6 +85,18 @@ $fz62: rem(62px);
 }
 .fz42{
 	font-size: $fz42;
+}
+.fz50{
+	font-size: $fz50;
+}
+.fz51{
+	font-size: $fz51;
+}
+.fz55{
+	font-size: $fz55;
+}
+.fz56{
+	font-size: $fz56;
 }
 .fz60{
 	font-size: $fz60;

@@ -5,6 +5,7 @@ $color_medium-dark: #52535e;
 $color_less-dark: #363d43;
 $color_orange: #fea100;
 $color_dark-orange: #fd9000;
+$color_light: #d4dade;
 $color-border_light-gray: #eeeeee;
 $color_gray: gray;
 $color_gray-better: #616161;
@@ -12,11 +13,29 @@ $color_lighter-gray: #5c6369;
 $color_medium-gray: #7d8587;
 $color_light-gray: #adb2b7;
 $color-bg_light-gray: #6e7678;
+$color_ink: #2c465a;
 $color_medium-white: #d7d7d7;
 $color_white: #ffffff;
 $color_pink: #fe4c8d;
+$color_light-pink: #ffe9f1;
 $color-bg_graphite: #565f61;
+$color_pear: #d38a0c;
+$color_light-pear: #ffeac5;
+$color-bg_pink: #fe4c8d;
+$color-bg_slight-blue: #edf1f3;
+$color-bg_orange: #fea100;
+$color_dark-grey: #2c465a;
+$color-bg_white: #f4f4f4;
+$color_lightest-grey: #f4f4f4;
+$color_mostly-light: #e8edef;
+$color-bg_medium-gray: #7d8587;
 
+.color_pear {
+	color: $color_pear;
+}
+.color_ink {
+	color: $color_ink;
+}
 .color_black-shadow{
 	color: $color_black-shadow;
 }
@@ -50,8 +69,8 @@ color: $color_dark;
 .color-bg_graphite{
 	background-color: $color-bg_graphite;
 }
-.color-bg_medium-gray{
-	background-color: $color_medium-gray;
+.color_medium-gray{
+	color: $color_medium-gray;
 }
 .color-bg_dark-bg {
 	background-color: $color_dark-bg;
@@ -61,4 +80,25 @@ color: $color_dark;
 }
 .color-bg_orange {
 	background-color: $color_orange;
+}
+.color-bg_pink {
+	background-color: $color_pink;
+}
+.color-bg_slight-blue {
+	background-color: $color-bg_slight-blue;
+}
+.color-bg_orange {
+	background-color: $color-bg_orange;
+}
+.color_dark-grey {
+	color: $color_dark-grey;
+}
+.color-bg_white {
+	color: $color-bg_white;
+}
+.color_lightest-grey {
+	color: $color_lightest-grey;
+}
+.color-bg_medium-gray{
+	background-color: $color_medium-gray;
 }

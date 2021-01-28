@@ -1,0 +1,62 @@
+section.instant-checkout.main-checkout
+    .instant-checkout__wrapper
+        h2.instant-checkout.title.playfair-bold.fz35.color_dark
+            | Instant Checkout
+        .instant-checkout.double-part
+            .instant-checkout.form-part
+                form.fz14.sintony-normal.color_less-dark(action="submit")
+                    img(src="", alt="")
+                    input.input-part(type="text" placeholder="First Name*")
+                    input.input-part(type="text" placeholder="Last Name*")
+                    input.input-part(type="email" placeholder="Email address*")
+                    input.input-part(type="tel" placeholder="Phone*")
+                    select.input-part(name="Country")
+                        option Country
+                        option Ukraine
+                        option USA
+                        option China
+                        option France
+                        option Greece
+                        option Australia
+                    textarea.delivery-address.fz14.sintony-normal.color_less-dark(type="text" placeholder="Delivery address*")
+                    input.input-part(type="text" placeholder="Pstcode / Zip*")
+                    input.address-check(type="checkbox")
+                    p.billing.fz14.color_less-dark Billing and Shipping address are same
+                    button.btn.order-btn(href='#') Place order
+            .instant-checkout.checkout-sidebar-part
+                .instant-checkout.checkout-sidebar-wrap.color-bg_pink.color_white
+                    .instant-checkout.wrap1
+                        .instant-checkout.checkout-sidebar-title.playfair-bold.fz22 Your order
+                        .instant-checkout.checkout-sidebar-contents-table.bordered.sintony-bold.fz15.color_white
+                            .checkout-head Product
+                            .checkout-head Total
+                    .instant-checkout.wrap2
+                        .checkout-product-list.sintony-normal.fz15.color_lightest-grey
+                            .checkout-list Product name one
+                            .checkout-list : $100
+                        .checkout-product-list.sintony-normal.fz15.color_lightest-grey
+                            .checkout-list Product name two
+                            .checkout-list : $100
+                        .checkout-product-list.sintony-normal.fz15.color_lightest-grey
+                            .checkout-list Product name three
+                            .checkout-list : $100
+                        .checkout-product-list.bordered.sintony-normal.fz15.color_lightest-grey
+                            .checkout-list Tax
+                            .checkout-list : $10
+
+                    .instant-checkout.checkout-sidebar-contents-table.tax-part.sintony-bold.fz15.color_white
+                        .checkout-head Order Total
+                        .checkout-head : $310
+                    .instant-checkout.checkout-sidebar-payment.playfair-bold.fz22 Payment method
+                        form.payment-form(action="submit")
+                            label.payment-label.sintony-bold.fz15.color_white(for="radio")
+                                input.form-radio#cash(type="radio" name="payment" value="cash")
+                                | Cash on delivery
+                            label.payment-label.sintony-bold.fz15.color_white(for="radio")
+                                input.form-radio#creditCard(type="radio" name="payment" value="creditCard")
+                                | Credit card
+                        .payment-wrap
+                            img.payment-service(src="./../dist/images/checkout/icon_visa.png", alt="visa")
+                            img.payment-service(src="./../dist/images/checkout/icon_maestro.png", alt="maestro")
+                            img.payment-service(src="./../dist/images/checkout/icon_cirrus.png", alt="cirrus")
+                            img.payment-service(src="./../dist/images/checkout/icon_discover.png", alt="discover")

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(href='https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='./styles/reset.css')
+    link(rel='stylesheet' href='./styles/style_reservation.css')
+    title Reservation
+  body
+    include ./preloader/preloader.pug
+    include ./pug/mixins.pug
+    include ./modules_reservation/header/header.pug
+    include ./modules_reservation/main-title/main-title.pug
+    include ./modules_reservation/book-a-table/book-a-table.pug
+    include ./modules_reservation/special-reservations/special-reservations.pug
+    include ./modules_reservation/schedule/schedule.pug
+    include ./modules_reservation/footer/footer.pug
+    script
+      include ./js/index_js/burger.js
+      include ./js/preloader/preloader.js

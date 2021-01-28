@@ -3,17 +3,20 @@ section.gallery
     | Our Gallery
   .gallery__wrapper-slide
     ul.gallery__slider
-      - arr2 = ["","","","","",]
+      - arr2 = ["./images/our-gallery/food1.jpg","./images/our-gallery/food2.jpg","./images/our-gallery/food3.jpeg","./images/our-gallery/food4.jpg","",]
         each val2 in arr2
-          li.gallery__slide.color-bg_medium-gray= val2
+          li.gallery__slide.color-bg_medium-gray
+            img.gallery__slide.color-bg_medium-gray(src= val2 alt="" srcset="")
     ul.gallery__slider
-      - arr2 = ["","","","","",]
+      - arr2 = ["./images/our-gallery/food2.jpg","./images/our-gallery/food1.jpg","./images/our-gallery/food4.jpg","./images/our-gallery/food3.jpeg","",]
         each val2 in arr2
-          li.gallery__slide.color-bg_medium-gray= val2
+          li.gallery__slide.color-bg_medium-gray
+            img.gallery__slide.color-bg_medium-gray(src= val2 alt="" srcset="")
     ul.gallery__slider
-      - arr2 = ["","","","","",]
+      - arr2 = ["./images/our-gallery/food4.jpg","./images/our-gallery/food3.jpeg","./images/our-gallery/food1.jpg","./images/our-gallery/food2.jpg","",]
         each val2 in arr2
-          li.gallery__slide.color-bg_medium-gray= val2
+          li.gallery__slide.color-bg_medium-gray
+            img.gallery__slide.color-bg_medium-gray(src= val2 alt="" srcset="")
   .gallery__radio
     ul.gallery__list
       li.gallery__list-radio.active_radio

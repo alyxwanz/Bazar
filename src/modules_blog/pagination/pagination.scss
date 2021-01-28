@@ -1,0 +1,33 @@
+.pagination {
+	padding-right: 150px;
+	max-width: 501px;
+	margin: 0 auto;
+	display: flex;
+	&__btn-prev,
+	&__btn-next {
+		padding: 12px 30px;
+		border-radius: 20px;
+		border: transparent;
+	}
+	&__btn-prev {
+		pointer-events:none;
+	}
+	&__container {
+		&-pages {
+			margin-left: 10px;
+			padding: 12px 30px;
+			border-radius: 20px;
+			background-color: transparent;
+			border: 2px solid $color_less-dark;
+			box-shadow: 1px 1px 1px $color_medium-gray;
+			&:hover {
+				border-color: $color_dark-orange;
+				background-color: $color_dark-orange;
+				
+			}
+			&:last-child {
+				margin-right: 10px;
+			}
+		}
+	}
+}

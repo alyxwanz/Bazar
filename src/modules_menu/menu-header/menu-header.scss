@@ -1,0 +1,111 @@
+.banner {
+    background-color: darkgray;
+    min-height: 250px;
+}
+
+.Speciality {
+    display: flex;
+
+}
+
+.img-Speciality {
+    width: 50%;
+    background-color: gray;
+}
+.img-Speciality__item {
+    width: 100%;
+}
+
+.disc {
+    background-color: #ecf1f4;
+    width: 50%;
+    padding: 94px 70px;
+
+    &-title {
+        font-family: $font-Playfair;
+        font-size: rem(35px);
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: normal;
+        text-align: left;
+        color: #14141d;
+        margin-bottom: 36px;
+    }
+
+    ul {
+        
+        li:not(:last-child) {
+            margin-bottom: 46px;
+        }
+
+        li {
+
+            font-family: $font-Sintony;
+            font-size: rem(14px);
+            color: #5c6369;
+
+            span {
+                display: block;
+                margin-bottom: 18px;
+                font-family: $font-Sintony;
+                font-size: rem(15px);
+                font-weight: bold;
+                color: #14141d;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+}
+
+.Menu-List-View {
+
+    .div-for-a {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    a {
+        padding: 30px 20px;
+        display: inline-block;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: $font-Playfair;
+        font-size: rem(35px);
+        font-weight: bold;
+        letter-spacing: normal;
+        color: #14141d;
+        margin-bottom: 42px;
+    }
+    .tabs {
+        ul {
+            border-bottom: 1px dashed black;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+
+            li {
+                font-family: $font-Playfair;
+                font-size: rem(20px);
+                font-weight: bold;
+                letter-spacing: normal;
+                color: #14141d;
+            }
+        }
+    }
+    .menu-wrap {
+        display: flex;
+        justify-content: center;
+        padding: 58px 0 58px;
+    }
+
+    .menu-list:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    
+}
+

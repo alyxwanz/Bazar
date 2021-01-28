@@ -10,24 +10,132 @@ mixin menu-item(headline, disc, value)
 mixin header-menu()
   ul.header__nav-list
     li.header__nav-item
-      span.header__nav-current.current-page.sintony-bold.fz14.color_light-gray home
-    - arr1 = ['menu', 'reservation', 'recipe', 'blog', 'pages', 'contact']
-      each val1 in arr1
-        li.header__nav-item
-          a.header__nav-link.sintony-bold.fz14.color_white(href='') #{val1}
+      a.header__nav-link.sintony-bold.fz14.home-page.color_white(href='./index.html') home
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.color_white.menu-page(href='./menu.html') menu
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.reservation-page.color_white(href='./reservation.html') reservation
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.recipe-2-column-page.color_white(href='./recipe-2-column.html') recipe
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.blog-page.color_white(href='./blog.html') blog
+    li.header__nav-item
+      .header__nav-link-container
+        span.header__nav-link.header__nav-link-container-drop.sintony-bold.fz14.pages-page.color_white pages
+          .header__container-links
+            a.header__container-link.sintony-bold.fz14.pages-page.color_white(href='./chef.html') chef
+            a.header__container-link.sintony-bold.fz14.pages-page.color_white(href='./event.html') event
+    li.header__nav-item
+      a.header__nav-link.sintony-bold.fz14.contact-page.color_white(href='./contact.html') contact
 
-mixin feedback()
+mixin footer-menu()
+  ul.footer__nav-list
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.home-page_f(href='./index.html') Home
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.about-us-page_f(href='./about-us.html') About us
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.menu-page_f(href='./menu.html') Menu
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.reservation-page_f(href='./reservation.html') Reservation
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.recipe-2-column-page_f(href='./recipe-2-column.html') Recipe
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.blog-page_f(href='./blog.html') Blog
+    li.footer__nav-item.footer-margin
+      a.footer__nav-link.sintony-normal.fz14.contact-page_f(href='./contact.html') Contact us
+
+mixin feedback(url, name, comment)
   .feedback-slider__block
-    .feedback-slider__img.color-bg_medium-gray
+    .feedback-slider__img
+      img(src= url alt='person' srcset='')
     .feedback-slider__text.playfair-bold
-      h3.feedback-slider__headline.playfair-bold.fz25.color_dark
-        | Best atmosphere and food
+      h3.feedback-slider__headline.playfair-bold.fz25.color_dark= comment
       p.feedback-slider__disc.sintony-normal.fz15.color_less-dark
         | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
         | model text, and a search for &apos;lorem ipsum&apos; will uncover many web sites still in their infancy.
         | Various versions have evolved over the years, sometimes by accident.
       span.feedback-slider__line
-      span.feedback-slider__name.sintony-bold.fz16.color_dark
-        | Dr. Prabakaran John
+      span.feedback-slider__name.sintony-bold.fz16.color_dark= name
       .feedback-slider__stars
         img.feedback-slider__icon(src='./images/feedback-slider/stars.png' alt='stars' srcset='')
+
+mixin menu__list(img, name)
+  .list__flex-container-item
+    .list__flex-container-item-icon
+      img.list__flex-container-item-logo(src=img, alt='')
+    .list__flex-container-item-name
+      h3.list__flex-container-item-word.fz20.playfair-bold.color_dark= name
+
+mixin blog__content(img, title, count, text, day, month)
+  .blog__content-item
+    .blog__content-item-photo
+      img.blog__content-item-photo-image(src=img alt='' srcset='')
+    .blog__content-item-text
+      .blog__content-item-text-date.sintony-bold.fz30.color-bg_orange.color_white= day
+        .blog__content-item-text-date-month.sintony-bold.fz12.color_white= month
+      .blog__content-item-text-description
+        h2.blog__content-item-text-description-title.playfair-bold.fz35= title
+        p.blog__content-item-text-description-main_text.color_lighter-gray.sintony-normal.fz14= text
+    .blog__content-item-panel
+      .blog__content-item-panel-rate
+        .blog__content-item-panel-rate-btn
+          a.blog__content-item-panel-rate-btn-read_more.btn.fz14.sintony-bold(href='#') read more
+        .blog__content-item-panel-rate-like
+        .blog__content-item-panel-rate-summ.fz14.color_white= count
+      .blog__content-item-panel-links
+        .blog__content-item-panel-links-share
+          a.blog__content-item-panel-links-share-link(href='#')
+            img.blog__content-item-panel-links-share-link-img(src='./images/blog/content/share.png' alt='stars' srcset='')
+        .blog__content-item-panel-links-social
+          +social-blog('facebook', './images/blog/content/icon_facebook.png','https://uk-ua.facebook.com/')
+          +social-blog('twitter', './images/blog/content/icon_twitter.png', 'https://twitter.com/ru')
+          +social-blog('google', './images/blog/content/icon_google.png','https://www.google.com.ua/?hl=ru')
+
+mixin social(name, src, url)
+  .footer__social
+    a.footer__social-link(href=url)
+      img.footer__social-icon(src= src alt=name srcset='')
+
+mixin social-blog(name, src, url)
+  .blog__content-item-panel-links-social-block
+    a.blog__content-item-panel-links-social-block-link(href=url)
+      img.blog__content-item-panel-links-social-block-link-icon(src= src alt=name srcset='')
+
+mixin category-tag(name)
+  li.blog__sidebar-category-list-tags-item.fz14.sintony-bold= name
+
+mixin post(img, title, text)
+  .blog__sidebar-post-item
+    .blog__sidebar-post-item-photo
+      img.blog__sidebar-post-item-photo-icon(src= img alt='post' srcset='')
+    .blog__sidebar-post-item-text
+      .blog__sidebar-post-item-text-title.fz11.sintony-bold.color_lighter-gray= title
+      .blog__sidebar-post-item-text-text.fz14.playfair-bold.color_dark= text
+
+mixin radio-orange()
+  .radio-orange
+    span.radio-orange__item.active-radio-orange
+    span.radio-orange__item
+    span.radio-orange__item
+
+mixin archive(month, summ)
+  li.blog__sidebar-archive-statistic-item
+    .blog__sidebar-archive-statistic-item-date.sintony-bold.fz14= month
+    .blog__sidebar-archive-statistic-item-count.sintony-bold.fz14= summ
+
+mixin tags(name)
+  .blog__sidebar-tags-container-item
+    span.blog__sidebar-tags-container-item-name.sintony-bold.fz14.color_pear= name
+
+mixin content-item(photo, name, stars, text)
+  .content__flex-container
+    .content__flex-container-photo
+      img.content__flex-container-photo-icon(src= photo alt='food' srcset='')
+    .content__flex-container-content
+      h3.content__flex-container-content-title.playfair-bold.fz22.color_dark= name
+      .content__flex-container-content-stars
+        img.content__flex-container-content-stars-icon_stars(src= stars alt='rate' srcset='')
+      p.content__flex-container-content-text.sintony-normal.fz14.color_lighter-gray= text
+      .content__flex-container-content-btn_item
+      a.content__flex-container-content-btn_item-button.btn.sintony-bold.fz14.color_white recipe details

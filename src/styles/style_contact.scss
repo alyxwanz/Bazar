@@ -1,0 +1,18 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../preloader/preloader.scss";
+@import "./../modules_contact/header/header.scss";
+@import "./../modules_contact/main-title/main-title.scss";
+@import "./../modules_contact/address/address.scss";
+@import "./../modules_contact/footer/footer.scss";
+@import "./../responsive_web_design/rwd_contact/contact_header.scss";
+@import "./../responsive_web_design/rwd_contact/contact_address.scss";
+@import "./../responsive_web_design/rwd_contact/contact_footer.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}

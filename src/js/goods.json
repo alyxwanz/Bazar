@@ -1,0 +1,272 @@
+[
+    {
+        "id": "01",
+        "name": "Pizza Marinara",
+        "type": ["All", "Pizza"],
+        "description": "Neapolitan pizza in Italian cuisine seasoned with only tomatoes, extra virgin olive oil, oregano and garlic",
+        "today special": true,
+        "price": "89,00",
+        "img": "../images/json/pizza-marinara.jpg"
+    },
+    {
+        "id": "02",
+        "name": "Chicken Noodles",
+        "type": ["All", "Soups"],
+        "description": "Mary Cadogan's aromatic broth will warm you up on a winter's evening - it contains ginger, which is particularly good for colds",
+        "today special": true,
+        "price": "89,00",
+        "img": "../images/json/chicken-noodles.jpg"
+    },
+    {
+        "id": "03",
+        "name": "Ultimate Organic Fruit Salad",
+        "type": ["All", "Breakfast"],
+        "description": "The refreshing flavor of the easy-to-make mint syrup gives this classic dessert a classy pick-me-up and makes it the perfect dessert for hot summer days",
+        "today special": false,
+        "price": "50,00",
+        "img": "../images/json/fruit-salad.jpg"
+    },
+    {
+        "id": "04",
+        "name": "Pancakes and Maple Syrup",
+        "type": ["All", "Breakfast"],
+        "description": "A zesty take on American pancakes with orange zest in the batter and segments on top. All doused with lashings of maple syrup",
+        "today special": false,
+        "price": "68,00",
+        "img": "../images/json/maple-syrup-pancake.jpg"
+    },
+    {
+        "id": "05",
+        "name": "Toasts and Jam",
+        "type": ["All", "Breakfast"],
+        "description": "Rustic breads, scones, and biscuits paired with fruit-jams, jellies, nut butters, savory spreads, pickles, and more",
+        "today special": false,
+        "price": "45,00",
+        "img": "../images/json/jam-with-toast.jpg"
+    },
+    {
+        "id": "06",
+        "name": "Pizza Meat&Cheese",
+        "type": ["All", "Pizza"],
+        "description": "Get a taste of what you have been missing and get a mouthful of Hand-tossed Pizzas you deserve",
+        "today special": false,
+        "price": "80,00",
+        "img": "../images/json/pizza-meet-cheese.jpg"
+    },
+    {
+        "id": "07",
+        "name": "Pizza Caesar",
+        "type": ["All", "Pizza"],
+        "description": "Pizza based on Caesar sauce with mozzarella, bacon, chicken fillet, iceberg salad leaves and parmesan cheese.",
+        "today special": false,
+        "price": "95,00",
+        "img": "../images/json/pizza-caesar.jpg"
+    },
+    {
+        "id": "08",
+        "name": "Pizza Dolce",
+        "type": ["All", "Pizza"],
+        "description": "Sweet pizza with chokolate and fruits",
+        "today special": false,
+        "price": "85,00",
+        "img": "../images/json/pizza-dolce.jpg"
+    },
+    {
+        "id": "09",
+        "name": "Soup Tom Yam",
+        "type": ["All", "Soups"],
+        "description": "Spicy and hot vietnamese soup",
+        "today special": false,
+        "price": "45,00",
+        "img": "../images/json/tom-yum-soup.jpg"
+    },
+    {
+        "id": "10",
+        "name": "Soup Miso",
+        "type": ["All", "Soups"],
+        "description": "Traditional japanese soup with tofu, egg and kimchi",
+        "today special": false,
+        "price": "38,50",
+        "img": "../images/json/miso-soup.jpg"
+    },
+    {
+        "id": "11",
+        "name": "Soup Okroshka",
+        "type": ["All", "Soups"],
+        "description": "Traditional fresh russian soup",
+        "today special": false,
+        "price": "68,00",
+        "img": "../images/json/soup-okroshka.jpg"
+    },
+    {
+        "id": "12",
+        "name": "Soup Borsch",
+        "type": ["All", "Soups"],
+        "description": "Traditional ukrainian red soup with sour cream",
+        "today special": false,
+        "price": "75,00",
+        "img": "../images/json/borscht-soup.jpg"
+    },
+    {
+        "id": "13",
+        "name": "Cinnamon Rolls",
+        "type": ["All", "Breakfast"],
+        "description": "Just cinnamon rolls",
+        "today special": false,
+        "price": "33,00",
+        "img": "../images/json/cinnamon-rolls.jpg"
+    },
+    {
+        "id": "14",
+        "name": "Eggs Benedict",
+        "type": ["All", "Breakfast"],
+        "description": "Eggs with a toasted english muffin, topped with a slice of Canadian bacon",
+        "today special": false,
+        "price": "40,00",
+        "img": "../images/json/eggs-benedict.jpg"
+    },
+    {
+        "id": "15",
+        "name": "Shawarma",
+        "type": ["All", "Breakfast"],
+        "description": "Shawarma with chicken or pork, maded by world famous shawarmamen Ashot",
+        "today special": false,
+        "price": "25,00",
+        "img": "../images/json/shawarma.jpg"
+    },
+    {
+        "id": "16",
+        "name": "Croissants",
+        "type": ["All", "Breakfast"],
+        "description": "Awwww, croissants!",
+        "today special": false,
+        "price": "20,00",
+        "img": "../images/json/croissants.jpg"
+    },
+    {
+        "id": "17",
+        "name": "Spinach and feta on flat bread",
+        "type": ["All", "Lunch"],
+        "description": "Traditional turkish lunch",
+        "today special": false,
+        "price": "55,00",
+        "img": "../images/json/spinach-feta-flatbread.jpg"
+    },
+    {
+        "id": "18",
+        "name": "Feijoada with rice and coconut water",
+        "type": ["All", "Lunch"],
+        "description": "Bean stew looks flavorful, hearty and nutritious.",
+        "today special": false,
+        "price": "67,00",
+        "img": "../images/json/feijoada.jpg"
+    },
+    {
+        "id": "19",
+        "name": "Pasta with tuna",
+        "type": ["All", "Lunch"],
+        "description": "Italian tradinional lunch. Olives and fresh tomatoes included",
+        "today special": false,
+        "price": "60,00",
+        "img": "../images/json/pasta-with-tuna.jpg"
+    },
+    {
+        "id": "20",
+        "name": "Organic european style yogurt",
+        "type": ["All", "Snacks"],
+        "description": "Crafted with pure, simple ingredients, and minimally processed.",
+        "today special": false,
+        "price": "15,00",
+        "img": "../images/json/organic-yogurt.jpg"
+    },
+    {
+        "id": "21",
+        "name": "Schnitzel with salad and herby potatoes",
+        "type": ["All", "Lunch"],
+        "description": "Austrian traditional lunch. Yumm!",
+        "today special": false,
+        "price": "45,00",
+        "img": "../images/json/schnitzel-with-potato.jpg"
+    },
+    {
+        "id": "22",
+        "name": "Grilled Lamb and Feta Pita Sandwiches",
+        "type": ["All", "Lunch"],
+        "description": "Healthy and delicious",
+        "today special": false,
+        "price": "44,75",
+        "img": "../images/json/grilled-lamb-with-feta.jpg"
+    },
+    {
+        "id": "23",
+        "name": "A lot of butter",
+        "type": ["All", "Snacks"],
+        "description": "It's a thrill! Ice cream!",
+        "today special": false,
+        "price": "99,99",
+        "img": "../images/json/lot-of-butter.jpg"
+    },
+    {
+        "id": "24",
+        "name": "Jaffa Cakes",
+        "type": ["All", "Snacks"],
+        "description": "Light and delicious snacks from Scotland",
+        "today special": false,
+        "price": "10,00",
+        "img": "../images/json/jaffa-cakes.jpg"
+    },
+    {
+        "id": "25",
+        "name": "Gansito",
+        "type": ["All", "Snacks"],
+        "description": "A Mexican snack cake that is filled with both strawberry jelly and a creamy filling",
+        "today special": false,
+        "price": "25,25",
+        "img": "../images/json/gansito.jpg"
+    },
+    {
+        "id": "26",
+        "name": "Black Label Burger",
+        "type": ["All", "Dinner"],
+        "description": "Prime dry-aged beef, carefully sourced and aged for six to seven weeks",
+        "today special": false,
+        "price": "85,00",
+        "img": "../images/json/black-label-burger.jpg"
+    },
+    {
+        "id": "27",
+        "name": "Blackened Redfish",
+        "type": ["All", "Dinner"],
+        "description": "The dish starts with a blend of spices, applied liberally to the Gulf fish before it’s seared with a little clarified butter in a ripping-hot cast-iron pan",
+        "today special": false,
+        "price": "110,00",
+        "img": "../images/json/blackened-redfish.jpg"
+    },
+    {
+        "id": "28",
+        "name": "Buffalo Wings",
+        "type": ["All", "Dinner"],
+        "description": "Buffalo Wings is always Buffalo Wings",
+        "today special": false,
+        "price": "75,00",
+        "img": "../images/json/buffalo-wings.jpg"
+    },
+    {
+        "id": "29",
+        "name": "Charbroiled Oysters",
+        "type": ["All", "Dinner"],
+        "description": "Gulf oysters from Louisiana are some of the plumpest and tastiest in the country",
+        "today special": false,
+        "price": "140,00",
+        "img": "../images/json/oysters.jpg"
+    },
+    {
+        "id": "30",
+        "name": "Chicken for Two",
+        "type": ["All", "Dinner"],
+        "description": "Chicken with a dry brine before being dried, seasoned and cooked in a very hot oven",
+        "today special": false,
+        "price": "100,00",
+        "img": "../images/json/chicken-for-two.jpg"
+    }
+]

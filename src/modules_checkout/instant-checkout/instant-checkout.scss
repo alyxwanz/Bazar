@@ -1,0 +1,128 @@
+.instant-checkout__wrapper {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.double-part {
+    display: flex;
+}
+
+.input-part {
+    display: block;
+    width: 570px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #c7d1d6;
+    margin-right: 30px;
+}
+
+.delivery-address {
+    width: 570px;
+    height: 190px;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #c7d1d6;
+}
+
+.address-check {
+    border: 1px solid #c7d1d6;
+    margin-top: 45px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.billing {
+    display: inline-block;
+    padding-right: 70px;
+}
+
+.order-btn {
+    display: inline-block;
+    padding: 20px 37px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border: none;
+}
+
+.checkout-sidebar-wrap {
+    padding: 50px 90px 95px 60px;
+    border: 1px dashed #e4e4e4;
+    box-shadow: 0px 0px 0px 10px #fe4c8d;
+    margin-left: 25px;
+}
+
+.checkout-sidebar-title {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.wrap1 {
+    padding-bottom: 15px;
+}
+
+.wrap2 {
+    padding-bottom: 15px;
+}
+
+
+.checkout-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-sidebar-contents-table {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.bordered {
+    border-bottom: 1px dashed #e4e4e4;
+}
+
+.checkout-product-list {
+    display: flex;
+	 justify-content: space-between;
+	 padding-bottom: 20px;
+}
+
+.tax-part {
+    padding-bottom: 60px;
+}
+
+.checkout-sidebar-payment {
+    display: block;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+
+.payment-form {
+    padding-top: 20px;
+}
+
+.payment-label {
+    display: block;
+}
+
+.payment-wrap {
+	margin-left: 30px;
+    display: flex;
+}
+
+.payment-service {
+    display: inline;
+    margin-right: 8px;
+}
+
+.form-radio {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}

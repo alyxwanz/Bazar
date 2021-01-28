@@ -70,6 +70,10 @@
 		@include hover-link;
 	}
 
+	&__cube {
+		border: 2px solid $color_medium-dark;
+	}
+
 	&__cube:not(:last-child) {
 		position: absolute;
 		top: -50px;

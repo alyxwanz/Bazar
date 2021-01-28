@@ -80,6 +80,7 @@
 		overflow: hidden;
 		.header__slider-item {
 			width: 100%;
+			padding-bottom: 5px;
 			display: flex;
 		}
 		&-btn-left,
@@ -125,4 +126,9 @@
 			@include hover-link;
 		}
 	}
+}
+.home-page {
+	color: $color_light-gray !important;
+	pointer-events: none;
+   cursor: default;
 }

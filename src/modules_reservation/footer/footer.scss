@@ -1,0 +1,141 @@
+.footer {
+	padding: 100px 0 68px;
+	&__nav-item {
+		margin-bottom: 15px;
+	}
+	&__nav-link {
+
+@include letter-space;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color_white;
+			text-decoration: underline;
+			outline: none;
+		}
+	}
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+
+	&__social{
+		display: inline-block;
+		margin: 37px 4px 0 0;
+		&-link {
+			display: inline;
+			.footer__social-icon {
+				border-radius: 50%;
+				border: 1px solid transparent;
+				&:hover {
+					border: 1px solid $color_gray;
+				}
+			}
+		}
+	
+	}
+	
+	&__column {
+		// first column
+		& > .footer__column-title {
+			margin-bottom: 33px;
+		}
+
+		// second column
+		& > .footer__subscribe-disc {
+			@include letter-space;
+
+			display: block;
+			margin-bottom: 16px;
+		}
+
+		& > .footer__form {
+			display: flex;
+
+			& > .footer__form-input {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: solid 2px $color_medium-dark;
+				border-radius: 5px;
+				width: 100%;
+				margin-right: 9px;
+
+				&:hover {
+					border: 2px solid $color_gray;
+				}
+
+				& > .footer__form-icon {
+					position: relative;
+					& > .footer__form-pick {
+						position: absolute;
+						top: 2px;
+						left: 15px;
+					}
+
+					& > .footer__form-item {
+						padding-left: 50px;
+						border: none;
+						background: transparent;
+					}
+				}
+			}
+
+			& > .footer__form-btn {
+				border: 2px solid $color_orange;
+				padding: 20px 36px;
+			}
+		}
+
+		// third column
+		& > .footer__column-link {
+			display: block;
+			margin-bottom: 10px;
+			border: 1px solid transparent;
+			border-radius: 4px;
+			&:hover{
+				border: 1px solid $color_gray;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	&__copyright {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		& > .footer__copyright-text {
+			text-transform: uppercase;
+			position: relative;
+		}
+
+		& > .footer__copyright-text::after {
+			content: "";
+			width: 350px;
+			height: 1px;
+			background-color: $color_medium-dark;
+			position: absolute;
+			bottom: 5px;
+			right: 356px;
+		}
+
+		& > .footer__copyright-text::before {
+			content: "";
+			width: 350px;
+			height: 1px;
+			background-color: $color_medium-dark;
+			position: absolute;
+			bottom: 5px;
+			left: 356px;
+		}
+	}
+}
+
+.reservation-page_f {
+	color: $color_lighter-gray !important;
+	pointer-events: none;
+   cursor: default;
+}

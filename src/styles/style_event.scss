@@ -1,0 +1,20 @@
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./fontsize.scss";
+@import "./variables.scss";
+@import "./../preloader/preloader.scss";
+@import "./../modules_event/header/header.scss";
+@import "./../modules_event/main-title/main-title.scss";
+@import "./../modules_event/content/content.scss";
+@import "./../modules_event/schedule/schedule.scss";
+@import "./../modules_event/footer/footer.scss";
+@import "./../responsive_web_design/rwd_event/event_header.scss";
+// @import "./../responsive_web_design/rwd_event/event_content.scss";
+@import "./../responsive_web_design/rwd_event/event_schedule.scss";
+@import "./../responsive_web_design/rwd_event/event_footer.scss";
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}

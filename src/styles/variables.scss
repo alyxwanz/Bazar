@@ -32,11 +32,10 @@
 	color: $color_white;
 }
 .text-decor-dark {
-	text-shadow: $color_dark 1px 1px 0, $color_dark -1px -1px 0, 
-	$color_dark -1px 1px 0, $color_dark 1px -1px 0;
+	text-shadow: $color_dark 1px 1px 0, $color_dark -1px -1px 0, $color_dark -1px 1px 0, $color_dark 1px -1px 0;
 }
 .transformAnimation {
-	transition: all .6s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 .scale-item {
 	transform: scale(0.8);
@@ -48,12 +47,20 @@
 	// transition: all 1s ease-in-out;
 }
 @keyframes index {
-	0% {z-index: 0;}
-	100% { z-index: 1;}
+	0% {
+		z-index: 0;
+	}
+	100% {
+		z-index: 1;
+	}
 }
 @keyframes index2 {
-	0% {z-index: 1;}
-	100% { z-index: 0;}
+	0% {
+		z-index: 1;
+	}
+	100% {
+		z-index: 0;
+	}
 }
 
 .active_radio {
@@ -70,5 +77,90 @@
 		transform: translate(-50%, -50%);
 		border-radius: 50%;
 	}
-	
 }
+
+.radio-orange {
+	display: flex;
+	&__item {
+		position: relative;
+		width: 10px;
+		height: 10px;
+		border: 2px solid $color_orange;
+		border-radius: 50%;
+		cursor: pointer;
+		margin-right: 4px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.active-radio-orange {
+	position: relative;
+	&:after {
+		position: absolute;
+		content: "";
+		width: 7px;
+		height: 7px;
+		background-color: $color_orange;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+	}
+}
+button.active_end {
+	background-color: $color_light-pear;
+
+}
+
+.header__nav-link-container-drop {
+	cursor: pointer;
+ }
+
+ .header__nav-link-container {
+	position: relative;
+	display: inline-block;
+
+ }
+
+.header__container-links {
+	display: none;
+	position: absolute;
+	background-color: $color_dark;
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 16px;
+	left: -6px;
+ }
+
+ .header__container-links a {
+	color: $color_white;
+	padding: 6px 0 6px 6px;
+	text-decoration: none;
+	display: block;
+
+ }
+ 
+
+ .header__container-links a:hover {
+	 color: $color_orange;
+}
+
+ .header__nav-link-container:hover .header__container-links {
+
+	display: block;
+ }
+ .header__nav-link-container:hover .header__nav-link-container-drop {
+
+	color: $color_orange;
+ }
+
+ @media (max-width: 570px) {
+	 .main-subtitle {
+		 font-size: $fz26;
+	 }
+	 .main-title_img {
+		margin: -12px 0 0;
+  }
+ }
